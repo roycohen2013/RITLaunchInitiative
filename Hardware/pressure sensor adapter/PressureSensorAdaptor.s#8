@@ -2112,7 +2112,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 </instance>
 <instance part="SUPPLY7" gate="G$1" x="7.62" y="-40.64" rot="R180"/>
 <instance part="SUPPLY8" gate="G$1" x="7.62" y="-25.4"/>
-<instance part="SUPPLY9" gate="G$1" x="83.82" y="78.74"/>
+<instance part="SUPPLY9" gate="G$1" x="78.74" y="38.1"/>
 </instances>
 <busses>
 </busses>
@@ -2303,6 +2303,12 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <pinref part="SUPPLY7" gate="G$1" pin="12V"/>
 <wire x1="2.54" y1="-38.1" x2="7.62" y2="-38.1" width="0.1524" layer="91"/>
 <wire x1="7.62" y1="-38.1" x2="7.62" y2="-40.64" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="V-"/>
+<pinref part="SUPPLY9" gate="G$1" pin="12V"/>
+<wire x1="91.44" y1="35.56" x2="78.74" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="35.56" x2="78.74" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

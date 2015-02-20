@@ -2119,7 +2119,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <instance part="U$3" gate="G$1" x="175.26" y="-7.62"/>
 <instance part="U1" gate="G$1" x="111.76" y="-5.08"/>
 <instance part="SUPPLY1" gate="G$1" x="86.36" y="0"/>
-<instance part="SUPPLY2" gate="G$1" x="-68.58" y="-38.1"/>
+<instance part="SUPPLY2" gate="G$1" x="246.38" y="17.78" rot="R180"/>
 <instance part="GND-ISO1" gate="G$1" x="93.98" y="-17.78"/>
 <instance part="SUPPLY3" gate="G$1" x="137.16" y="2.54"/>
 <instance part="C6" gate="G$1" x="129.54" y="-5.08"/>
@@ -2133,9 +2133,9 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <instance part="GND-ISO6" gate="G$1" x="187.96" y="63.5"/>
 <instance part="GND4" gate="1" x="157.48" y="-15.24"/>
 <instance part="SUPPLY5" gate="G$1" x="157.48" y="-2.54"/>
-<instance part="JP3" gate="G$1" x="-81.28" y="-45.72"/>
-<instance part="GND-ISO7" gate="G$1" x="-45.72" y="-53.34"/>
-<instance part="GND5" gate="1" x="-40.64" y="-45.72"/>
+<instance part="JP3" gate="G$1" x="259.08" y="25.4" rot="R180"/>
+<instance part="GND-ISO7" gate="G$1" x="223.52" y="33.02" rot="R180"/>
+<instance part="GND5" gate="1" x="218.44" y="25.4" rot="R180"/>
 <instance part="JP1" gate="G$1" x="50.8" y="45.72"/>
 <instance part="SUPPLY6" gate="G$1" x="81.28" y="68.58"/>
 <instance part="SUPPLY7" gate="G$1" x="193.04" y="-15.24" rot="R180"/>
@@ -2180,7 +2180,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <segment>
 <pinref part="JP3" gate="G$1" pin="4"/>
 <pinref part="GND5" gate="1" pin="GND"/>
-<wire x1="-73.66" y1="-43.18" x2="-40.64" y2="-43.18" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="22.86" x2="218.44" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VOUT" class="0">
@@ -2215,8 +2215,8 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <segment>
 <pinref part="JP3" gate="G$1" pin="5"/>
 <pinref part="SUPPLY2" gate="G$1" pin="VIN"/>
-<wire x1="-73.66" y1="-40.64" x2="-68.58" y2="-40.64" width="0.1524" layer="91"/>
-<wire x1="-68.58" y1="-40.64" x2="-68.58" y2="-38.1" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="20.32" x2="246.38" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="20.32" x2="246.38" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND-ISO" class="0">
@@ -2254,8 +2254,8 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <segment>
 <pinref part="JP3" gate="G$1" pin="3"/>
 <pinref part="GND-ISO7" gate="G$1" pin="GND-ISO"/>
-<wire x1="-73.66" y1="-45.72" x2="-45.72" y2="-45.72" width="0.1524" layer="91"/>
-<wire x1="-45.72" y1="-45.72" x2="-45.72" y2="-50.8" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="25.4" x2="223.52" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="25.4" x2="223.52" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="COM"/>
@@ -2318,9 +2318,9 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 </net>
 <net name="SDA" class="0">
 <segment>
-<wire x1="-73.66" y1="-50.8" x2="-68.58" y2="-50.8" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="30.48" x2="246.38" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="JP3" gate="G$1" pin="1"/>
-<label x="-68.58" y="-50.8" size="1.016" layer="95" xref="yes"/>
+<label x="246.38" y="30.48" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="SDA"/>
@@ -2330,9 +2330,9 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 </net>
 <net name="SCL" class="0">
 <segment>
-<wire x1="-73.66" y1="-48.26" x2="-68.58" y2="-48.26" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="27.94" x2="246.38" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="JP3" gate="G$1" pin="2"/>
-<label x="-68.58" y="-48.26" size="1.016" layer="95" xref="yes"/>
+<label x="246.38" y="27.94" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="SCL"/>
