@@ -1457,41 +1457,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </package>
 </packages>
 </library>
-<library name="SparkFun-Capacitors">
-<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
-In this library you'll find resistors, capacitors, inductors, test points, jumper pads, etc.&lt;br&gt;&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
-&lt;br&gt;&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
-&lt;br&gt;&lt;br&gt;
-You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
-<package name="0805">
-<wire x1="-0.3" y1="0.6" x2="0.3" y2="0.6" width="0.1524" layer="21"/>
-<wire x1="-0.3" y1="-0.6" x2="0.3" y2="-0.6" width="0.1524" layer="21"/>
-<smd name="1" x="-0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
-<smd name="2" x="0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
-<text x="-0.762" y="0.8255" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-1.016" y="-1.397" size="0.4064" layer="27">&gt;VALUE</text>
-</package>
-<package name="0603-CAP">
-<wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="-0.983" x2="-1.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-1.473" y1="-0.983" x2="-1.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
-<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
-<wire x1="0" y1="0.0305" x2="0" y2="-0.0305" width="0.5588" layer="21"/>
-<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<text x="-0.889" y="0.762" size="0.4064" layer="25" font="vector">&gt;NAME</text>
-<text x="-1.016" y="-1.143" size="0.4064" layer="27" font="vector">&gt;VALUE</text>
-<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
-<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
-</package>
-</packages>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1707,12 +1672,6 @@ design rules under a new name.</description>
 <element name="U1" library="SparkFun-PowerIC" package="SOT23-5" value="" x="-3.81" y="-19.05">
 <attribute name="PROD_ID" value="VREG-00823" x="-3.81" y="-19.05" size="1.778" layer="27" display="off"/>
 </element>
-<element name="C6" library="SparkFun-Capacitors" package="0805" value="2.2uF" x="-7.62" y="-19.05">
-<attribute name="PROD_ID" value="CAP-11624" x="-7.62" y="-19.05" size="1.778" layer="27" display="off"/>
-</element>
-<element name="C7" library="SparkFun-Capacitors" package="0603-CAP" value="470pF" x="-7.62" y="-24.13">
-<attribute name="PROD_ID" value="CAP-07884" x="-7.62" y="-24.13" size="1.778" layer="27" display="off"/>
-</element>
 </elements>
 <signals>
 <signal name="N$1">
@@ -1881,42 +1840,6 @@ design rules under a new name.</description>
 <wire x1="3.81" y1="12.7" x2="5.08" y2="13.97" width="0.8128" layer="16"/>
 <wire x1="5.08" y1="13.97" x2="5.08" y2="17.78" width="0.8128" layer="16"/>
 <wire x1="5.08" y1="17.78" x2="6.35" y2="19.05" width="0.8128" layer="16"/>
-</signal>
-<signal name="VIN">
-<contactref element="U1" pad="1"/>
-<contactref element="U1" pad="3"/>
-<wire x1="-2.86" y1="-20.3501" x2="-4.76" y2="-20.3501" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="GND-ISO">
-<contactref element="U1" pad="2"/>
-<contactref element="C6" pad="2"/>
-<contactref element="C7" pad="2"/>
-<contactref element="U$2" pad="2"/>
-<wire x1="-3.81" y1="-20.3501" x2="-6.77" y2="-24.13" width="0" layer="19" extent="1-1"/>
-<wire x1="-6.72" y1="-19.05" x2="-3.81" y2="-20.3501" width="0" layer="19" extent="1-1"/>
-<wire x1="1.2399" y1="-2.54" x2="-6.72" y2="-19.05" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="5V">
-<contactref element="C6" pad="1"/>
-<contactref element="U1" pad="5"/>
-<contactref element="U$2" pad="5"/>
-<wire x1="-4.76" y1="-17.7499" x2="-8.52" y2="-19.05" width="0" layer="19" extent="1-1"/>
-<wire x1="3.8401" y1="-2.54" x2="-4.76" y2="-17.7499" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$11">
-<contactref element="U1" pad="4"/>
-<contactref element="C7" pad="1"/>
-<wire x1="-2.86" y1="-17.7499" x2="-8.47" y2="-24.13" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="SDA">
-<contactref element="JP6" pad="1"/>
-<contactref element="U$2" pad="4"/>
-<wire x1="3.8401" y1="-3.49" x2="1.27" y2="-20.32" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="SCL">
-<contactref element="JP6" pad="2"/>
-<contactref element="U$2" pad="3"/>
-<wire x1="1.2399" y1="-3.49" x2="3.81" y2="-20.32" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>

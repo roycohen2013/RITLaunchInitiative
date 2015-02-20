@@ -1695,7 +1695,6 @@ design rules under a new name.</description>
 </element>
 <element name="JP1" library="adafruit" package="1X01" value="Vin+" x="2.54" y="12.7" rot="R90"/>
 <element name="JP2" library="adafruit" package="1X01" value="PSV+" x="2.54" y="6.35" rot="R90"/>
-<element name="JP3" library="adafruit" package="1X01" value="Vout" x="2.54" y="2.54" rot="R90"/>
 <element name="JP4" library="adafruit" package="1X01" value="PSIo" x="2.54" y="8.89" rot="R90"/>
 <element name="JP5" library="adafruit" package="1X01" value="Vin-" x="2.54" y="15.24" rot="R270"/>
 <element name="L1" library="rcl" package="L2012C" value="220uH" x="8.89" y="15.24" rot="R180"/>
@@ -1713,6 +1712,7 @@ design rules under a new name.</description>
 <element name="C7" library="SparkFun-Capacitors" package="0603-CAP" value="470pF" x="-7.62" y="-24.13">
 <attribute name="PROD_ID" value="CAP-07884" x="-7.62" y="-24.13" size="1.778" layer="27" display="off"/>
 </element>
+<element name="C8" library="SparkFun-Capacitors" package="0805" value="" x="-11.43" y="-22.86"/>
 </elements>
 <signals>
 <signal name="N$1">
@@ -1781,10 +1781,9 @@ design rules under a new name.</description>
 <wire x1="19.2024" y1="14.1732" x2="19.05" y2="13.97" width="0.254" layer="1"/>
 <wire x1="21.2598" y1="25.3746" x2="21.27" y2="25.4" width="0.254" layer="1"/>
 </signal>
-<signal name="N$3">
+<signal name="VOUT">
 <contactref element="IC1" pad="14"/>
 <contactref element="IC1" pad="15"/>
-<contactref element="JP3" pad="1"/>
 <wire x1="26.7462" y1="18.9738" x2="26.7462" y2="16.6878" width="0.254" layer="1"/>
 <wire x1="26.7462" y1="16.6878" x2="26.67" y2="16.51" width="0.254" layer="1"/>
 <wire x1="26.7462" y1="18.9738" x2="26.67" y2="19.05" width="0.254" layer="1"/>
@@ -1792,8 +1791,9 @@ design rules under a new name.</description>
 <wire x1="18.7452" y1="10.287" x2="11.2014" y2="2.7432" width="0.254" layer="16"/>
 <wire x1="20.3454" y1="10.287" x2="18.7452" y2="10.287" width="0.254" layer="16"/>
 <wire x1="26.5176" y1="16.4592" x2="20.3454" y2="10.287" width="0.254" layer="16"/>
-<wire x1="2.7432" y1="2.7432" x2="2.54" y2="2.54" width="0.254" layer="16"/>
 <wire x1="26.5176" y1="16.4592" x2="26.67" y2="16.51" width="0.254" layer="16"/>
+<contactref element="U$2" pad="1"/>
+<wire x1="1.2399" y1="-1.59" x2="2.7432" y2="2.7432" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$4">
 <contactref element="IC1" pad="16"/>
@@ -1892,14 +1892,20 @@ design rules under a new name.</description>
 <contactref element="C6" pad="2"/>
 <contactref element="C7" pad="2"/>
 <contactref element="U$2" pad="2"/>
+<contactref element="C8" pad="2"/>
+<contactref element="U$2" pad="6"/>
+<wire x1="-6.77" y1="-24.13" x2="-10.53" y2="-22.86" width="0" layer="19" extent="1-1"/>
 <wire x1="-3.81" y1="-20.3501" x2="-6.77" y2="-24.13" width="0" layer="19" extent="1-1"/>
 <wire x1="-6.72" y1="-19.05" x2="-3.81" y2="-20.3501" width="0" layer="19" extent="1-1"/>
 <wire x1="1.2399" y1="-2.54" x2="-6.72" y2="-19.05" width="0" layer="19" extent="1-1"/>
+<wire x1="3.8401" y1="-1.59" x2="1.2399" y2="-2.54" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="5V">
 <contactref element="C6" pad="1"/>
 <contactref element="U1" pad="5"/>
 <contactref element="U$2" pad="5"/>
+<contactref element="C8" pad="1"/>
+<wire x1="-8.52" y1="-19.05" x2="-12.33" y2="-22.86" width="0" layer="19" extent="1-1"/>
 <wire x1="-4.76" y1="-17.7499" x2="-8.52" y2="-19.05" width="0" layer="19" extent="1-1"/>
 <wire x1="3.8401" y1="-2.54" x2="-4.76" y2="-17.7499" width="0" layer="19" extent="1-1"/>
 </signal>
