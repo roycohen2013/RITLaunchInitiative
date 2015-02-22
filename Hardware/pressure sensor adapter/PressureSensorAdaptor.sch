@@ -2123,7 +2123,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <part name="C7" library="SparkFun-Capacitors" deviceset="470PF-50V-5%(0603)" device="SMD" value="470pF"/>
 <part name="GND-ISO4" library="SparkFun-Aesthetics" deviceset="GND-ISO" device=""/>
 <part name="SUPPLY4" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
-<part name="C8" library="SparkFun-Capacitors" deviceset="CAP" device="0805"/>
+<part name="C8" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="0.1uf"/>
 <part name="GND-ISO5" library="SparkFun-Aesthetics" deviceset="GND-ISO" device=""/>
 <part name="GND-ISO6" library="SparkFun-Aesthetics" deviceset="GND-ISO" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
@@ -2145,6 +2145,17 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <attribute name="DESIGNER" value="Roy Cohen"/>
 <attribute name="VERSION" value="A"/>
 </part>
+<part name="C3" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="10uF">
+<attribute name="DIGIKEY" value="490-3886-1-ND"/>
+</part>
+<part name="C4" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="0.1uf"/>
+<part name="C5" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="100pF"/>
+<part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="12V" device=""/>
+<part name="GND1" library="supply1" deviceset="GND" device=""/>
+<part name="GND2" library="supply1" deviceset="GND" device=""/>
+<part name="GND3" library="supply1" deviceset="GND" device=""/>
+<part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="12V" device=""/>
+<part name="SUPPLY5" library="SparkFun-Aesthetics" deviceset="12V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2187,6 +2198,17 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <attribute name="VERSION" x="109.22" y="-132.08" size="1.016" layer="96" display="off"/>
 <attribute name="DESIGNER" x="109.22" y="-132.08" size="1.016" layer="96" display="off"/>
 </instance>
+<instance part="C3" gate="G$1" x="88.9" y="-2.54">
+<attribute name="DIGIKEY" x="88.9" y="-2.54" size="1.016" layer="96" display="off"/>
+</instance>
+<instance part="C4" gate="G$1" x="81.28" y="-2.54"/>
+<instance part="C5" gate="G$1" x="73.66" y="-2.54"/>
+<instance part="SUPPLY1" gate="G$1" x="73.66" y="2.54"/>
+<instance part="GND1" gate="1" x="73.66" y="-7.62"/>
+<instance part="GND2" gate="1" x="81.28" y="-7.62"/>
+<instance part="GND3" gate="1" x="88.9" y="-7.62"/>
+<instance part="SUPPLY2" gate="G$1" x="81.28" y="2.54"/>
+<instance part="SUPPLY5" gate="G$1" x="88.9" y="2.54"/>
 </instances>
 <busses>
 </busses>
@@ -2217,6 +2239,18 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <pinref part="JP3" gate="G$1" pin="4"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="20.32" y1="0" x2="53.34" y2="0" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C5" gate="G$1" pin="2"/>
+<pinref part="GND1" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C4" gate="G$1" pin="2"/>
+<pinref part="GND2" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C3" gate="G$1" pin="2"/>
+<pinref part="GND3" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="VOUT" class="0">
@@ -2374,6 +2408,18 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <junction x="-50.8" y="-27.94"/>
 <pinref part="SUPPLY6" gate="G$1" pin="12V"/>
 <wire x1="-63.5" y1="-27.94" x2="-63.5" y2="-25.4" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C5" gate="G$1" pin="1"/>
+<pinref part="SUPPLY1" gate="G$1" pin="12V"/>
+</segment>
+<segment>
+<pinref part="C4" gate="G$1" pin="1"/>
+<pinref part="SUPPLY2" gate="G$1" pin="12V"/>
+</segment>
+<segment>
+<pinref part="C3" gate="G$1" pin="1"/>
+<pinref part="SUPPLY5" gate="G$1" pin="12V"/>
 </segment>
 </net>
 <net name="N$2" class="0">
