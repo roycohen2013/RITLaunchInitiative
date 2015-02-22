@@ -867,7 +867,7 @@ design rules under a new name.</description>
 <contactref element="U$1" pad="9"/>
 <wire x1="-20.955" y1="36.89" x2="-84.82" y2="-3.81" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$15">
+<signal name="THERMOCOUPLE">
 <contactref element="U$1" pad="11"/>
 <contactref element="U$1" pad="10"/>
 <wire x1="-23.495" y1="36.89" x2="-22.225" y2="36.89" width="0" layer="19" extent="1-1"/>

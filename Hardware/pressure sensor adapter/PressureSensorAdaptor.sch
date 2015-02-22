@@ -1545,12 +1545,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <packages>
 </packages>
 <symbols>
-<symbol name="VIN">
-<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
-<text x="-1.016" y="3.556" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="VIN" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
 <symbol name="GND-ISO">
 <description>Isolated ground</description>
 <pin name="GND-ISO" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
@@ -1574,19 +1568,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="VIN" prefix="SUPPLY">
-<description>Vin supply symbol</description>
-<gates>
-<gate name="G$1" symbol="VIN" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="GND-ISO" prefix="GND-ISO">
 <description>Isolated ground</description>
 <gates>
@@ -2075,8 +2056,6 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <part name="U$2" library="RitLaunchInitiative" deviceset="MCP3425" device=""/>
 <part name="U$3" library="RitLaunchInitiative" deviceset="VASD1-S12-D12-SIP" device=""/>
 <part name="U1" library="SparkFun-PowerIC" deviceset="MIC5205" device="5V"/>
-<part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="VIN" device=""/>
-<part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="VIN" device=""/>
 <part name="GND-ISO1" library="SparkFun-Aesthetics" deviceset="GND-ISO" device=""/>
 <part name="SUPPLY3" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="C6" library="SparkFun-Capacitors" deviceset="2.2UF-25V-+80/-20(0805)" device="" value="2.2uF"/>
@@ -2089,37 +2068,31 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <part name="GND-ISO5" library="SparkFun-Aesthetics" deviceset="GND-ISO" device=""/>
 <part name="GND-ISO6" library="SparkFun-Aesthetics" deviceset="GND-ISO" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
-<part name="SUPPLY5" library="SparkFun-Aesthetics" deviceset="VIN" device=""/>
 <part name="JP3" library="SparkFun-Connectors" deviceset="M05" device="PTH"/>
 <part name="GND-ISO7" library="SparkFun-Aesthetics" deviceset="GND-ISO" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="JP1" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
-<part name="SUPPLY6" library="SparkFun-Aesthetics" deviceset="12V" device=""/>
-<part name="SUPPLY7" library="SparkFun-Aesthetics" deviceset="12V" device="" value="-12V"/>
-<part name="SUPPLY8" library="SparkFun-Aesthetics" deviceset="12V" device=""/>
-<part name="SUPPLY9" library="SparkFun-Aesthetics" deviceset="12V" device="" value="-12V"/>
-<part name="SUPPLY10" library="SparkFun-Aesthetics" deviceset="12V" device=""/>
 <part name="GND-ISO8" library="SparkFun-Aesthetics" deviceset="GND-ISO" device=""/>
 <part name="GND-ISO9" library="SparkFun-Aesthetics" deviceset="GND-ISO" device=""/>
 <part name="GND-ISO10" library="SparkFun-Aesthetics" deviceset="GND-ISO" device=""/>
 <part name="C1" library="SparkFun-Capacitors" deviceset="1.0UF-25V-+80/-20(0805)" device="" value="1.0uF"/>
 <part name="C2" library="SparkFun-Capacitors" deviceset="1.0UF-25V-+80/-20(0805)" device="" value="1.0uF"/>
-<part name="SUPPLY11" library="SparkFun-Aesthetics" deviceset="12V" device=""/>
-<part name="SUPPLY12" library="SparkFun-Aesthetics" deviceset="12V" device="" value="-12V"/>
 <part name="GND-ISO11" library="SparkFun-Aesthetics" deviceset="GND-ISO" device=""/>
 <part name="GND-ISO12" library="SparkFun-Aesthetics" deviceset="GND-ISO" device=""/>
+<part name="SUPPLY6" library="SparkFun-Aesthetics" deviceset="12V" device=""/>
+<part name="SUPPLY7" library="SparkFun-Aesthetics" deviceset="12V" device=""/>
+<part name="SUPPLY9" library="SparkFun-Aesthetics" deviceset="12V" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<text x="-111.76" y="30.48" size="1.778" layer="91">Current Loop</text>
 </plain>
 <instances>
 <instance part="IC1" gate="G$1" x="-43.18" y="22.86"/>
 <instance part="U$2" gate="G$1" x="20.32" y="25.4"/>
 <instance part="U$3" gate="G$1" x="25.4" y="-35.56"/>
 <instance part="U1" gate="G$1" x="-38.1" y="-33.02"/>
-<instance part="SUPPLY1" gate="G$1" x="-63.5" y="-27.94"/>
-<instance part="SUPPLY2" gate="G$1" x="25.4" y="5.08"/>
 <instance part="GND-ISO1" gate="G$1" x="-55.88" y="-45.72"/>
 <instance part="SUPPLY3" gate="G$1" x="-12.7" y="-25.4"/>
 <instance part="C6" gate="G$1" x="-20.32" y="-33.02"/>
@@ -2132,25 +2105,20 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <instance part="GND-ISO5" gate="G$1" x="48.26" y="20.32"/>
 <instance part="GND-ISO6" gate="G$1" x="38.1" y="35.56"/>
 <instance part="GND4" gate="1" x="7.62" y="-43.18"/>
-<instance part="SUPPLY5" gate="G$1" x="7.62" y="-30.48"/>
 <instance part="JP3" gate="G$1" x="12.7" y="-2.54"/>
 <instance part="GND-ISO7" gate="G$1" x="48.26" y="-10.16"/>
 <instance part="GND5" gate="1" x="53.34" y="-2.54"/>
 <instance part="JP1" gate="G$1" x="-99.06" y="17.78"/>
-<instance part="SUPPLY6" gate="G$1" x="-68.58" y="40.64"/>
-<instance part="SUPPLY7" gate="G$1" x="43.18" y="-43.18" rot="R180"/>
-<instance part="SUPPLY8" gate="G$1" x="43.18" y="-27.94"/>
-<instance part="SUPPLY9" gate="G$1" x="-68.58" y="10.16"/>
-<instance part="SUPPLY10" gate="G$1" x="-86.36" y="22.86"/>
 <instance part="GND-ISO8" gate="G$1" x="53.34" y="-38.1"/>
 <instance part="GND-ISO9" gate="G$1" x="-22.86" y="0"/>
 <instance part="GND-ISO10" gate="G$1" x="-60.96" y="0"/>
-<instance part="C1" gate="G$1" x="-48.26" y="60.96"/>
-<instance part="C2" gate="G$1" x="-33.02" y="60.96"/>
-<instance part="SUPPLY11" gate="G$1" x="-48.26" y="68.58"/>
-<instance part="SUPPLY12" gate="G$1" x="-33.02" y="68.58"/>
-<instance part="GND-ISO11" gate="G$1" x="-48.26" y="53.34"/>
-<instance part="GND-ISO12" gate="G$1" x="-33.02" y="53.34"/>
+<instance part="C1" gate="G$1" x="-73.66" y="33.02"/>
+<instance part="C2" gate="G$1" x="-73.66" y="2.54"/>
+<instance part="GND-ISO11" gate="G$1" x="-73.66" y="27.94"/>
+<instance part="GND-ISO12" gate="G$1" x="-73.66" y="-5.08"/>
+<instance part="SUPPLY6" gate="G$1" x="-63.5" y="-25.4"/>
+<instance part="SUPPLY7" gate="G$1" x="25.4" y="5.08"/>
+<instance part="SUPPLY9" gate="G$1" x="7.62" y="-30.48"/>
 </instances>
 <busses>
 </busses>
@@ -2193,30 +2161,6 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <junction x="-20.32" y="33.02"/>
 <pinref part="U$2" gate="G$1" pin="VIN+"/>
 <wire x1="-20.32" y1="33.02" x2="7.62" y2="33.02" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="VIN" class="0">
-<segment>
-<pinref part="SUPPLY1" gate="G$1" pin="VIN"/>
-<wire x1="-63.5" y1="-27.94" x2="-50.8" y2="-27.94" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="IN"/>
-<wire x1="-50.8" y1="-27.94" x2="-48.26" y2="-27.94" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="EN"/>
-<wire x1="-48.26" y1="-38.1" x2="-50.8" y2="-38.1" width="0.1524" layer="91"/>
-<wire x1="-50.8" y1="-38.1" x2="-50.8" y2="-27.94" width="0.1524" layer="91"/>
-<junction x="-50.8" y="-27.94"/>
-</segment>
-<segment>
-<pinref part="U$3" gate="G$1" pin="VIN+"/>
-<pinref part="SUPPLY5" gate="G$1" pin="VIN"/>
-<wire x1="12.7" y1="-33.02" x2="7.62" y2="-33.02" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="-33.02" x2="7.62" y2="-30.48" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="JP3" gate="G$1" pin="5"/>
-<pinref part="SUPPLY2" gate="G$1" pin="VIN"/>
-<wire x1="20.32" y1="2.54" x2="25.4" y2="2.54" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="2.54" x2="25.4" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND-ISO" class="0">
@@ -2281,12 +2225,11 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
 <pinref part="GND-ISO11" gate="G$1" pin="GND-ISO"/>
-<wire x1="-48.26" y1="58.42" x2="-48.26" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="2"/>
 <pinref part="GND-ISO12" gate="G$1" pin="GND-ISO"/>
-<wire x1="-33.02" y1="58.42" x2="-33.02" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="-73.66" y1="0" x2="-73.66" y2="-2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="5V" class="0">
@@ -2342,44 +2285,27 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 </net>
 <net name="12V" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="V+"/>
-<pinref part="SUPPLY6" gate="G$1" pin="12V"/>
-<wire x1="-68.58" y1="38.1" x2="-68.58" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="-58.42" y1="38.1" x2="-68.58" y2="38.1" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U$3" gate="G$1" pin="VO+"/>
-<pinref part="SUPPLY8" gate="G$1" pin="12V"/>
-<wire x1="38.1" y1="-30.48" x2="43.18" y2="-30.48" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="-30.48" x2="43.18" y2="-27.94" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U$3" gate="G$1" pin="VO-"/>
+<pinref part="JP3" gate="G$1" pin="5"/>
+<wire x1="20.32" y1="2.54" x2="25.4" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="2.54" x2="25.4" y2="5.08" width="0.1524" layer="91"/>
 <pinref part="SUPPLY7" gate="G$1" pin="12V"/>
-<wire x1="38.1" y1="-40.64" x2="43.18" y2="-40.64" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="-40.64" x2="43.18" y2="-43.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="V-"/>
+<pinref part="U$3" gate="G$1" pin="VIN+"/>
+<wire x1="12.7" y1="-33.02" x2="7.62" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="-33.02" x2="7.62" y2="-30.48" width="0.1524" layer="91"/>
 <pinref part="SUPPLY9" gate="G$1" pin="12V"/>
-<wire x1="-58.42" y1="7.62" x2="-68.58" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="-68.58" y1="7.62" x2="-68.58" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="G$1" pin="2"/>
-<pinref part="SUPPLY10" gate="G$1" pin="12V"/>
-<wire x1="-91.44" y1="20.32" x2="-86.36" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="-86.36" y1="20.32" x2="-86.36" y2="22.86" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="C1" gate="G$1" pin="1"/>
-<pinref part="SUPPLY11" gate="G$1" pin="12V"/>
-<wire x1="-48.26" y1="66.04" x2="-48.26" y2="68.58" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="SUPPLY12" gate="G$1" pin="12V"/>
-<pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="-33.02" y1="68.58" x2="-33.02" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="-63.5" y1="-27.94" x2="-50.8" y2="-27.94" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="IN"/>
+<wire x1="-50.8" y1="-27.94" x2="-48.26" y2="-27.94" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="EN"/>
+<wire x1="-48.26" y1="-38.1" x2="-50.8" y2="-38.1" width="0.1524" layer="91"/>
+<wire x1="-50.8" y1="-38.1" x2="-50.8" y2="-27.94" width="0.1524" layer="91"/>
+<junction x="-50.8" y="-27.94"/>
+<pinref part="SUPPLY6" gate="G$1" pin="12V"/>
+<wire x1="-63.5" y1="-27.94" x2="-63.5" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -2387,6 +2313,41 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <pinref part="IC1" gate="G$1" pin="+IN"/>
 <pinref part="JP1" gate="G$1" pin="1"/>
 <wire x1="-58.42" y1="17.78" x2="-91.44" y2="17.78" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="12V-" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="VO-"/>
+<wire x1="38.1" y1="-40.64" x2="43.18" y2="-40.64" width="0.1524" layer="91"/>
+<label x="43.18" y="-40.64" size="1.016" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="V-"/>
+<wire x1="-58.42" y1="7.62" x2="-73.66" y2="7.62" width="0.1524" layer="91"/>
+<label x="-76.2" y="7.62" size="1.016" layer="95" rot="R180" xref="yes"/>
+<pinref part="C2" gate="G$1" pin="1"/>
+<wire x1="-73.66" y1="7.62" x2="-76.2" y2="7.62" width="0.1524" layer="91"/>
+<junction x="-73.66" y="7.62"/>
+</segment>
+</net>
+<net name="12V+" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="VO+"/>
+<wire x1="38.1" y1="-30.48" x2="43.18" y2="-30.48" width="0.1524" layer="91"/>
+<label x="43.18" y="-30.48" size="1.016" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="V+"/>
+<wire x1="-58.42" y1="38.1" x2="-73.66" y2="38.1" width="0.1524" layer="91"/>
+<label x="-76.2" y="38.1" size="1.016" layer="95" rot="R180" xref="yes"/>
+<pinref part="C1" gate="G$1" pin="1"/>
+<wire x1="-73.66" y1="38.1" x2="-76.2" y2="38.1" width="0.1524" layer="91"/>
+<junction x="-73.66" y="38.1"/>
+</segment>
+<segment>
+<wire x1="-83.82" y1="20.32" x2="-91.44" y2="20.32" width="0.1524" layer="91"/>
+<label x="-83.82" y="20.32" size="1.016" layer="95" xref="yes"/>
+<pinref part="JP1" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>

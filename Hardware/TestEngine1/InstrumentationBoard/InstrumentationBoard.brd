@@ -877,7 +877,7 @@ design rules under a new name.</description>
 <element name="C5" library="SparkFun-Capacitors" package="0805" value="0.1uF" x="-73.66" y="2.54"/>
 <element name="C6" library="SparkFun-Capacitors" package="0805" value="1uF" x="-77.47" y="2.54"/>
 <element name="C7" library="SparkFun-Capacitors" package="0805" value="1uF" x="-81.28" y="2.54"/>
-<element name="R7" library="adafruit" package="R0805" value="10K" x="-83.82" y="-3.81"/>
+<element name="R7" library="adafruit" package="R0805" value="1K" x="-83.82" y="-3.81"/>
 <element name="JP5" library="SparkFun-Connectors" package="1X04" value="" x="-83.82" y="-10.16"/>
 <element name="U$4" library="RitLaunchInitiative" package="TO-252" value="FDD3706" x="-92.71" y="-5.08">
 <attribute name="DATASHEET_LINK" value="https://www.fairchildsemi.com/datasheets/FD/FDD3706.pdf" x="-92.71" y="-5.08" size="1.778" layer="27" display="off"/>
@@ -1211,11 +1211,11 @@ design rules under a new name.</description>
 <wire x1="-23.495" y1="31.69" x2="-81.28" y2="-10.16" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$20">
-<contactref element="U$1" pad="15"/>
 <contactref element="U$1" pad="4"/>
 <contactref element="JP5" pad="3"/>
+<contactref element="U$1" pad="16"/>
 <wire x1="-26.035" y1="31.69" x2="-78.74" y2="-10.16" width="0" layer="19" extent="1-1"/>
-<wire x1="-28.575" y1="36.89" x2="-26.035" y2="31.69" width="0" layer="19" extent="1-1"/>
+<wire x1="-29.845" y1="36.89" x2="-26.035" y2="31.69" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$18">
 <contactref element="U$4" pad="2"/>

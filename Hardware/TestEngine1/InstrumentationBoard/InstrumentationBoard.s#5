@@ -7961,6 +7961,8 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <text x="53.34" y="15.24" size="1.778" layer="91">Gnd</text>
 <text x="-147.32" y="68.58" size="1.27" layer="91">Excite - </text>
 <text x="-147.32" y="66.04" size="1.27" layer="91">Excite +</text>
+<text x="-147.32" y="63.5" size="1.27" layer="91">V+</text>
+<text x="-147.32" y="60.96" size="1.27" layer="91">V-</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="-76.2" y="50.8"/>

@@ -895,9 +895,13 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$11">
 <contactref element="U$1" pad="7"/>
+<contactref element="JP5" pad="1"/>
+<wire x1="-22.225" y1="31.69" x2="-83.82" y2="-10.16" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$16">
 <contactref element="U$1" pad="6"/>
+<contactref element="JP5" pad="2"/>
+<wire x1="-23.495" y1="31.69" x2="-81.28" y2="-10.16" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$20">
 <contactref element="U$1" pad="15"/>

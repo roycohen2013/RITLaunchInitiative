@@ -10074,7 +10074,7 @@ High-power, low thermal resistance package.</description>
 <part name="C5" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="0.1uF"/>
 <part name="C6" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="1uF"/>
 <part name="C7" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="1uF"/>
-<part name="R7" library="adafruit" deviceset="R-US_" device="R0805" value="10K"/>
+<part name="R7" library="adafruit" deviceset="R-US_" device="R0805" value="1K"/>
 <part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="12V" device=""/>
 <part name="SUPPLY3" library="SparkFun-Aesthetics" deviceset="12V" device=""/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
@@ -10936,15 +10936,15 @@ High-power, low thermal resistance package.</description>
 </net>
 <net name="N$20" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="VREF5"/>
-<wire x1="-93.98" y1="66.04" x2="-99.06" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="-99.06" y1="66.04" x2="-99.06" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="-99.06" y1="63.5" x2="-99.06" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="VREF_OUT"/>
 <wire x1="-99.06" y1="60.96" x2="-93.98" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="-99.06" y1="60.96" x2="-99.06" y2="55.88" width="0.1524" layer="91"/>
 <junction x="-99.06" y="60.96"/>
 <pinref part="JP5" gate="G$1" pin="3"/>
 <wire x1="-129.54" y1="55.88" x2="-99.06" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="VREF10"/>
+<wire x1="-93.98" y1="63.5" x2="-99.06" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$18" class="0">
