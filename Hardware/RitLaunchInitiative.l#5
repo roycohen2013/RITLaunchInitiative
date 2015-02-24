@@ -10942,92 +10942,10 @@
 <pin name="VO-" x="12.7" y="-5.08" length="middle" rot="R180"/>
 </symbol>
 <symbol name="TI_CONNECTED_BOOSTER">
-<wire x1="-22.86" y1="48.26" x2="-22.86" y2="-55.88" width="0.254" layer="94"/>
-<wire x1="-22.86" y1="-55.88" x2="22.86" y2="-55.88" width="0.254" layer="94"/>
-<wire x1="22.86" y1="-55.88" x2="22.86" y2="48.26" width="0.254" layer="94"/>
-<wire x1="22.86" y1="48.26" x2="-22.86" y2="48.26" width="0.254" layer="94"/>
-<pin name="3.3V" x="-27.94" y="45.72" length="middle"/>
-<pin name="AIN9/PE4" x="-27.94" y="43.18" length="middle"/>
-<pin name="U7RX/PC4" x="-27.94" y="40.64" length="middle"/>
-<pin name="U7TX/PC5" x="-27.94" y="38.1" length="middle"/>
-<pin name="PC6" x="-27.94" y="35.56" length="middle"/>
-<pin name="AIN8/PE5" x="-27.94" y="33.02" length="middle"/>
-<pin name="SSI2CLK/PD3" x="-27.94" y="30.48" length="middle"/>
-<pin name="PC7" x="-27.94" y="27.94" length="middle"/>
-<pin name="I2C0SCL/PB2" x="-27.94" y="25.4" length="middle"/>
-<pin name="I2C0SDA/PB3" x="-27.94" y="22.86" length="middle"/>
-<pin name="5V" x="-27.94" y="20.32" length="middle"/>
-<pin name="GND" x="-27.94" y="17.78" length="middle"/>
-<pin name="AIN3/PE0" x="-27.94" y="15.24" length="middle"/>
-<pin name="AIN2/PE1" x="-27.94" y="12.7" length="middle"/>
-<pin name="AIN1/PE2" x="-27.94" y="10.16" length="middle"/>
-<pin name="AIN0/PE3" x="-27.94" y="7.62" length="middle"/>
-<pin name="AIN4/PD7" x="-27.94" y="5.08" length="middle"/>
-<pin name="PA6" x="-27.94" y="2.54" length="middle"/>
-<pin name="PM4" x="-27.94" y="0" length="middle"/>
-<pin name="PM5" x="-27.94" y="-2.54" length="middle"/>
-<pin name="3.3VV" x="-27.94" y="-5.08" length="middle"/>
-<pin name="AIN13/PD2" x="-27.94" y="-7.62" length="middle"/>
-<pin name="U6RX/PP0" x="-27.94" y="-10.16" length="middle"/>
-<pin name="U6TX/PP1" x="-27.94" y="-12.7" length="middle"/>
-<pin name="CAN0RX/PA0" x="-27.94" y="-15.24" length="middle"/>
-<pin name="P$26" x="-27.94" y="-17.78" length="middle"/>
-<pin name="P$27" x="-27.94" y="-20.32" length="middle"/>
-<pin name="P$28" x="-27.94" y="-22.86" length="middle"/>
-<pin name="P$29" x="-27.94" y="-25.4" length="middle"/>
-<pin name="P$30" x="-27.94" y="-27.94" length="middle"/>
-<pin name="P$31" x="-27.94" y="-30.48" length="middle"/>
-<pin name="P$32" x="-27.94" y="-33.02" length="middle"/>
-<pin name="P$33" x="-27.94" y="-35.56" length="middle"/>
-<pin name="P$34" x="-27.94" y="-38.1" length="middle"/>
-<pin name="P$35" x="-27.94" y="-40.64" length="middle"/>
-<pin name="P$36" x="-27.94" y="-43.18" length="middle"/>
-<pin name="P$37" x="-27.94" y="-45.72" length="middle"/>
-<pin name="P$38" x="-27.94" y="-48.26" length="middle"/>
-<pin name="P$39" x="-27.94" y="-50.8" length="middle"/>
-<pin name="P$40" x="-27.94" y="-53.34" length="middle"/>
-<pin name="P$41" x="27.94" y="-53.34" length="middle" rot="R180"/>
-<pin name="P$42" x="27.94" y="-50.8" length="middle" rot="R180"/>
-<pin name="P$43" x="27.94" y="-48.26" length="middle" rot="R180"/>
-<pin name="P$44" x="27.94" y="-45.72" length="middle" rot="R180"/>
-<pin name="P$45" x="27.94" y="-43.18" length="middle" rot="R180"/>
-<pin name="P$46" x="27.94" y="-40.64" length="middle" rot="R180"/>
-<pin name="P$47" x="27.94" y="-38.1" length="middle" rot="R180"/>
-<pin name="P$48" x="27.94" y="-35.56" length="middle" rot="R180"/>
-<pin name="P$49" x="27.94" y="-33.02" length="middle" rot="R180"/>
-<pin name="P$50" x="27.94" y="-30.48" length="middle" rot="R180"/>
-<pin name="P$51" x="27.94" y="-27.94" length="middle" rot="R180"/>
-<pin name="P$52" x="27.94" y="-25.4" length="middle" rot="R180"/>
-<pin name="P$53" x="27.94" y="-22.86" length="middle" rot="R180"/>
-<pin name="P$54" x="27.94" y="-20.32" length="middle" rot="R180"/>
-<pin name="P$55" x="27.94" y="-17.78" length="middle" rot="R180"/>
-<pin name="P$56" x="27.94" y="-15.24" length="middle" rot="R180"/>
-<pin name="P$57" x="27.94" y="-12.7" length="middle" rot="R180"/>
-<pin name="P$58" x="27.94" y="-10.16" length="middle" rot="R180"/>
-<pin name="P$59" x="27.94" y="-7.62" length="middle" rot="R180"/>
-<pin name="P$60" x="27.94" y="-5.08" length="middle" rot="R180"/>
-<pin name="P$61" x="27.94" y="-2.54" length="middle" rot="R180"/>
-<pin name="P$62" x="27.94" y="0" length="middle" rot="R180"/>
-<pin name="P$63" x="27.94" y="2.54" length="middle" rot="R180"/>
-<pin name="P$64" x="27.94" y="5.08" length="middle" rot="R180"/>
-<pin name="P$65" x="27.94" y="7.62" length="middle" rot="R180"/>
-<pin name="P$66" x="27.94" y="10.16" length="middle" rot="R180"/>
-<pin name="P$67" x="27.94" y="12.7" length="middle" rot="R180"/>
-<pin name="P$68" x="27.94" y="15.24" length="middle" rot="R180"/>
-<pin name="P$69" x="27.94" y="17.78" length="middle" rot="R180"/>
-<pin name="P$70" x="27.94" y="20.32" length="middle" rot="R180"/>
-<pin name="P$71" x="27.94" y="22.86" length="middle" rot="R180"/>
-<pin name="P$72" x="27.94" y="25.4" length="middle" rot="R180"/>
-<pin name="P$73" x="27.94" y="27.94" length="middle" rot="R180"/>
-<pin name="P$74" x="27.94" y="30.48" length="middle" rot="R180"/>
-<pin name="P$75" x="27.94" y="33.02" length="middle" rot="R180"/>
-<pin name="P$76" x="27.94" y="35.56" length="middle" rot="R180"/>
-<pin name="P$77" x="27.94" y="38.1" length="middle" rot="R180"/>
-<pin name="P$78" x="27.94" y="40.64" length="middle" rot="R180"/>
-<pin name="P$79" x="27.94" y="43.18" length="middle" rot="R180"/>
-<pin name="P$80" x="27.94" y="45.72" length="middle" rot="R180"/>
-<text x="-22.86" y="50.8" size="1.778" layer="94">&gt;NAME</text>
-<text x="-22.86" y="-60.96" size="1.778" layer="94">&gt;VALUE</text>
+<wire x1="-20.32" y1="68.58" x2="-20.32" y2="-66.04" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="-66.04" x2="25.4" y2="-66.04" width="0.254" layer="94"/>
+<wire x1="25.4" y1="-66.04" x2="25.4" y2="68.58" width="0.254" layer="94"/>
+<wire x1="25.4" y1="68.58" x2="-20.32" y2="68.58" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
