@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -10789,6 +10789,8 @@
 <wire x1="-3.643165625" y1="-5.06449375" x2="-3.654975" y2="-5.073771875" width="0.1" layer="22"/>
 <wire x1="-3.654975" y1="-5.073771875" x2="-3.664190625" y2="-5.08170625" width="0.1" layer="22"/>
 </package>
+<package name="TI_CONNECTED_BOOSTER">
+</package>
 </packages>
 <symbols>
 <symbol name="INA125UA">
@@ -10942,10 +10944,92 @@
 <pin name="VO-" x="12.7" y="-5.08" length="middle" rot="R180"/>
 </symbol>
 <symbol name="TI_CONNECTED_BOOSTER">
-<wire x1="-20.32" y1="68.58" x2="-20.32" y2="-66.04" width="0.254" layer="94"/>
-<wire x1="-20.32" y1="-66.04" x2="25.4" y2="-66.04" width="0.254" layer="94"/>
-<wire x1="25.4" y1="-66.04" x2="25.4" y2="68.58" width="0.254" layer="94"/>
-<wire x1="25.4" y1="68.58" x2="-20.32" y2="68.58" width="0.254" layer="94"/>
+<wire x1="-22.86" y1="48.26" x2="-22.86" y2="-55.88" width="0.254" layer="94"/>
+<wire x1="-22.86" y1="-55.88" x2="22.86" y2="-55.88" width="0.254" layer="94"/>
+<wire x1="22.86" y1="-55.88" x2="22.86" y2="48.26" width="0.254" layer="94"/>
+<wire x1="22.86" y1="48.26" x2="-22.86" y2="48.26" width="0.254" layer="94"/>
+<pin name="3.3V" x="-27.94" y="45.72" length="middle"/>
+<pin name="AIN9/PE4" x="-27.94" y="43.18" length="middle"/>
+<pin name="U7RX/PC4" x="-27.94" y="40.64" length="middle"/>
+<pin name="U7TX/PC5" x="-27.94" y="38.1" length="middle"/>
+<pin name="PC6" x="-27.94" y="35.56" length="middle"/>
+<pin name="AIN8/PE5" x="-27.94" y="33.02" length="middle"/>
+<pin name="SSI2CLK/PD3" x="-27.94" y="30.48" length="middle"/>
+<pin name="PC7" x="-27.94" y="27.94" length="middle"/>
+<pin name="I2C0SCL/PB2" x="-27.94" y="25.4" length="middle"/>
+<pin name="I2C0SDA/PB3" x="-27.94" y="22.86" length="middle"/>
+<pin name="5V" x="-27.94" y="20.32" length="middle"/>
+<pin name="GND" x="-27.94" y="17.78" length="middle"/>
+<pin name="AIN3/PE0" x="-27.94" y="15.24" length="middle"/>
+<pin name="AIN2/PE1" x="-27.94" y="12.7" length="middle"/>
+<pin name="AIN1/PE2" x="-27.94" y="10.16" length="middle"/>
+<pin name="AIN0/PE3" x="-27.94" y="7.62" length="middle"/>
+<pin name="AIN4/PD7" x="-27.94" y="5.08" length="middle"/>
+<pin name="PA6" x="-27.94" y="2.54" length="middle"/>
+<pin name="PM4" x="-27.94" y="0" length="middle"/>
+<pin name="PM5" x="-27.94" y="-2.54" length="middle"/>
+<pin name="3.3VV" x="-27.94" y="-5.08" length="middle"/>
+<pin name="AIN13/PD2" x="-27.94" y="-7.62" length="middle"/>
+<pin name="U6RX/PP0" x="-27.94" y="-10.16" length="middle"/>
+<pin name="U6TX/PP1" x="-27.94" y="-12.7" length="middle"/>
+<pin name="CAN0RX/PA0" x="-27.94" y="-15.24" length="middle"/>
+<pin name="CAN0TX/PA1" x="-27.94" y="-17.78" length="middle"/>
+<pin name="SSI3CLK/PQ0" x="-27.94" y="-20.32" length="middle"/>
+<pin name="PP4" x="-27.94" y="-22.86" length="middle"/>
+<pin name="I2C2SCL/PN5" x="-27.94" y="-25.4" length="middle"/>
+<pin name="I2C2SDA/PN4" x="-27.94" y="-27.94" length="middle"/>
+<pin name="5VV" x="-27.94" y="-30.48" length="middle"/>
+<pin name="GNDD" x="-27.94" y="-33.02" length="middle"/>
+<pin name="AIN10/PB4" x="-27.94" y="-35.56" length="middle"/>
+<pin name="AIN11/PB5" x="-27.94" y="-38.1" length="middle"/>
+<pin name="AIN16/PK0" x="-27.94" y="-40.64" length="middle"/>
+<pin name="AIN17/PK1" x="-27.94" y="-43.18" length="middle"/>
+<pin name="AIN18/PK2" x="-27.94" y="-45.72" length="middle"/>
+<pin name="AIN19/PK3" x="-27.94" y="-48.26" length="middle"/>
+<pin name="PA4" x="-27.94" y="-50.8" length="middle"/>
+<pin name="PA5" x="-27.94" y="-53.34" length="middle"/>
+<pin name="PK7" x="27.94" y="-53.34" length="middle" rot="R180"/>
+<pin name="PK6" x="27.94" y="-50.8" length="middle" rot="R180"/>
+<pin name="PH1" x="27.94" y="-48.26" length="middle" rot="R180"/>
+<pin name="PH0" x="27.94" y="-45.72" length="middle" rot="R180"/>
+<pin name="T3CCP0/PM2" x="27.94" y="-43.18" length="middle" rot="R180"/>
+<pin name="T2CCP1/PM1" x="27.94" y="-40.64" length="middle" rot="R180"/>
+<pin name="T2CCP0/PM0" x="27.94" y="-38.1" length="middle" rot="R180"/>
+<pin name="M0PWM7/PK5" x="27.94" y="-35.56" length="middle" rot="R180"/>
+<pin name="M0PWM6/PK4" x="27.94" y="-33.02" length="middle" rot="R180"/>
+<pin name="M0PWM5/PG1" x="27.94" y="-30.48" length="middle" rot="R180"/>
+<pin name="PM6" x="27.94" y="-27.94" length="middle" rot="R180"/>
+<pin name="PQ1" x="27.94" y="-25.4" length="middle" rot="R180"/>
+<pin name="PP3" x="27.94" y="-22.86" length="middle" rot="R180"/>
+<pin name="SSI3RX/PQ3" x="27.94" y="-20.32" length="middle" rot="R180"/>
+<pin name="SSI3TX/PQ2" x="27.94" y="-17.78" length="middle" rot="R180"/>
+<pin name="RST" x="27.94" y="-15.24" length="middle" rot="R180"/>
+<pin name="PA7" x="27.94" y="-12.7" length="middle" rot="R180"/>
+<pin name="PP5" x="27.94" y="-10.16" length="middle" rot="R180"/>
+<pin name="PM7" x="27.94" y="-7.62" length="middle" rot="R180"/>
+<pin name="GND2" x="27.94" y="-5.08" length="middle" rot="R180"/>
+<pin name="PL3" x="27.94" y="-2.54" length="middle" rot="R180"/>
+<pin name="PL2" x="27.94" y="0" length="middle" rot="R180"/>
+<pin name="PL1" x="27.94" y="2.54" length="middle" rot="R180"/>
+<pin name="PL0" x="27.94" y="5.08" length="middle" rot="R180"/>
+<pin name="T0CCP1/PL5" x="27.94" y="7.62" length="middle" rot="R180"/>
+<pin name="T0CCP0/PL4" x="27.94" y="10.16" length="middle" rot="R180"/>
+<pin name="M0PWM4/PG0" x="27.94" y="12.7" length="middle" rot="R180"/>
+<pin name="M0PWM3/PF3" x="27.94" y="15.24" length="middle" rot="R180"/>
+<pin name="M0PWM2/PF2" x="27.94" y="17.78" length="middle" rot="R180"/>
+<pin name="M0PWM1/PF1" x="27.94" y="20.32" length="middle" rot="R180"/>
+<pin name="PP2" x="27.94" y="22.86" length="middle" rot="R180"/>
+<pin name="PN3" x="27.94" y="25.4" length="middle" rot="R180"/>
+<pin name="PN2" x="27.94" y="27.94" length="middle" rot="R180"/>
+<pin name="I2C7SCL/SSI2RX/PD0" x="27.94" y="30.48" length="middle" rot="R180"/>
+<pin name="I2C7SDA/SSI2TX/PD1" x="27.94" y="33.02" length="middle" rot="R180"/>
+<pin name="RST2" x="27.94" y="35.56" length="middle" rot="R180"/>
+<pin name="PH3" x="27.94" y="38.1" length="middle" rot="R180"/>
+<pin name="PH2" x="27.94" y="40.64" length="middle" rot="R180"/>
+<pin name="T3CCP1/PM3" x="27.94" y="43.18" length="middle" rot="R180"/>
+<pin name="GND3" x="27.94" y="45.72" length="middle" rot="R180"/>
+<text x="-22.86" y="50.8" size="1.778" layer="94">&gt;NAME</text>
+<text x="-22.86" y="-60.96" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
