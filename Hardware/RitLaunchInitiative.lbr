@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -11150,7 +11150,7 @@
 <wire x1="-23.495" y1="-59.69" x2="-24.13" y2="-60.325" width="0.2032" layer="21"/>
 <wire x1="-24.13" y1="-61.595" x2="-24.13" y2="-60.325" width="0.2032" layer="21"/>
 <pad name="3.3V1" x="-22.86" y="-38.1" drill="1.016" diameter="1.8796" shape="square"/>
-<pad name="AIN/PD2" x="-22.86" y="-40.64" drill="1.016" diameter="1.8796"/>
+<pad name="AIN13/PD2" x="-22.86" y="-40.64" drill="1.016" diameter="1.8796"/>
 <pad name="U6RX/PP0" x="-22.86" y="-43.18" drill="1.016" diameter="1.8796"/>
 <pad name="U6TX/PP1" x="-22.86" y="-45.72" drill="1.016" diameter="1.8796"/>
 <pad name="CAN0RX/PA0" x="-22.86" y="-48.26" drill="1.016" diameter="1.8796"/>
@@ -11413,6 +11413,28 @@
 <text x="18.034" y="-38.608" size="0.889" layer="21" font="vector" align="bottom-right">PWM</text>
 <text x="-27.559" y="24.892" size="0.889" layer="21" font="vector">3.3V</text>
 <text x="-27.559" y="-38.608" size="0.889" layer="21" font="vector">3.3V</text>
+<wire x1="-11.43" y1="25.4" x2="-11.43" y2="17.78" width="0.127" layer="21"/>
+<wire x1="-11.43" y1="25.4" x2="-12.7" y2="24.13" width="0.127" layer="21"/>
+<wire x1="-12.7" y1="24.13" x2="-10.16" y2="24.13" width="0.127" layer="21"/>
+<wire x1="-10.16" y1="24.13" x2="-11.43" y2="25.4" width="0.127" layer="21"/>
+<wire x1="11.43" y1="24.13" x2="10.16" y2="24.13" width="0.127" layer="21"/>
+<wire x1="10.16" y1="24.13" x2="11.43" y2="25.4" width="0.127" layer="21"/>
+<wire x1="11.43" y1="25.4" x2="12.7" y2="24.13" width="0.127" layer="21"/>
+<wire x1="12.7" y1="24.13" x2="11.43" y2="24.13" width="0.127" layer="21"/>
+<wire x1="11.43" y1="24.13" x2="11.43" y2="25.4" width="0.127" layer="21"/>
+<wire x1="11.43" y1="24.13" x2="11.43" y2="17.78" width="0.127" layer="21"/>
+<wire x1="-11.43" y1="-36.83" x2="-11.43" y2="-44.45" width="0.127" layer="21"/>
+<wire x1="-11.43" y1="-36.83" x2="-12.7" y2="-38.1" width="0.127" layer="21"/>
+<wire x1="-12.7" y1="-38.1" x2="-10.16" y2="-38.1" width="0.127" layer="21"/>
+<wire x1="-10.16" y1="-38.1" x2="-11.43" y2="-36.83" width="0.127" layer="21"/>
+<wire x1="11.43" y1="-38.1" x2="10.16" y2="-38.1" width="0.127" layer="21"/>
+<wire x1="10.16" y1="-38.1" x2="11.43" y2="-36.83" width="0.127" layer="21"/>
+<wire x1="11.43" y1="-36.83" x2="12.7" y2="-38.1" width="0.127" layer="21"/>
+<wire x1="12.7" y1="-38.1" x2="11.43" y2="-38.1" width="0.127" layer="21"/>
+<wire x1="11.43" y1="-38.1" x2="11.43" y2="-36.83" width="0.127" layer="21"/>
+<wire x1="11.43" y1="-38.1" x2="11.43" y2="-44.45" width="0.127" layer="21"/>
+<text x="-2.54" y="-38.1" size="1.27" layer="21">Pack 2</text>
+<text x="-1.27" y="26.67" size="1.27" layer="21">pack 1</text>
 </package>
 </packages>
 <symbols>
@@ -11591,7 +11613,6 @@
 <pin name="PA6" x="-27.94" y="2.54" length="middle"/>
 <pin name="PM4" x="-27.94" y="0" length="middle"/>
 <pin name="PM5" x="-27.94" y="-2.54" length="middle"/>
-<pin name="3.3VV" x="-27.94" y="-5.08" length="middle"/>
 <pin name="AIN13/PD2" x="-27.94" y="-7.62" length="middle"/>
 <pin name="U6RX/PP0" x="-27.94" y="-10.16" length="middle"/>
 <pin name="U6TX/PP1" x="-27.94" y="-12.7" length="middle"/>
@@ -11601,8 +11622,6 @@
 <pin name="PP4" x="-27.94" y="-22.86" length="middle"/>
 <pin name="I2C2SCL/PN5" x="-27.94" y="-25.4" length="middle"/>
 <pin name="I2C2SDA/PN4" x="-27.94" y="-27.94" length="middle"/>
-<pin name="5VV" x="-27.94" y="-30.48" length="middle"/>
-<pin name="GNDD" x="-27.94" y="-33.02" length="middle"/>
 <pin name="AIN10/PB4" x="-27.94" y="-35.56" length="middle"/>
 <pin name="AIN11/PB5" x="-27.94" y="-38.1" length="middle"/>
 <pin name="AIN16/PK0" x="-27.94" y="-40.64" length="middle"/>
@@ -11629,8 +11648,7 @@
 <pin name="RST" x="27.94" y="-15.24" length="middle" rot="R180"/>
 <pin name="PA7" x="27.94" y="-12.7" length="middle" rot="R180"/>
 <pin name="PP5" x="27.94" y="-10.16" length="middle" rot="R180"/>
-<pin name="PM7" x="27.94" y="-7.62" length="middle" rot="R180"/>
-<pin name="GND2" x="27.94" y="-5.08" length="middle" rot="R180"/>
+<pin name="T5CCP1/PM7" x="27.94" y="-7.62" length="middle" rot="R180"/>
 <pin name="PL3" x="27.94" y="-2.54" length="middle" rot="R180"/>
 <pin name="PL2" x="27.94" y="0" length="middle" rot="R180"/>
 <pin name="PL1" x="27.94" y="2.54" length="middle" rot="R180"/>
@@ -11646,11 +11664,9 @@
 <pin name="PN2" x="27.94" y="27.94" length="middle" rot="R180"/>
 <pin name="I2C7SCL/SSI2RX/PD0" x="27.94" y="30.48" length="middle" rot="R180"/>
 <pin name="I2C7SDA/SSI2TX/PD1" x="27.94" y="33.02" length="middle" rot="R180"/>
-<pin name="RST2" x="27.94" y="35.56" length="middle" rot="R180"/>
 <pin name="PH3" x="27.94" y="38.1" length="middle" rot="R180"/>
 <pin name="PH2" x="27.94" y="40.64" length="middle" rot="R180"/>
 <pin name="T3CCP1/PM3" x="27.94" y="43.18" length="middle" rot="R180"/>
-<pin name="GND3" x="27.94" y="45.72" length="middle" rot="R180"/>
 <text x="-22.86" y="50.8" size="1.778" layer="94">&gt;NAME</text>
 <text x="-22.86" y="-60.96" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
@@ -11835,6 +11851,94 @@ http://www.cui.com/product/resource/vasd1-sip.pdf</description>
 <connect gate="G$1" pin="VIN-" pad="P$2"/>
 <connect gate="G$1" pin="VO+" pad="P$6"/>
 <connect gate="G$1" pin="VO-" pad="P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BOOSTER_PACK_CONNECTED">
+<gates>
+<gate name="G$1" symbol="TI_CONNECTED_BOOSTER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TI_CONNECTED_BOOSTER">
+<connects>
+<connect gate="G$1" pin="3.3V" pad="3.3V 3.3V1"/>
+<connect gate="G$1" pin="5V" pad="5V 5V1"/>
+<connect gate="G$1" pin="AIN0/PE3" pad="AIN0/PE3"/>
+<connect gate="G$1" pin="AIN1/PE2" pad="AIN1/PE2"/>
+<connect gate="G$1" pin="AIN10/PB4" pad="AIN10/PB4"/>
+<connect gate="G$1" pin="AIN11/PB5" pad="AIN11/PB5"/>
+<connect gate="G$1" pin="AIN13/PD2" pad="AIN13/PD2"/>
+<connect gate="G$1" pin="AIN16/PK0" pad="AIN16/PK0"/>
+<connect gate="G$1" pin="AIN17/PK1" pad="AIN17/PK1"/>
+<connect gate="G$1" pin="AIN18/PK2" pad="AIN18/PK2"/>
+<connect gate="G$1" pin="AIN19/PK3" pad="AIN19/PK3"/>
+<connect gate="G$1" pin="AIN2/PE1" pad="AIN2/PE1"/>
+<connect gate="G$1" pin="AIN3/PE0" pad="AIN3/PE0"/>
+<connect gate="G$1" pin="AIN4/PD7" pad="AIN4/PD7"/>
+<connect gate="G$1" pin="AIN8/PE5" pad="AIN8/PE5"/>
+<connect gate="G$1" pin="AIN9/PE4" pad="AIN9/PE4"/>
+<connect gate="G$1" pin="CAN0RX/PA0" pad="CAN0RX/PA0"/>
+<connect gate="G$1" pin="CAN0TX/PA1" pad="CAN0TX/PA1"/>
+<connect gate="G$1" pin="GND" pad="GND GND1 GND2 GND3"/>
+<connect gate="G$1" pin="I2C0SCL/PB2" pad="I2C0SCL/PB2"/>
+<connect gate="G$1" pin="I2C0SDA/PB3" pad="I2C0SDA/PB3"/>
+<connect gate="G$1" pin="I2C2SCL/PN5" pad="I2C2SCL/PN5"/>
+<connect gate="G$1" pin="I2C2SDA/PN4" pad="I2C2SDA/PN4"/>
+<connect gate="G$1" pin="I2C7SCL/SSI2RX/PD0" pad="I2C7SCL/SSI2RX/PD0"/>
+<connect gate="G$1" pin="I2C7SDA/SSI2TX/PD1" pad="I2C7SDA/SSI2TX/PD1"/>
+<connect gate="G$1" pin="M0PWM1/PF1" pad="M0PWM1/PF1"/>
+<connect gate="G$1" pin="M0PWM2/PF2" pad="M0PWM2/PF2"/>
+<connect gate="G$1" pin="M0PWM3/PF3" pad="M0PWM3/PF3"/>
+<connect gate="G$1" pin="M0PWM4/PG0" pad="M0PWM4/PG0"/>
+<connect gate="G$1" pin="M0PWM5/PG1" pad="M0PWM5/PG1"/>
+<connect gate="G$1" pin="M0PWM6/PK4" pad="M0PWM6/PK4"/>
+<connect gate="G$1" pin="M0PWM7/PK5" pad="M0PWM7/PK5"/>
+<connect gate="G$1" pin="PA4" pad="PA4"/>
+<connect gate="G$1" pin="PA5" pad="PA5"/>
+<connect gate="G$1" pin="PA6" pad="PA6"/>
+<connect gate="G$1" pin="PA7" pad="PA7"/>
+<connect gate="G$1" pin="PC6" pad="PC6"/>
+<connect gate="G$1" pin="PC7" pad="PC7"/>
+<connect gate="G$1" pin="PH0" pad="PH0"/>
+<connect gate="G$1" pin="PH1" pad="PH1"/>
+<connect gate="G$1" pin="PH2" pad="PH2"/>
+<connect gate="G$1" pin="PH3" pad="PH3"/>
+<connect gate="G$1" pin="PK6" pad="PK6"/>
+<connect gate="G$1" pin="PK7" pad="PK7"/>
+<connect gate="G$1" pin="PL0" pad="PL0"/>
+<connect gate="G$1" pin="PL1" pad="PL1"/>
+<connect gate="G$1" pin="PL2" pad="PL2"/>
+<connect gate="G$1" pin="PL3" pad="PL3"/>
+<connect gate="G$1" pin="PM4" pad="PM4"/>
+<connect gate="G$1" pin="PM5" pad="PM5"/>
+<connect gate="G$1" pin="PM6" pad="PM6"/>
+<connect gate="G$1" pin="PN2" pad="PN2"/>
+<connect gate="G$1" pin="PN3" pad="PN3"/>
+<connect gate="G$1" pin="PP2" pad="PP2"/>
+<connect gate="G$1" pin="PP3" pad="PP3"/>
+<connect gate="G$1" pin="PP4" pad="PP4"/>
+<connect gate="G$1" pin="PP5" pad="PP5"/>
+<connect gate="G$1" pin="PQ1" pad="PQ1"/>
+<connect gate="G$1" pin="RST" pad="RST RST1"/>
+<connect gate="G$1" pin="SSI2CLK/PD3" pad="SSI2CLK/PD3"/>
+<connect gate="G$1" pin="SSI3CLK/PQ0" pad="SSI3CLK/PQ0"/>
+<connect gate="G$1" pin="SSI3RX/PQ3" pad="SSI3RX/PQ3"/>
+<connect gate="G$1" pin="SSI3TX/PQ2" pad="SSI3TX/PQ2"/>
+<connect gate="G$1" pin="T0CCP0/PL4" pad="T0CCP0/PL4"/>
+<connect gate="G$1" pin="T0CCP1/PL5" pad="T0CCP1/PL5"/>
+<connect gate="G$1" pin="T2CCP0/PM0" pad="T2CCP0/PM0"/>
+<connect gate="G$1" pin="T2CCP1/PM1" pad="T2CCP1/PM1"/>
+<connect gate="G$1" pin="T3CCP0/PM2" pad="T3CCP0/PM2"/>
+<connect gate="G$1" pin="T3CCP1/PM3" pad="T3CCP1/PM3"/>
+<connect gate="G$1" pin="T5CCP1/PM7" pad="T5CCP1/PM7"/>
+<connect gate="G$1" pin="U6RX/PP0" pad="U6RX/PP0"/>
+<connect gate="G$1" pin="U6TX/PP1" pad="U6TX/PP1"/>
+<connect gate="G$1" pin="U7RX/PC4" pad="U7RX/PC4"/>
+<connect gate="G$1" pin="U7TX/PC5" pad="U7TX/PC5"/>
 </connects>
 <technologies>
 <technology name=""/>

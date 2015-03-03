@@ -10974,16 +10974,16 @@
 <wire x1="21.59" y1="3.175" x2="20.955" y2="3.81" width="0.2032" layer="21"/>
 <wire x1="19.685" y1="3.81" x2="19.05" y2="3.175" width="0.2032" layer="21"/>
 <wire x1="19.05" y1="1.905" x2="19.05" y2="3.175" width="0.2032" layer="21"/>
-<pad name="40" x="20.32" y="25.4" drill="1.016" diameter="1.8796" shape="square"/>
-<pad name="39" x="20.32" y="22.86" drill="1.016" diameter="1.8796"/>
-<pad name="38" x="20.32" y="20.32" drill="1.016" diameter="1.8796"/>
-<pad name="37" x="20.32" y="17.78" drill="1.016" diameter="1.8796"/>
-<pad name="36" x="20.32" y="15.24" drill="1.016" diameter="1.8796"/>
-<pad name="35" x="20.32" y="12.7" drill="1.016" diameter="1.8796"/>
-<pad name="34" x="20.32" y="10.16" drill="1.016" diameter="1.8796"/>
-<pad name="33" x="20.32" y="7.62" drill="1.016" diameter="1.8796"/>
-<pad name="32" x="20.32" y="5.08" drill="1.016" diameter="1.8796"/>
-<pad name="31" x="20.32" y="2.54" drill="1.016" diameter="1.8796"/>
+<pad name="M0PWM1/PF1" x="20.32" y="25.4" drill="1.016" diameter="1.8796" shape="square"/>
+<pad name="M0PWM2/PF2" x="20.32" y="22.86" drill="1.016" diameter="1.8796"/>
+<pad name="M0PWM3/PF3" x="20.32" y="20.32" drill="1.016" diameter="1.8796"/>
+<pad name="M0PWM4/PG0" x="20.32" y="17.78" drill="1.016" diameter="1.8796"/>
+<pad name="T0CCP0/PL4" x="20.32" y="15.24" drill="1.016" diameter="1.8796"/>
+<pad name="T0CCP1/PL5" x="20.32" y="12.7" drill="1.016" diameter="1.8796"/>
+<pad name="PL0" x="20.32" y="10.16" drill="1.016" diameter="1.8796"/>
+<pad name="PL1" x="20.32" y="7.62" drill="1.016" diameter="1.8796"/>
+<pad name="PL2" x="20.32" y="5.08" drill="1.016" diameter="1.8796"/>
+<pad name="PL3" x="20.32" y="2.54" drill="1.016" diameter="1.8796"/>
 <wire x1="19.685" y1="24.13" x2="19.05" y2="24.13" width="0.2286" layer="21"/>
 <wire x1="19.05" y1="24.13" x2="19.05" y2="26.67" width="0.2286" layer="21"/>
 <wire x1="19.05" y1="26.67" x2="21.59" y2="26.67" width="0.2286" layer="21"/>
@@ -11043,16 +11043,16 @@
 <wire x1="24.13" y1="3.175" x2="23.495" y2="3.81" width="0.2032" layer="21"/>
 <wire x1="22.225" y1="3.81" x2="21.59" y2="3.175" width="0.2032" layer="21"/>
 <wire x1="21.59" y1="1.905" x2="21.59" y2="3.175" width="0.2032" layer="21"/>
-<pad name="20" x="22.86" y="25.4" drill="1.016" diameter="1.8796" shape="square"/>
-<pad name="19" x="22.86" y="22.86" drill="1.016" diameter="1.8796"/>
-<pad name="18" x="22.86" y="20.32" drill="1.016" diameter="1.8796"/>
-<pad name="17" x="22.86" y="17.78" drill="1.016" diameter="1.8796"/>
-<pad name="16" x="22.86" y="15.24" drill="1.016" diameter="1.8796"/>
-<pad name="15" x="22.86" y="12.7" drill="1.016" diameter="1.8796"/>
-<pad name="14" x="22.86" y="10.16" drill="1.016" diameter="1.8796"/>
-<pad name="13" x="22.86" y="7.62" drill="1.016" diameter="1.8796"/>
-<pad name="12" x="22.86" y="5.08" drill="1.016" diameter="1.8796"/>
-<pad name="11" x="22.86" y="2.54" drill="1.016" diameter="1.8796"/>
+<pad name="GND1" x="22.86" y="25.4" drill="1.016" diameter="1.8796" shape="square"/>
+<pad name="T3CCP1/PM3" x="22.86" y="22.86" drill="1.016" diameter="1.8796"/>
+<pad name="PH2" x="22.86" y="20.32" drill="1.016" diameter="1.8796"/>
+<pad name="PH3" x="22.86" y="17.78" drill="1.016" diameter="1.8796"/>
+<pad name="RST" x="22.86" y="15.24" drill="1.016" diameter="1.8796"/>
+<pad name="I2C7SDA/SSI2TX/PD1" x="22.86" y="12.7" drill="1.016" diameter="1.8796"/>
+<pad name="I2C7SCL/SSI2RX/PD0" x="22.86" y="10.16" drill="1.016" diameter="1.8796"/>
+<pad name="PN2" x="22.86" y="7.62" drill="1.016" diameter="1.8796"/>
+<pad name="PN3" x="22.86" y="5.08" drill="1.016" diameter="1.8796"/>
+<pad name="PP2" x="22.86" y="2.54" drill="1.016" diameter="1.8796"/>
 <wire x1="22.225" y1="24.13" x2="21.59" y2="24.13" width="0.2286" layer="21"/>
 <wire x1="21.59" y1="24.13" x2="21.59" y2="26.67" width="0.2286" layer="21"/>
 <wire x1="21.59" y1="26.67" x2="24.13" y2="26.67" width="0.2286" layer="21"/>

@@ -11149,16 +11149,16 @@
 <wire x1="-21.59" y1="-60.325" x2="-22.225" y2="-59.69" width="0.2032" layer="21"/>
 <wire x1="-23.495" y1="-59.69" x2="-24.13" y2="-60.325" width="0.2032" layer="21"/>
 <wire x1="-24.13" y1="-61.595" x2="-24.13" y2="-60.325" width="0.2032" layer="21"/>
-<pad name="56" x="-22.86" y="-38.1" drill="1.016" diameter="1.8796" shape="square"/>
-<pad name="57" x="-22.86" y="-40.64" drill="1.016" diameter="1.8796"/>
-<pad name="58" x="-22.86" y="-43.18" drill="1.016" diameter="1.8796"/>
-<pad name="59" x="-22.86" y="-45.72" drill="1.016" diameter="1.8796"/>
-<pad name="60" x="-22.86" y="-48.26" drill="1.016" diameter="1.8796"/>
-<pad name="61" x="-22.86" y="-50.8" drill="1.016" diameter="1.8796"/>
-<pad name="62" x="-22.86" y="-53.34" drill="1.016" diameter="1.8796"/>
-<pad name="63" x="-22.86" y="-55.88" drill="1.016" diameter="1.8796"/>
-<pad name="64" x="-22.86" y="-58.42" drill="1.016" diameter="1.8796"/>
-<pad name="65" x="-22.86" y="-60.96" drill="1.016" diameter="1.8796"/>
+<pad name="3.3V1" x="-22.86" y="-38.1" drill="1.016" diameter="1.8796" shape="square"/>
+<pad name="AIN/PD2" x="-22.86" y="-40.64" drill="1.016" diameter="1.8796"/>
+<pad name="U6RX/PP0" x="-22.86" y="-43.18" drill="1.016" diameter="1.8796"/>
+<pad name="U6TX/PP1" x="-22.86" y="-45.72" drill="1.016" diameter="1.8796"/>
+<pad name="CAN0RX/PA0" x="-22.86" y="-48.26" drill="1.016" diameter="1.8796"/>
+<pad name="CAN0TX/PA1" x="-22.86" y="-50.8" drill="1.016" diameter="1.8796"/>
+<pad name="SSI3CLK/PQ0" x="-22.86" y="-53.34" drill="1.016" diameter="1.8796"/>
+<pad name="PP4" x="-22.86" y="-55.88" drill="1.016" diameter="1.8796"/>
+<pad name="I2C2SCL/PN5" x="-22.86" y="-58.42" drill="1.016" diameter="1.8796"/>
+<pad name="I2C2SDA/PN4" x="-22.86" y="-60.96" drill="1.016" diameter="1.8796"/>
 <wire x1="-23.495" y1="-39.37" x2="-24.13" y2="-39.37" width="0.2286" layer="21"/>
 <wire x1="-24.13" y1="-39.37" x2="-24.13" y2="-36.83" width="0.2286" layer="21"/>
 <wire x1="-24.13" y1="-36.83" x2="-21.59" y2="-36.83" width="0.2286" layer="21"/>
@@ -11220,16 +11220,16 @@
 <wire x1="-19.05" y1="-60.325" x2="-19.685" y2="-59.69" width="0.2032" layer="21"/>
 <wire x1="-20.955" y1="-59.69" x2="-21.59" y2="-60.325" width="0.2032" layer="21"/>
 <wire x1="-21.59" y1="-61.595" x2="-21.59" y2="-60.325" width="0.2032" layer="21"/>
-<pad name="66" x="-20.32" y="-38.1" drill="1.016" diameter="1.8796" shape="square"/>
-<pad name="67" x="-20.32" y="-40.64" drill="1.016" diameter="1.8796"/>
-<pad name="68" x="-20.32" y="-43.18" drill="1.016" diameter="1.8796"/>
-<pad name="69" x="-20.32" y="-45.72" drill="1.016" diameter="1.8796"/>
-<pad name="70" x="-20.32" y="-48.26" drill="1.016" diameter="1.8796"/>
-<pad name="71" x="-20.32" y="-50.8" drill="1.016" diameter="1.8796"/>
-<pad name="72" x="-20.32" y="-53.34" drill="1.016" diameter="1.8796"/>
-<pad name="73" x="-20.32" y="-55.88" drill="1.016" diameter="1.8796"/>
-<pad name="74" x="-20.32" y="-58.42" drill="1.016" diameter="1.8796"/>
-<pad name="75" x="-20.32" y="-60.96" drill="1.016" diameter="1.8796"/>
+<pad name="5V1" x="-20.32" y="-38.1" drill="1.016" diameter="1.8796" shape="square"/>
+<pad name="GND2" x="-20.32" y="-40.64" drill="1.016" diameter="1.8796"/>
+<pad name="AIN10/PB4" x="-20.32" y="-43.18" drill="1.016" diameter="1.8796"/>
+<pad name="AIN11/PB5" x="-20.32" y="-45.72" drill="1.016" diameter="1.8796"/>
+<pad name="AIN16/PK0" x="-20.32" y="-48.26" drill="1.016" diameter="1.8796"/>
+<pad name="AIN17/PK1" x="-20.32" y="-50.8" drill="1.016" diameter="1.8796"/>
+<pad name="AIN18/PK2" x="-20.32" y="-53.34" drill="1.016" diameter="1.8796"/>
+<pad name="AIN19/PK3" x="-20.32" y="-55.88" drill="1.016" diameter="1.8796"/>
+<pad name="PA4" x="-20.32" y="-58.42" drill="1.016" diameter="1.8796"/>
+<pad name="PA5" x="-20.32" y="-60.96" drill="1.016" diameter="1.8796"/>
 <wire x1="-20.955" y1="-39.37" x2="-21.59" y2="-39.37" width="0.2286" layer="21"/>
 <wire x1="-21.59" y1="-39.37" x2="-21.59" y2="-36.83" width="0.2286" layer="21"/>
 <wire x1="-21.59" y1="-36.83" x2="-19.05" y2="-36.83" width="0.2286" layer="21"/>

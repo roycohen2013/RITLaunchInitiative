@@ -11281,16 +11281,16 @@
 <wire x1="21.59" y1="-60.325" x2="20.955" y2="-59.69" width="0.2032" layer="21"/>
 <wire x1="19.685" y1="-59.69" x2="19.05" y2="-60.325" width="0.2032" layer="21"/>
 <wire x1="19.05" y1="-61.595" x2="19.05" y2="-60.325" width="0.2032" layer="21"/>
-<pad name="76" x="20.32" y="-38.1" drill="1.016" diameter="1.8796" shape="square"/>
-<pad name="77" x="20.32" y="-40.64" drill="1.016" diameter="1.8796"/>
-<pad name="78" x="20.32" y="-43.18" drill="1.016" diameter="1.8796"/>
-<pad name="79" x="20.32" y="-45.72" drill="1.016" diameter="1.8796"/>
-<pad name="80" x="20.32" y="-48.26" drill="1.016" diameter="1.8796"/>
-<pad name="81" x="20.32" y="-50.8" drill="1.016" diameter="1.8796"/>
-<pad name="82" x="20.32" y="-53.34" drill="1.016" diameter="1.8796"/>
-<pad name="83" x="20.32" y="-55.88" drill="1.016" diameter="1.8796"/>
-<pad name="84" x="20.32" y="-58.42" drill="1.016" diameter="1.8796"/>
-<pad name="85" x="20.32" y="-60.96" drill="1.016" diameter="1.8796"/>
+<pad name="M0PWM5/PG1" x="20.32" y="-38.1" drill="1.016" diameter="1.8796" shape="square"/>
+<pad name="M0PWM6/PK4" x="20.32" y="-40.64" drill="1.016" diameter="1.8796"/>
+<pad name="M0PWM7/PK5" x="20.32" y="-43.18" drill="1.016" diameter="1.8796"/>
+<pad name="T2CCP0/PM0" x="20.32" y="-45.72" drill="1.016" diameter="1.8796"/>
+<pad name="T2CCP1/PM1" x="20.32" y="-48.26" drill="1.016" diameter="1.8796"/>
+<pad name="T3CCP0/PM2" x="20.32" y="-50.8" drill="1.016" diameter="1.8796"/>
+<pad name="PH0" x="20.32" y="-53.34" drill="1.016" diameter="1.8796"/>
+<pad name="PH1" x="20.32" y="-55.88" drill="1.016" diameter="1.8796"/>
+<pad name="PK6" x="20.32" y="-58.42" drill="1.016" diameter="1.8796"/>
+<pad name="PK7" x="20.32" y="-60.96" drill="1.016" diameter="1.8796"/>
 <wire x1="19.685" y1="-39.37" x2="19.05" y2="-39.37" width="0.2286" layer="21"/>
 <wire x1="19.05" y1="-39.37" x2="19.05" y2="-36.83" width="0.2286" layer="21"/>
 <wire x1="19.05" y1="-36.83" x2="21.59" y2="-36.83" width="0.2286" layer="21"/>
@@ -11350,16 +11350,16 @@
 <wire x1="24.13" y1="-60.325" x2="23.495" y2="-59.69" width="0.2032" layer="21"/>
 <wire x1="22.225" y1="-59.69" x2="21.59" y2="-60.325" width="0.2032" layer="21"/>
 <wire x1="21.59" y1="-61.595" x2="21.59" y2="-60.325" width="0.2032" layer="21"/>
-<pad name="86" x="22.86" y="-38.1" drill="1.016" diameter="1.8796" shape="square"/>
-<pad name="87" x="22.86" y="-40.64" drill="1.016" diameter="1.8796"/>
-<pad name="88" x="22.86" y="-43.18" drill="1.016" diameter="1.8796"/>
-<pad name="89" x="22.86" y="-45.72" drill="1.016" diameter="1.8796"/>
-<pad name="90" x="22.86" y="-48.26" drill="1.016" diameter="1.8796"/>
-<pad name="91" x="22.86" y="-50.8" drill="1.016" diameter="1.8796"/>
-<pad name="92" x="22.86" y="-53.34" drill="1.016" diameter="1.8796"/>
-<pad name="93" x="22.86" y="-55.88" drill="1.016" diameter="1.8796"/>
-<pad name="94" x="22.86" y="-58.42" drill="1.016" diameter="1.8796"/>
-<pad name="95" x="22.86" y="-60.96" drill="1.016" diameter="1.8796"/>
+<pad name="GND3" x="22.86" y="-38.1" drill="1.016" diameter="1.8796" shape="square"/>
+<pad name="T5CCP1/PM7" x="22.86" y="-40.64" drill="1.016" diameter="1.8796"/>
+<pad name="PP5" x="22.86" y="-43.18" drill="1.016" diameter="1.8796"/>
+<pad name="PA7" x="22.86" y="-45.72" drill="1.016" diameter="1.8796"/>
+<pad name="RST1" x="22.86" y="-48.26" drill="1.016" diameter="1.8796"/>
+<pad name="SSI3TX/PQ2" x="22.86" y="-50.8" drill="1.016" diameter="1.8796"/>
+<pad name="SSI3RX/PQ3" x="22.86" y="-53.34" drill="1.016" diameter="1.8796"/>
+<pad name="PP3" x="22.86" y="-55.88" drill="1.016" diameter="1.8796"/>
+<pad name="PQ1" x="22.86" y="-58.42" drill="1.016" diameter="1.8796"/>
+<pad name="PM6" x="22.86" y="-60.96" drill="1.016" diameter="1.8796"/>
 <wire x1="22.225" y1="-39.37" x2="21.59" y2="-39.37" width="0.2286" layer="21"/>
 <wire x1="21.59" y1="-39.37" x2="21.59" y2="-36.83" width="0.2286" layer="21"/>
 <wire x1="21.59" y1="-36.83" x2="24.13" y2="-36.83" width="0.2286" layer="21"/>
@@ -11411,6 +11411,8 @@
 <text x="25.146" y="-56.388" size="0.889" layer="21" font="vector">CS</text>
 <text x="25.146" y="-61.468" size="0.889" layer="21" font="vector">GPIO</text>
 <text x="18.034" y="-38.608" size="0.889" layer="21" font="vector" align="bottom-right">PWM</text>
+<text x="-27.559" y="24.892" size="0.889" layer="21" font="vector">3.3V</text>
+<text x="-27.559" y="-38.608" size="0.889" layer="21" font="vector">3.3V</text>
 </package>
 </packages>
 <symbols>

@@ -10841,16 +10841,16 @@
 <wire x1="-21.59" y1="3.175" x2="-22.225" y2="3.81" width="0.2032" layer="21"/>
 <wire x1="-23.495" y1="3.81" x2="-24.13" y2="3.175" width="0.2032" layer="21"/>
 <wire x1="-24.13" y1="1.905" x2="-24.13" y2="3.175" width="0.2032" layer="21"/>
-<pad name="1" x="-22.86" y="25.4" drill="1.016" diameter="1.8796" shape="square"/>
-<pad name="2" x="-22.86" y="22.86" drill="1.016" diameter="1.8796"/>
-<pad name="3" x="-22.86" y="20.32" drill="1.016" diameter="1.8796"/>
-<pad name="4" x="-22.86" y="17.78" drill="1.016" diameter="1.8796"/>
-<pad name="5" x="-22.86" y="15.24" drill="1.016" diameter="1.8796"/>
-<pad name="6" x="-22.86" y="12.7" drill="1.016" diameter="1.8796"/>
-<pad name="7" x="-22.86" y="10.16" drill="1.016" diameter="1.8796"/>
-<pad name="8" x="-22.86" y="7.62" drill="1.016" diameter="1.8796"/>
-<pad name="9" x="-22.86" y="5.08" drill="1.016" diameter="1.8796"/>
-<pad name="10" x="-22.86" y="2.54" drill="1.016" diameter="1.8796"/>
+<pad name="3.3V" x="-22.86" y="25.4" drill="1.016" diameter="1.8796" shape="square"/>
+<pad name="AIN9/PE4" x="-22.86" y="22.86" drill="1.016" diameter="1.8796"/>
+<pad name="U7RX/PC4" x="-22.86" y="20.32" drill="1.016" diameter="1.8796"/>
+<pad name="U7TX/PC5" x="-22.86" y="17.78" drill="1.016" diameter="1.8796"/>
+<pad name="PC6" x="-22.86" y="15.24" drill="1.016" diameter="1.8796"/>
+<pad name="AIN8/PE5" x="-22.86" y="12.7" drill="1.016" diameter="1.8796"/>
+<pad name="SSI2CLK/PD3" x="-22.86" y="10.16" drill="1.016" diameter="1.8796"/>
+<pad name="PC7" x="-22.86" y="7.62" drill="1.016" diameter="1.8796"/>
+<pad name="I2C0SCL/PB2" x="-22.86" y="5.08" drill="1.016" diameter="1.8796"/>
+<pad name="I2C0SDA/PB3" x="-22.86" y="2.54" drill="1.016" diameter="1.8796"/>
 <text x="-24.2062" y="29.7688" size="1.27" layer="25" font="vector" ratio="10">J1</text>
 <wire x1="-23.495" y1="24.13" x2="-24.13" y2="24.13" width="0.2286" layer="21"/>
 <wire x1="-24.13" y1="24.13" x2="-24.13" y2="26.67" width="0.2286" layer="21"/>
@@ -10913,16 +10913,16 @@
 <wire x1="-19.05" y1="3.175" x2="-19.685" y2="3.81" width="0.2032" layer="21"/>
 <wire x1="-20.955" y1="3.81" x2="-21.59" y2="3.175" width="0.2032" layer="21"/>
 <wire x1="-21.59" y1="1.905" x2="-21.59" y2="3.175" width="0.2032" layer="21"/>
-<pad name="21" x="-20.32" y="25.4" drill="1.016" diameter="1.8796" shape="square"/>
-<pad name="22" x="-20.32" y="22.86" drill="1.016" diameter="1.8796"/>
-<pad name="23" x="-20.32" y="20.32" drill="1.016" diameter="1.8796"/>
-<pad name="24" x="-20.32" y="17.78" drill="1.016" diameter="1.8796"/>
-<pad name="25" x="-20.32" y="15.24" drill="1.016" diameter="1.8796"/>
-<pad name="26" x="-20.32" y="12.7" drill="1.016" diameter="1.8796"/>
-<pad name="27" x="-20.32" y="10.16" drill="1.016" diameter="1.8796"/>
-<pad name="28" x="-20.32" y="7.62" drill="1.016" diameter="1.8796"/>
-<pad name="29" x="-20.32" y="5.08" drill="1.016" diameter="1.8796"/>
-<pad name="30" x="-20.32" y="2.54" drill="1.016" diameter="1.8796"/>
+<pad name="5V" x="-20.32" y="25.4" drill="1.016" diameter="1.8796" shape="square"/>
+<pad name="GND" x="-20.32" y="22.86" drill="1.016" diameter="1.8796"/>
+<pad name="AIN3/PE0" x="-20.32" y="20.32" drill="1.016" diameter="1.8796"/>
+<pad name="AIN2/PE1" x="-20.32" y="17.78" drill="1.016" diameter="1.8796"/>
+<pad name="AIN1/PE2" x="-20.32" y="15.24" drill="1.016" diameter="1.8796"/>
+<pad name="AIN0/PE3" x="-20.32" y="12.7" drill="1.016" diameter="1.8796"/>
+<pad name="AIN4/PD7" x="-20.32" y="10.16" drill="1.016" diameter="1.8796"/>
+<pad name="PA6" x="-20.32" y="7.62" drill="1.016" diameter="1.8796"/>
+<pad name="PM4" x="-20.32" y="5.08" drill="1.016" diameter="1.8796"/>
+<pad name="PM5" x="-20.32" y="2.54" drill="1.016" diameter="1.8796"/>
 <wire x1="-20.955" y1="24.13" x2="-21.59" y2="24.13" width="0.2286" layer="21"/>
 <wire x1="-21.59" y1="24.13" x2="-21.59" y2="26.67" width="0.2286" layer="21"/>
 <wire x1="-21.59" y1="26.67" x2="-19.05" y2="26.67" width="0.2286" layer="21"/>
@@ -11058,7 +11058,6 @@
 <wire x1="21.59" y1="26.67" x2="24.13" y2="26.67" width="0.2286" layer="21"/>
 <wire x1="24.13" y1="26.67" x2="24.13" y2="24.13" width="0.2286" layer="21"/>
 <wire x1="24.13" y1="24.13" x2="23.495" y2="24.13" width="0.2286" layer="21"/>
-<text x="-25.146" y="22.352" size="0.889" layer="21" font="vector" align="bottom-right">AIN</text>
 <text x="-25.146" y="19.812" size="0.889" layer="21" font="vector" align="bottom-right">RX</text>
 <text x="-25.146" y="17.526" size="0.889" layer="21" font="vector" align="bottom-right">TX</text>
 <text x="-25.146" y="14.986" size="0.889" layer="21" font="vector" align="bottom-right">GPIO</text>
