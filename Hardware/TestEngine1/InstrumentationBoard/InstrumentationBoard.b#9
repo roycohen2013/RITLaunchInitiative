@@ -1497,8 +1497,8 @@ design rules under a new name.</description>
 <element name="FB2" library="microbuilder" package="_0805" value="Ferrite" x="101.6" y="69.85" rot="R270"/>
 <element name="IC1" library="adafruit" package="SO08" value="MAX31855" x="99.06" y="63.5" rot="R180"/>
 <element name="J1" library="adafruit" package="1X2-3.5MM" value="1X2-3.5MM" x="99.06" y="76.2"/>
-<element name="J2" library="SparkFun-Connectors" package="BANANA_CONN" value="" x="57.15" y="6.35"/>
-<element name="J3" library="SparkFun-Connectors" package="BANANA_CONN" value="" x="36.83" y="6.35"/>
+<element name="J2" library="SparkFun-Connectors" package="BANANA_CONN" value="" x="57.15" y="5.08"/>
+<element name="J3" library="SparkFun-Connectors" package="BANANA_CONN" value="" x="36.83" y="5.08"/>
 <element name="JP1" library="SparkFun-Connectors" package="1X02" value="M02PTH" x="69.85" y="74.93" smashed="yes" rot="R90"/>
 <element name="R34" library="SparkFun-Resistors" package="0805" value="10K" x="92.71" y="59.69"/>
 <element name="R35" library="SparkFun-Resistors" package="0805" value="10K" x="92.71" y="62.23"/>
@@ -1507,9 +1507,9 @@ design rules under a new name.</description>
 <attribute name="DATASHEET_LINK" value="http://www.ti.com/lit/ds/symlink/ina125.pdf" x="92.71" y="41.91" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DIGIKEY_PART_NUMBER" value="INA125UA-ND" x="92.71" y="41.91" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="U$2" library="RitLaunchInitiative" package="TO-252" value="MC33269DTRK" x="46.99" y="11.43"/>
+<element name="U$2" library="RitLaunchInitiative" package="TO-252" value="MC33269DTRK" x="54.61" y="16.51" rot="R270"/>
 <element name="U$3" library="RitLaunchInitiative" package="SOT223" value="TC1262" x="55.88" y="26.67" rot="R90"/>
-<element name="C4" library="SparkFun-Capacitors" package="0805" value="0.33uF" x="45.085" y="22.86" rot="R180"/>
+<element name="C4" library="SparkFun-Capacitors" package="0805" value="0.33uF" x="48.895" y="16.51" rot="R180"/>
 <element name="C5" library="SparkFun-Capacitors" package="0805" value="0.1uF" x="50.8" y="21.59" rot="R180"/>
 <element name="C6" library="SparkFun-Capacitors" package="0805" value="1uF" x="15.24" y="24.13"/>
 <element name="C7" library="SparkFun-Capacitors" package="0805" value="1uF" x="16.51" y="21.59"/>
@@ -1844,9 +1844,9 @@ design rules under a new name.</description>
 <contactref element="J3" pad="P$1"/>
 <contactref element="C4" pad="2"/>
 <contactref element="C5" pad="2"/>
-<wire x1="44.185" y1="22.86" x2="49.9" y2="21.59" width="0" layer="19" extent="1-1"/>
-<wire x1="44.71" y1="6.63" x2="49.9" y2="21.59" width="0" layer="19" extent="1-1"/>
-<wire x1="36.83" y1="6.35" x2="44.71" y2="6.63" width="0" layer="19" extent="1-1"/>
+<wire x1="49.81" y1="18.79" x2="49.9" y2="21.59" width="0" layer="19" extent="1-1"/>
+<wire x1="47.995" y1="16.51" x2="49.81" y2="18.79" width="0" layer="19" extent="1-1"/>
+<wire x1="36.83" y1="5.08" x2="47.995" y2="16.51" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="5V">
 <contactref element="U$2" pad="2"/>
@@ -1865,7 +1865,7 @@ design rules under a new name.</description>
 <wire x1="82.55" y1="24.13" x2="82.55" y2="26.67" width="0" layer="19" extent="1-1"/>
 <wire x1="58.9788" y1="24.3586" x2="82.55" y2="24.13" width="0" layer="19" extent="1-1"/>
 <wire x1="51.7" y1="21.59" x2="58.9788" y2="24.3586" width="0" layer="19" extent="1-1"/>
-<wire x1="46.99" y1="13.93" x2="51.7" y2="21.59" width="0" layer="19" extent="1-1"/>
+<wire x1="57.11" y1="16.51" x2="51.7" y2="21.59" width="0" layer="19" extent="1-1"/>
 <wire x1="44.45" y1="29.58" x2="51.7" y2="21.59" width="0" layer="19" extent="1-1"/>
 <wire x1="14.34" y1="24.13" x2="44.45" y2="29.58" width="0" layer="19" extent="1-1"/>
 <wire x1="0" y1="33.02" x2="14.34" y2="24.13" width="0" layer="19" extent="1-1"/>
@@ -1910,10 +1910,10 @@ design rules under a new name.</description>
 <wire x1="95.31" y1="37.465" x2="95.31" y2="38.735" width="0" layer="19" extent="1-1"/>
 <wire x1="94.88" y1="35.56" x2="95.31" y2="37.465" width="0" layer="19" extent="1-1"/>
 <wire x1="100.33" y1="31.75" x2="94.88" y2="35.56" width="0" layer="19" extent="1-1"/>
-<wire x1="57.15" y1="6.35" x2="94.88" y2="35.56" width="0" layer="19" extent="1-1"/>
-<wire x1="49.27" y1="6.63" x2="57.15" y2="6.35" width="0" layer="19" extent="1-1"/>
-<wire x1="45.985" y1="22.86" x2="49.27" y2="6.63" width="0" layer="19" extent="1-1"/>
-<wire x1="39.37" y1="29.58" x2="45.985" y2="22.86" width="0" layer="19" extent="1-1"/>
+<wire x1="57.15" y1="5.08" x2="94.88" y2="35.56" width="0" layer="19" extent="1-1"/>
+<wire x1="49.81" y1="14.23" x2="57.15" y2="5.08" width="0" layer="19" extent="1-1"/>
+<wire x1="49.795" y1="16.51" x2="49.81" y2="14.23" width="0" layer="19" extent="1-1"/>
+<wire x1="39.37" y1="29.58" x2="49.795" y2="16.51" width="0" layer="19" extent="1-1"/>
 <wire x1="24.5" y1="36.83" x2="39.37" y2="29.58" width="0" layer="19" extent="1-1"/>
 <wire x1="20.69" y1="36.83" x2="24.5" y2="36.83" width="0" layer="19" extent="1-1"/>
 <wire x1="20.69" y1="40.64" x2="20.69" y2="36.83" width="0" layer="19" extent="1-1"/>
@@ -2020,16 +2020,12 @@ design rules under a new name.</description>
 <signal name="SDA">
 <contactref element="U1" pad="6"/>
 <contactref element="JP133" pad="1"/>
-<contactref element="U$10" pad="I2C0SCL/PB2"/>
-<wire x1="65" y1="37.92" x2="69.85" y2="54.61" width="0" layer="19" extent="1-1"/>
-<wire x1="100.33" y1="21.59" x2="65" y2="37.92" width="0" layer="19" extent="1-1"/>
+<wire x1="65" y1="37.92" x2="100.33" y2="21.59" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SCL">
 <contactref element="U1" pad="5"/>
 <contactref element="JP133" pad="2"/>
-<contactref element="U$10" pad="I2C0SDA/PB3"/>
 <wire x1="63.5" y1="37.92" x2="100.33" y2="24.13" width="0" layer="19" extent="1-1"/>
-<wire x1="67.31" y1="54.61" x2="63.5" y2="37.92" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MISO">
 <contactref element="IC1" pad="7"/>

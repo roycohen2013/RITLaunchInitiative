@@ -1498,7 +1498,7 @@ design rules under a new name.</description>
 <element name="IC1" library="adafruit" package="SO08" value="MAX31855" x="99.06" y="63.5" rot="R180"/>
 <element name="J1" library="adafruit" package="1X2-3.5MM" value="1X2-3.5MM" x="99.06" y="76.2"/>
 <element name="J2" library="SparkFun-Connectors" package="BANANA_CONN" value="" x="57.15" y="6.35"/>
-<element name="J3" library="SparkFun-Connectors" package="BANANA_CONN" value="" x="36.83" y="6.35"/>
+<element name="J3" library="SparkFun-Connectors" package="BANANA_CONN" value="" x="36.83" y="6.985"/>
 <element name="JP1" library="SparkFun-Connectors" package="1X02" value="M02PTH" x="69.85" y="74.93" smashed="yes" rot="R90"/>
 <element name="R34" library="SparkFun-Resistors" package="0805" value="10K" x="92.71" y="59.69"/>
 <element name="R35" library="SparkFun-Resistors" package="0805" value="10K" x="92.71" y="62.23"/>
@@ -1846,7 +1846,7 @@ design rules under a new name.</description>
 <contactref element="C5" pad="2"/>
 <wire x1="44.185" y1="22.86" x2="49.9" y2="21.59" width="0" layer="19" extent="1-1"/>
 <wire x1="44.71" y1="6.63" x2="49.9" y2="21.59" width="0" layer="19" extent="1-1"/>
-<wire x1="36.83" y1="6.35" x2="44.71" y2="6.63" width="0" layer="19" extent="1-1"/>
+<wire x1="36.83" y1="6.985" x2="44.71" y2="6.63" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="5V">
 <contactref element="U$2" pad="2"/>
@@ -2020,16 +2020,12 @@ design rules under a new name.</description>
 <signal name="SDA">
 <contactref element="U1" pad="6"/>
 <contactref element="JP133" pad="1"/>
-<contactref element="U$10" pad="I2C0SCL/PB2"/>
-<wire x1="65" y1="37.92" x2="69.85" y2="54.61" width="0" layer="19" extent="1-1"/>
-<wire x1="100.33" y1="21.59" x2="65" y2="37.92" width="0" layer="19" extent="1-1"/>
+<wire x1="65" y1="37.92" x2="100.33" y2="21.59" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SCL">
 <contactref element="U1" pad="5"/>
 <contactref element="JP133" pad="2"/>
-<contactref element="U$10" pad="I2C0SDA/PB3"/>
 <wire x1="63.5" y1="37.92" x2="100.33" y2="24.13" width="0" layer="19" extent="1-1"/>
-<wire x1="67.31" y1="54.61" x2="63.5" y2="37.92" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MISO">
 <contactref element="IC1" pad="7"/>

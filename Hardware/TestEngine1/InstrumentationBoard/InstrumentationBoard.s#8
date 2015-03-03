@@ -9083,7 +9083,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="JP17" library="SparkFun-Connectors" deviceset="M03" device="PTH"/>
 <part name="GND31" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY15" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
-<part name="JP18" library="SparkFun-Connectors" deviceset="M03" device="PTH"/>
+<part name="JP166" library="SparkFun-Connectors" deviceset="M03" device="PTH"/>
 <part name="GND32" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY16" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="LED1" library="adafruit" deviceset="RGBLED" device="5050"/>
@@ -9377,7 +9377,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <instance part="JP17" gate="G$1" x="254" y="88.9" rot="R180"/>
 <instance part="GND31" gate="1" x="233.68" y="81.28"/>
 <instance part="SUPPLY15" gate="G$1" x="233.68" y="93.98"/>
-<instance part="JP18" gate="G$1" x="287.02" y="88.9" rot="R180"/>
+<instance part="JP166" gate="G$1" x="287.02" y="88.9" rot="R180"/>
 <instance part="GND32" gate="1" x="266.7" y="81.28"/>
 <instance part="SUPPLY16" gate="G$1" x="266.7" y="93.98"/>
 <instance part="LED1" gate="G$1" x="33.02" y="-35.56" rot="R270"/>
@@ -9682,7 +9682,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <wire x1="233.68" y1="86.36" x2="233.68" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP18" gate="G$1" pin="3"/>
+<pinref part="JP166" gate="G$1" pin="3"/>
 <pinref part="GND32" gate="1" pin="GND"/>
 <wire x1="279.4" y1="86.36" x2="266.7" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="266.7" y1="86.36" x2="266.7" y2="83.82" width="0.1524" layer="91"/>
@@ -10136,7 +10136,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <segment>
 <pinref part="SUPPLY16" gate="G$1" pin="5V"/>
 <wire x1="266.7" y1="93.98" x2="266.7" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="JP18" gate="G$1" pin="2"/>
+<pinref part="JP166" gate="G$1" pin="2"/>
 <wire x1="279.4" y1="88.9" x2="266.7" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -10531,7 +10531,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 </net>
 <net name="PWM_3" class="0">
 <segment>
-<pinref part="JP18" gate="G$1" pin="1"/>
+<pinref part="JP166" gate="G$1" pin="1"/>
 <wire x1="279.4" y1="91.44" x2="276.86" y2="91.44" width="0.1524" layer="91"/>
 <label x="276.86" y="91.44" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
