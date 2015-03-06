@@ -8381,8 +8381,8 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 </segment>
 <segment>
 <wire x1="-50.8" y1="213.36" x2="-66.04" y2="213.36" width="0.1524" layer="91"/>
-<label x="-50.8" y="213.36" size="1.016" layer="95" xref="yes"/>
 <pinref part="U$10" gate="G$1" pin="M0PWM7/PK5"/>
+<label x="-50.8" y="213.36" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="GREEN" class="0">
@@ -8395,9 +8395,9 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <junction x="20.32" y="-76.2"/>
 </segment>
 <segment>
-<wire x1="-50.8" y1="215.9" x2="-66.04" y2="215.9" width="0.1524" layer="91"/>
-<label x="-50.8" y="215.9" size="1.016" layer="95" xref="yes"/>
-<pinref part="U$10" gate="G$1" pin="M0PWM6/PK4"/>
+<wire x1="-48.26" y1="218.44" x2="-66.04" y2="218.44" width="0.1524" layer="91"/>
+<label x="-48.26" y="218.44" size="1.016" layer="95" xref="yes"/>
+<pinref part="U$10" gate="G$1" pin="M0PWM5/PG1"/>
 </segment>
 </net>
 <net name="RED" class="0">
@@ -8411,9 +8411,9 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <junction x="20.32" y="-58.42"/>
 </segment>
 <segment>
-<wire x1="-50.8" y1="218.44" x2="-66.04" y2="218.44" width="0.1524" layer="91"/>
-<label x="-50.8" y="218.44" size="1.016" layer="95" xref="yes"/>
-<pinref part="U$10" gate="G$1" pin="M0PWM5/PG1"/>
+<wire x1="-66.04" y1="215.9" x2="-55.88" y2="215.9" width="0.1524" layer="91"/>
+<label x="-55.88" y="215.9" size="1.016" layer="95" xref="yes"/>
+<pinref part="U$10" gate="G$1" pin="M0PWM6/PK4"/>
 </segment>
 </net>
 <net name="SW_1" class="0">
