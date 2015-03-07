@@ -13,6 +13,11 @@ namespace RocketComm
             Simple
         }
 
+        public static IRocketMessage GenerateMessage(byte type)
+        {
+            return GenerateMessage((MessageType)type);
+        }
+
         public static IRocketMessage GenerateMessage(MessageType type)
         {
             switch (type)
