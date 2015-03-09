@@ -6988,7 +6988,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <wire x1="190.5" y1="220.98" x2="325.12" y2="220.98" width="0.1524" layer="94"/>
 <wire x1="325.12" y1="220.98" x2="325.12" y2="289.56" width="0.1524" layer="94"/>
 <wire x1="325.12" y1="289.56" x2="190.5" y2="289.56" width="0.1524" layer="94"/>
-<text x="218.44" y="287.02" size="2.54" layer="94">Pressure transducers voltage signaling</text>
+<text x="226.06" y="284.48" size="2.54" layer="94">Pressure transducers voltage signaling</text>
 <wire x1="195.58" y1="106.68" x2="325.12" y2="106.68" width="0.1524" layer="94"/>
 <wire x1="325.12" y1="106.68" x2="325.12" y2="71.12" width="0.1524" layer="94"/>
 <wire x1="325.12" y1="71.12" x2="195.58" y2="71.12" width="0.1524" layer="94"/>
