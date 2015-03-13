@@ -197,9 +197,9 @@
 <text x="101.6" y="67.31" size="1.6764" layer="21">-</text>
 <text x="38.735" y="53.975" size="0.8128" layer="21">KeySw</text>
 <text x="45.72" y="53.975" size="0.8128" layer="21">TiltSw</text>
-<text x="92.71" y="45.72" size="3.81" layer="22" rot="MR0">RIT launch Initative</text>
-<text x="92.71" y="41.91" size="2.1844" layer="22" rot="MR0">Instrumentation board</text>
-<text x="54.61" y="41.91" size="2.1844" layer="22" rot="MR0">Rev A</text>
+<text x="72.39" y="44.45" size="3.81" layer="22" rot="MR0">RIT launch Initative</text>
+<text x="72.39" y="40.005" size="2.1844" layer="22" rot="MR0">Instrumentation board</text>
+<text x="72.39" y="36.83" size="2.1844" layer="22" rot="MR0">Rev A</text>
 </plain>
 <libraries>
 <library name="adafruit">
@@ -5250,7 +5250,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="S2" library="SparkFun-Electromechanical" package="TACTILE-SWITCH-SMD" value="SWITCH-MOMENTARY-2SMD" x="8.89" y="33.655" smashed="yes">
 <attribute name="PROD_ID" value="SWCH-08247" x="8.89" y="33.655" size="1.778" layer="27" display="off"/>
 </element>
-<element name="U$8" library="RitLaunchInitiative" package="RITLAUNCH_LOGO" value="" x="45.72" y="24.13" rot="MR0"/>
+<element name="U$8" library="RitLaunchInitiative" package="RITLAUNCH_LOGO" value="" x="66.04" y="5.08" rot="MR0"/>
 </elements>
 <signals>
 <signal name="GND">
