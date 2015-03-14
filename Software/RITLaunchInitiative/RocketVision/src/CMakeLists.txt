@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( Horizon )
+find_package( OpenCV REQUIRED )
+add_executable( Horizon main.cpp HorizonDetect.cpp )
+target_link_libraries( Horizon ${OpenCV_LIBS} )
