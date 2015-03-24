@@ -6741,17 +6741,27 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="R35" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="10K"/>
 <part name="+3V7" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V8" library="supply1" deviceset="+3V3" device=""/>
-<part name="FB1" library="microbuilder" deviceset="FERRITE" device="_0805" value="Ferrite"/>
-<part name="FB2" library="microbuilder" deviceset="FERRITE" device="_0805" value="Ferrite"/>
-<part name="C3" library="microbuilder" deviceset="CAP_CERAMIC" device="_0805" value="0.01µF"/>
+<part name="FB1" library="microbuilder" deviceset="FERRITE" device="_0805" value="Ferrite">
+<attribute name="DIGIKEY" value="732-1609-1-ND"/>
+</part>
+<part name="FB2" library="microbuilder" deviceset="FERRITE" device="_0805" value="Ferrite">
+<attribute name="DIGIKEY" value="732-1609-1-ND"/>
+</part>
+<part name="C3" library="microbuilder" deviceset="CAP_CERAMIC" device="_0805" value="0.01µF">
+<attribute name="DIGIKEY" value="490-1664-1-ND"/>
+</part>
 <part name="R1" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="10k"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="JP1" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 <part name="J2" library="SparkFun-Connectors" deviceset="BANANA_CONN" device=""/>
 <part name="J3" library="SparkFun-Connectors" deviceset="BANANA_CONN" device=""/>
-<part name="U$2" library="RitLaunchInitiative" deviceset="MC33269DTRK" device=""/>
-<part name="U$3" library="RitLaunchInitiative" deviceset="TC1262" device=""/>
+<part name="U$2" library="RitLaunchInitiative" deviceset="MC33269DTRK" device="">
+<attribute name="DIGIKEY" value="MC33269DTRK-5.0GOSCT-ND"/>
+</part>
+<part name="U$3" library="RitLaunchInitiative" deviceset="TC1262" device="">
+<attribute name="DIGIKEY" value="TC1262-3.3VDBCT-ND"/>
+</part>
 <part name="GND" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="C4" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="0.33uF"/>
@@ -6806,8 +6816,12 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="JP9" library="SparkFun-Connectors" deviceset="M03" device="PTH"/>
 <part name="GND21" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY9" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
-<part name="R14" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="1.7k"/>
-<part name="R15" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="3.3k"/>
+<part name="R14" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="1.8k">
+<attribute name="DIGIKEY" value="RMCF0805FT1K80CT-ND"/>
+</part>
+<part name="R15" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="3.3k">
+<attribute name="DIGIKEY" value="RHM3.30KCHCT-ND"/>
+</part>
 <part name="GND22" library="supply1" deviceset="GND" device=""/>
 <part name="U1" library="SparkFun-Sensors" deviceset="BMP180" device=""/>
 <part name="+3V11" library="supply1" deviceset="+3V3" device=""/>
@@ -6826,7 +6840,9 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="JP18" library="SparkFun-Connectors" deviceset="M03" device="PTH"/>
 <part name="GND32" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY16" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
-<part name="LED1" library="adafruit" deviceset="RGBLED" device="5050"/>
+<part name="LED1" library="adafruit" deviceset="RGBLED" device="5050">
+<attribute name="DIGIKEY" value="1516-1131-1-ND"/>
+</part>
 <part name="JP1777" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
 <part name="S1" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="SMD"/>
 <part name="Q1" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCHANNEL" device="BSS123LT1G"/>
@@ -6860,8 +6876,8 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="D6" library="SparkFun-DiscreteSemi" deviceset="DIODE-SCHOTTKY" device="-B340A" value="B340A">
 <attribute name="DIGIKEY" value="SS110-TPCT-ND"/>
 </part>
-<part name="R19" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="9k"/>
-<part name="R20" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="3k"/>
+<part name="R19" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="3k"/>
+<part name="R20" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="1k"/>
 <part name="GND38" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY17" library="SparkFun-Aesthetics" deviceset="12V" device=""/>
 <part name="GND39" library="supply1" deviceset="GND" device=""/>
@@ -6874,8 +6890,12 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="JP10" library="SparkFun-Connectors" deviceset="M03" device="PTH"/>
 <part name="GND41" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY19" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
-<part name="R16" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="1.7k"/>
-<part name="R17" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="3.3k"/>
+<part name="R16" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="1.8k">
+<attribute name="DIGIKEY" value="RMCF0805FT1K80CT-ND"/>
+</part>
+<part name="R17" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="3.3k">
+<attribute name="DIGIKEY" value="RHM3.30KCHCT-ND"/>
+</part>
 <part name="GND42" library="supply1" deviceset="GND" device=""/>
 <part name="JP19" library="SparkFun-Connectors" deviceset="M03" device="PTH"/>
 <part name="GND43" library="supply1" deviceset="GND" device=""/>
@@ -6891,32 +6911,32 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="GND46" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY22" library="SparkFun-Aesthetics" deviceset="12V" device=""/>
 <part name="SUPPLY23" library="SparkFun-Aesthetics" deviceset="12V" device=""/>
-<part name="SUPPLY24" library="SparkFun-Aesthetics" deviceset="12V" device=""/>
-<part name="GND47" library="supply1" deviceset="GND" device=""/>
-<part name="GND48" library="supply1" deviceset="GND" device=""/>
-<part name="GND49" library="supply1" deviceset="GND" device=""/>
-<part name="SUPPLY25" library="SparkFun-Aesthetics" deviceset="12V" device=""/>
-<part name="SUPPLY26" library="SparkFun-Aesthetics" deviceset="12V" device=""/>
 <part name="C19" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="0.1uf"/>
 <part name="+3V17" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND50" library="supply1" deviceset="GND" device=""/>
 <part name="D9" library="SparkFun-LED" deviceset="LED" device="1206">
-<attribute name="DIGIKEY" value="350-2048-1-ND"/>
+<attribute name="DIGIKEY" value="160-1405-1-ND"/>
 </part>
-<part name="R21" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="100"/>
+<part name="R21" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="226">
+<attribute name="DIGIKEY" value="P226CCT-ND"/>
+</part>
 <part name="+3V18" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND51" library="supply1" deviceset="GND" device=""/>
-<part name="R22" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="220"/>
+<part name="R22" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="560">
+<attribute name="DIGIKEY" value="P560CCT-ND"/>
+</part>
 <part name="SUPPLY27" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="GND52" library="supply1" deviceset="GND" device=""/>
-<part name="R23" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="680"/>
+<part name="R23" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="2k">
+<attribute name="DIGIKEY" value="P2.00KCCT-ND"/>
+</part>
 <part name="SUPPLY28" library="SparkFun-Aesthetics" deviceset="12V" device=""/>
 <part name="GND53" library="supply1" deviceset="GND" device=""/>
 <part name="D7" library="SparkFun-LED" deviceset="LED" device="1206">
-<attribute name="DIGIKEY" value="350-2048-1-ND"/>
+<attribute name="DIGIKEY" value="160-1405-1-ND"/>
 </part>
 <part name="D8" library="SparkFun-LED" deviceset="LED" device="1206">
-<attribute name="DIGIKEY" value="350-2048-1-ND"/>
+<attribute name="DIGIKEY" value="160-1405-1-ND"/>
 </part>
 <part name="U$9" library="RitLaunchInitiative" deviceset="FDD3706" device=""/>
 <part name="SUPPLY29" library="SparkFun-Aesthetics" deviceset="12V" device=""/>
@@ -6950,8 +6970,12 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="JP20" library="SparkFun-Connectors" deviceset="M03" device="PTH"/>
 <part name="GND28" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY11" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
-<part name="R18" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="1.7k"/>
-<part name="R36" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="3.3k"/>
+<part name="R18" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="1.8k">
+<attribute name="DIGIKEY" value="RMCF0805FT1K80CT-ND"/>
+</part>
+<part name="R36" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="3.3k">
+<attribute name="DIGIKEY" value="RHM3.30KCHCT-ND"/>
+</part>
 <part name="GND29" library="supply1" deviceset="GND" device=""/>
 <part name="R37" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="10K"/>
 <part name="R38" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="10K"/>
@@ -6959,7 +6983,6 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="+3V24" library="supply1" deviceset="+3V3" device=""/>
 <part name="S2" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="SMD"/>
 <part name="GND60" library="supply1" deviceset="GND" device=""/>
-<part name="GND8" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6976,7 +6999,6 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <text x="198.12" y="251.46" size="1.016" layer="91">Scale signal from 5v to 3.3</text>
 <text x="-101.6" y="172.72" size="1.6764" layer="91">K type Thermocouple</text>
 <text x="-99.06" y="96.52" size="1.6764" layer="91">Load Cell measurement</text>
-<text x="38.1" y="-27.94" size="1.6764" layer="91">160-2022-1-ND</text>
 <text x="152.4" y="7.62" size="1.6764" layer="91">Tilt Switch</text>
 <wire x1="195.58" y1="187.96" x2="444.5" y2="187.96" width="0.1524" layer="94"/>
 <wire x1="444.5" y1="187.96" x2="444.5" y2="116.84" width="0.1524" layer="94"/>
@@ -7032,17 +7054,27 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <instance part="R35" gate="G$1" x="-66.04" y="134.62" rot="R270"/>
 <instance part="+3V7" gate="G$1" x="-63.5" y="139.7" rot="R270"/>
 <instance part="+3V8" gate="G$1" x="-66.04" y="109.22" rot="R180"/>
-<instance part="FB1" gate="G$1" x="-127" y="137.16"/>
-<instance part="FB2" gate="G$1" x="-127" y="124.46"/>
-<instance part="C3" gate="G$1" x="-119.38" y="129.54"/>
+<instance part="FB1" gate="G$1" x="-127" y="137.16">
+<attribute name="DIGIKEY" x="-127" y="137.16" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="FB2" gate="G$1" x="-127" y="124.46">
+<attribute name="DIGIKEY" x="-127" y="124.46" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C3" gate="G$1" x="-119.38" y="129.54">
+<attribute name="DIGIKEY" x="-119.38" y="129.54" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="R1" gate="G$1" x="213.36" y="142.24" rot="MR90"/>
 <instance part="GND3" gate="1" x="213.36" y="132.08" rot="MR0"/>
 <instance part="JP1" gate="G$1" x="223.52" y="152.4" rot="MR0"/>
 <instance part="+3V1" gate="G$1" x="213.36" y="165.1" rot="MR0"/>
 <instance part="J2" gate="G$1" x="-127" y="-5.08" rot="R180"/>
 <instance part="J3" gate="G$1" x="-127" y="-17.78" rot="R180"/>
-<instance part="U$2" gate="G$1" x="-101.6" y="-5.08"/>
-<instance part="U$3" gate="G$1" x="-55.88" y="-7.62"/>
+<instance part="U$2" gate="G$1" x="-101.6" y="-5.08">
+<attribute name="DIGIKEY" x="-101.6" y="-5.08" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U$3" gate="G$1" x="-55.88" y="-7.62">
+<attribute name="DIGIKEY" x="-55.88" y="-7.62" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND" gate="1" x="-101.6" y="-22.86"/>
 <instance part="SUPPLY1" gate="G$1" x="-73.66" y="2.54"/>
 <instance part="C4" gate="G$1" x="-114.3" y="-12.7"/>
@@ -7097,8 +7129,12 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <instance part="JP9" gate="G$1" x="241.3" y="261.62" rot="R180"/>
 <instance part="GND21" gate="1" x="210.82" y="259.08" rot="MR0"/>
 <instance part="SUPPLY9" gate="G$1" x="228.6" y="271.78"/>
-<instance part="R14" gate="G$1" x="220.98" y="254" rot="MR90"/>
-<instance part="R15" gate="G$1" x="220.98" y="238.76" rot="MR90"/>
+<instance part="R14" gate="G$1" x="220.98" y="254" rot="MR90">
+<attribute name="DIGIKEY" x="220.98" y="254" size="1.778" layer="96" rot="MR90" display="off"/>
+</instance>
+<instance part="R15" gate="G$1" x="220.98" y="238.76" rot="MR90">
+<attribute name="DIGIKEY" x="220.98" y="238.76" size="1.778" layer="96" rot="MR90" display="off"/>
+</instance>
 <instance part="GND22" gate="1" x="220.98" y="228.6" rot="MR0"/>
 <instance part="U1" gate="G$1" x="63.5" y="259.08"/>
 <instance part="+3V11" gate="G$1" x="106.68" y="276.86" rot="MR0"/>
@@ -7117,7 +7153,9 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <instance part="JP18" gate="G$1" x="287.02" y="88.9" rot="R180"/>
 <instance part="GND32" gate="1" x="266.7" y="81.28"/>
 <instance part="SUPPLY16" gate="G$1" x="266.7" y="93.98"/>
-<instance part="LED1" gate="G$1" x="33.02" y="-35.56" rot="R270"/>
+<instance part="LED1" gate="G$1" x="33.02" y="-35.56" rot="R270">
+<attribute name="DIGIKEY" x="33.02" y="-35.56" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
 <instance part="JP1777" gate="G$1" x="157.48" y="-5.08" rot="MR0"/>
 <instance part="S1" gate="G$1" x="152.4" y="-35.56"/>
 <instance part="Q1" gate="G$1" x="38.1" y="-93.98"/>
@@ -7125,7 +7163,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <instance part="Q3" gate="G$1" x="27.94" y="-58.42"/>
 <instance part="R27" gate="G$1" x="27.94" y="-25.4" rot="R270"/>
 <instance part="R28" gate="G$1" x="33.02" y="-22.86" rot="R270"/>
-<instance part="R29" gate="G$1" x="38.1" y="-20.32" rot="R270"/>
+<instance part="R29" gate="G$1" x="38.1" y="-17.78" rot="R270"/>
 <instance part="+3V13" gate="G$1" x="33.02" y="-2.54" rot="MR0"/>
 <instance part="GND33" gate="1" x="27.94" y="-71.12"/>
 <instance part="GND34" gate="1" x="33.02" y="-88.9"/>
@@ -7165,42 +7203,46 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <instance part="JP10" gate="G$1" x="281.94" y="261.62" rot="R180"/>
 <instance part="GND41" gate="1" x="256.54" y="259.08" rot="MR0"/>
 <instance part="SUPPLY19" gate="G$1" x="271.78" y="271.78"/>
-<instance part="R16" gate="G$1" x="264.16" y="254" rot="MR90"/>
-<instance part="R17" gate="G$1" x="264.16" y="238.76" rot="MR90"/>
+<instance part="R16" gate="G$1" x="264.16" y="254" rot="MR90">
+<attribute name="DIGIKEY" x="264.16" y="254" size="1.778" layer="96" rot="MR90" display="off"/>
+</instance>
+<instance part="R17" gate="G$1" x="264.16" y="238.76" rot="MR90">
+<attribute name="DIGIKEY" x="264.16" y="238.76" size="1.778" layer="96" rot="MR90" display="off"/>
+</instance>
 <instance part="GND42" gate="1" x="264.16" y="228.6" rot="MR0"/>
 <instance part="JP19" gate="G$1" x="314.96" y="88.9" rot="R180"/>
 <instance part="GND43" gate="1" x="294.64" y="81.28"/>
 <instance part="SUPPLY20" gate="G$1" x="294.64" y="93.98"/>
-<instance part="C13" gate="G$1" x="-157.48" y="-45.72">
-<attribute name="DIGIKEY" x="-157.48" y="-45.72" size="1.016" layer="96" display="off"/>
+<instance part="C13" gate="G$1" x="-154.94" y="-45.72">
+<attribute name="DIGIKEY" x="-154.94" y="-45.72" size="1.016" layer="96" display="off"/>
 </instance>
-<instance part="C14" gate="G$1" x="-165.1" y="-45.72"/>
+<instance part="C14" gate="G$1" x="-162.56" y="-45.72"/>
 <instance part="C15" gate="G$1" x="-172.72" y="-45.72"/>
 <instance part="SUPPLY21" gate="G$1" x="-172.72" y="-40.64"/>
 <instance part="GND44" gate="1" x="-172.72" y="-50.8"/>
-<instance part="GND45" gate="1" x="-165.1" y="-50.8"/>
-<instance part="GND46" gate="1" x="-157.48" y="-50.8"/>
-<instance part="SUPPLY22" gate="G$1" x="-165.1" y="-40.64"/>
-<instance part="SUPPLY23" gate="G$1" x="-157.48" y="-40.64"/>
-<instance part="SUPPLY24" gate="G$1" x="-172.72" y="-60.96"/>
-<instance part="GND47" gate="1" x="-172.72" y="-71.12"/>
-<instance part="GND48" gate="1" x="-165.1" y="-71.12"/>
-<instance part="GND49" gate="1" x="-154.94" y="-71.12"/>
-<instance part="SUPPLY25" gate="G$1" x="-165.1" y="-60.96"/>
-<instance part="SUPPLY26" gate="G$1" x="-154.94" y="-60.96"/>
+<instance part="GND45" gate="1" x="-162.56" y="-50.8"/>
+<instance part="GND46" gate="1" x="-154.94" y="-50.8"/>
+<instance part="SUPPLY22" gate="G$1" x="-162.56" y="-40.64"/>
+<instance part="SUPPLY23" gate="G$1" x="-154.94" y="-40.64"/>
 <instance part="C19" gate="G$1" x="-101.6" y="160.02" rot="R180"/>
 <instance part="+3V17" gate="G$1" x="-101.6" y="167.64"/>
 <instance part="GND50" gate="1" x="-101.6" y="152.4"/>
 <instance part="D9" gate="G$1" x="-48.26" y="-68.58">
 <attribute name="DIGIKEY" x="-48.26" y="-68.58" size="1.6764" layer="96" display="off"/>
 </instance>
-<instance part="R21" gate="G$1" x="-68.58" y="-60.96" rot="R270"/>
+<instance part="R21" gate="G$1" x="-68.58" y="-60.96" rot="R270">
+<attribute name="DIGIKEY" x="-68.58" y="-60.96" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
 <instance part="+3V18" gate="G$1" x="-68.58" y="-50.8"/>
 <instance part="GND51" gate="1" x="-68.58" y="-76.2"/>
-<instance part="R22" gate="G$1" x="-58.42" y="-60.96" rot="R270"/>
+<instance part="R22" gate="G$1" x="-58.42" y="-60.96" rot="R270">
+<attribute name="DIGIKEY" x="-58.42" y="-60.96" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
 <instance part="SUPPLY27" gate="G$1" x="-58.42" y="-53.34"/>
 <instance part="GND52" gate="1" x="-58.42" y="-76.2"/>
-<instance part="R23" gate="G$1" x="-48.26" y="-60.96" rot="R270"/>
+<instance part="R23" gate="G$1" x="-48.26" y="-60.96" rot="R270">
+<attribute name="DIGIKEY" x="-48.26" y="-60.96" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
 <instance part="SUPPLY28" gate="G$1" x="-48.26" y="-53.34"/>
 <instance part="GND53" gate="1" x="-48.26" y="-76.2"/>
 <instance part="D7" gate="G$1" x="-58.42" y="-68.58">
@@ -7241,8 +7283,12 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <instance part="JP20" gate="G$1" x="320.04" y="259.08" rot="R180"/>
 <instance part="GND28" gate="1" x="297.18" y="256.54" rot="MR0"/>
 <instance part="SUPPLY11" gate="G$1" x="309.88" y="271.78"/>
-<instance part="R18" gate="G$1" x="302.26" y="251.46" rot="MR90"/>
-<instance part="R36" gate="G$1" x="302.26" y="238.76" rot="MR90"/>
+<instance part="R18" gate="G$1" x="302.26" y="251.46" rot="MR90">
+<attribute name="DIGIKEY" x="302.26" y="251.46" size="1.778" layer="96" rot="MR90" display="off"/>
+</instance>
+<instance part="R36" gate="G$1" x="302.26" y="238.76" rot="MR90">
+<attribute name="DIGIKEY" x="302.26" y="238.76" size="1.778" layer="96" rot="MR90" display="off"/>
+</instance>
 <instance part="GND29" gate="1" x="302.26" y="228.6" rot="MR0"/>
 <instance part="R37" gate="G$1" x="-180.34" y="297.18" rot="R270"/>
 <instance part="R38" gate="G$1" x="-172.72" y="299.72" rot="R270"/>
@@ -7250,7 +7296,6 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <instance part="+3V24" gate="G$1" x="-172.72" y="309.88"/>
 <instance part="S2" gate="G$1" x="157.48" y="-63.5"/>
 <instance part="GND60" gate="1" x="165.1" y="-71.12"/>
-<instance part="GND8" gate="1" x="58.42" y="-71.12" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -7687,7 +7732,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <wire x1="33.02" y1="-5.08" x2="33.02" y2="-10.16" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="-10.16" x2="38.1" y2="-10.16" width="0.1524" layer="91"/>
 <pinref part="R29" gate="G$1" pin="1"/>
-<wire x1="38.1" y1="-10.16" x2="38.1" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="-10.16" x2="38.1" y2="-12.7" width="0.1524" layer="91"/>
 <pinref part="R28" gate="G$1" pin="1"/>
 <wire x1="33.02" y1="-17.78" x2="33.02" y2="-10.16" width="0.1524" layer="91"/>
 <pinref part="R27" gate="G$1" pin="1"/>
@@ -8371,7 +8416,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <segment>
 <pinref part="LED1" gate="G$1" pin="BLUE_A"/>
 <pinref part="R29" gate="G$1" pin="2"/>
-<wire x1="38.1" y1="-25.4" x2="38.1" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="-22.86" x2="38.1" y2="-30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="BLUE" class="0">
