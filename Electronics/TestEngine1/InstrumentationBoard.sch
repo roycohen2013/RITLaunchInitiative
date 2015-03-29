@@ -7081,7 +7081,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <instance part="C5" gate="G$1" x="-78.74" y="-12.7"/>
 <instance part="C6" gate="G$1" x="-68.58" y="-12.7"/>
 <instance part="C7" gate="G$1" x="-40.64" y="-12.7"/>
-<instance part="R33" gate="G$1" x="-78.74" y="22.86" rot="R180"/>
+<instance part="R33" gate="G$1" x="-76.2" y="22.86" rot="R180"/>
 <instance part="SUPPLY2" gate="G$1" x="-116.84" y="2.54"/>
 <instance part="SUPPLY3" gate="G$1" x="-55.88" y="78.74"/>
 <instance part="GND10" gate="1" x="-104.14" y="33.02"/>
@@ -7961,13 +7961,13 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <wire x1="-93.98" y1="33.02" x2="-96.52" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="-96.52" y1="33.02" x2="-96.52" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="R33" gate="G$1" pin="2"/>
-<wire x1="-96.52" y1="22.86" x2="-83.82" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="-96.52" y1="22.86" x2="-81.28" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$14" class="0">
 <segment>
 <pinref part="R33" gate="G$1" pin="1"/>
-<wire x1="-73.66" y1="22.86" x2="-55.88" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="-71.12" y1="22.86" x2="-55.88" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="-55.88" y1="22.86" x2="-55.88" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="RG2"/>
 <wire x1="-55.88" y1="33.02" x2="-58.42" y2="33.02" width="0.1524" layer="91"/>
