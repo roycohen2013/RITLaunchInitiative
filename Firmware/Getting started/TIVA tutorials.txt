@@ -1,0 +1,7 @@
+Getting started video :  https://www.youtube.com/watch?v=EsTaCiB0Hdg
+
+
+
+tutorial Workshop link: http://software-dl.ti.com/trainingTTO/trainingTTO_public_sw/Tiva_CLP/CLP_Workbook.pdf
+
+main tutorial link: http://processors.wiki.ti.com/index.php/Reading_Tiva_Documentation
