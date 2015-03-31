@@ -5,3 +5,6 @@ Getting started video :  https://www.youtube.com/watch?v=EsTaCiB0Hdg
 tutorial Workshop link: http://software-dl.ti.com/trainingTTO/trainingTTO_public_sw/Tiva_CLP/CLP_Workbook.pdf
 
 main tutorial link: http://processors.wiki.ti.com/index.php/Reading_Tiva_Documentation
+
+IOT TUTORIAL LINK: http://processors.wiki.ti.com/index.php/Creating_IoT_Solutions_with_the_TM4C1294XL_Connected_LaunchPad_Workshop?DCMP=tivac-launchpad&HQS=ConnectedLaunchPadWorkshop
+
