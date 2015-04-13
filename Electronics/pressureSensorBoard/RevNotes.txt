@@ -1,0 +1,4 @@
+Fix dc to dc blueprint, footprint is reversed
+
+add level shifter to i2C to 3.3V 
+
