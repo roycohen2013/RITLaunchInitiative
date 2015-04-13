@@ -1,0 +1,4 @@
+add proper power input connector
+add current sensing
+use smaller RGB led
+Find smaller mosfets
