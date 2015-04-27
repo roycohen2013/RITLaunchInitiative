@@ -1,16 +1,17 @@
 ==================================GPIO==================================
-PG1 - StatusLed(RED)
-PK4 - statusLed(GREEN)
-PK5 - statusLed(GREEN)
-	- User Button
-	- Mosfet 1
-	- Mosfet 2
-	- Mosfet 3
-	- Mosfet 4
-	- Mosfet 5
-	- Stepper motor Pulse
-	- Stepper motor Direction
-	
+PG1 - StatusLed(RED)(Output)
+PK4 - statusLed(GREEN)(Output)
+PK5 - statusLed(GREEN)(Output)
+	- Mosfet 1(Output)
+	- Mosfet 2(Output)
+	- Mosfet 3(Output)
+	- Mosfet 4(Output)
+	- Mosfet 5(Output)
+	- Stepper motor Pulse(Output)
+	- Stepper motor Direction(Output)
+	- User Button(Input)
+	- Tilt switch(Input)
+	- Key Switch(Input)
 	
 ==================================ANALOG==================================
 	- Thermistor 1
@@ -23,6 +24,9 @@ PK5 - statusLed(GREEN)
 	- Thermistor 8
 	- Load Cell
 	- Battery Voltage
+	- 5v Pressure Sense 1
+	- 5v Pressure Sense 2
+	- 5v Pressure Sense 3
 	
 ==================================COMMS==================================
 	- I2C(SDA)
