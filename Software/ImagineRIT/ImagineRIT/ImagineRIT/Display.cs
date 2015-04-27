@@ -15,10 +15,16 @@ namespace ImagineRIT
         public Display()
         {
             InitializeComponent();
+            this.ShowDialog();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void Display_Load(object sender, EventArgs e)
         {
+        }
+
+        private void YAxisDropDownToolTip_Popup(object sender, PopupEventArgs e)
+        {
+            
         }
     }
 }
