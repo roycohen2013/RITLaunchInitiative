@@ -5,13 +5,6 @@ VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImagineRIT", "ImagineRIT\ImagineRIT.csproj", "{C3CEB927-78D0-4AB9-834C-E1851D4FD828}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{642D12F3-CC4A-40E6-9061-86C2956F5E01}"
-	ProjectSection(SolutionItems) = preProject
-		DataSet.cs = DataSet.cs
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Graphulator", "Graphulator", "{EBBE473C-0051-46CE-B7F2-D222BB5012BB}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
