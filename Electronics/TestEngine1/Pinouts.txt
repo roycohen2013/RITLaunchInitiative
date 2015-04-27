@@ -1,0 +1,33 @@
+==================================GPIO==================================
+PG1 - StatusLed(RED)
+PK4 - statusLed(GREEN)
+PK5 - statusLed(GREEN)
+	- User Button
+	- Mosfet 1
+	- Mosfet 2
+	- Mosfet 3
+	- Mosfet 4
+	- Mosfet 5
+	- Stepper motor Pulse
+	- Stepper motor Direction
+	
+	
+==================================ANALOG==================================
+	- Thermistor 1
+	- Thermistor 2
+	- Thermistor 3
+	- Thermistor 4
+	- Thermistor 5
+	- Thermistor 6
+	- Thermistor 7
+	- Thermistor 8
+	- Load Cell
+	- Battery Voltage
+	
+==================================COMMS==================================
+	- I2C(SDA)
+	- I2C(SCL)
+	- SPI(Clk)
+	- SPI(out)
+	- SPI(In)
+	
