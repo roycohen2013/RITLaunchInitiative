@@ -2,3 +2,5 @@ add proper power input connector
 add current sensing
 use smaller RGB led
 Find smaller mosfets
+Make sure RGB IO's are all on the same port
+Make sure Mosfet IO's are on the same port
