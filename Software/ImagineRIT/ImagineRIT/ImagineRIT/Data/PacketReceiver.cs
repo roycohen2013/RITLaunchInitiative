@@ -1,17 +1,21 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO.Ports;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading;
+using ImagineRIT.Data;
 
-public class PacketReceiver
+public class PacketReceiver : IObservable<DataSet>
 {
-    //Grab ip address and port for microcontroller from our config file
-    static IPAddress ip = IPAddress.Parse(System.Configuration.ConfigurationSettings.AppSettings["MicrocontrollerIp"]);
-    static Int32 port = Int32.Parse(System.Configuration.ConfigurationSettings.AppSettings["MicrocontrollerPort"]);
+    List<IObserver<DataSet>> observers = new List<IObserver<DataSet>>();
 
-    public static void Receiver()
+    //Grab ip address and port for microcontroller from our config file
+    IPAddress ip = IPAddress.Parse(System.Configuration.ConfigurationSettings.AppSettings["MicrocontrollerIp"]);
+    Int32 port = Int32.Parse(System.Configuration.ConfigurationSettings.AppSettings["MicrocontrollerPort"]);
+
+    public void Receiver()
     {
         UdpClient udpServer = new UdpClient(port);
 
@@ -37,6 +41,16 @@ public class PacketReceiver
             };
             //Temperatures, NozzleTemp, EngineForce, BarometricPressure, NozzlePressure, BatteryVoltage, ValvePositions
             DataSet newSet = new DataSet(temperatures, data[8], data[9], data[10], BitConverter.ToInt32(data, 11), data[15], valvePositions);
+            //Tell observers about the shiny new DataSet!
+            foreach(IObserver<DataSet> observer in observers){
+                observer.OnNext(newSet);
+            }
         }
+    }
+
+    public IDisposable Subscribe(IObserver<DataSet> observer)
+    {
+        observers.Add(observer);
+        return new Unsubscriber<DataSet>(observers, observer);
     }
 }

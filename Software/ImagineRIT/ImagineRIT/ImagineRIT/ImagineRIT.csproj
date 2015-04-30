@@ -38,6 +38,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\Unsubscriber.cs" />
     <Compile Include="Data\PacketReceiver.cs" />
     <Compile Include="Data\DataSet.cs" />
     <Compile Include="Graphulator\Display.cs">
