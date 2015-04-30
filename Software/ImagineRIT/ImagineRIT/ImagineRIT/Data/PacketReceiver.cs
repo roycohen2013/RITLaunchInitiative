@@ -15,7 +15,7 @@ public class PacketReceiver : IObservable<DataSet>
     IPAddress ip = IPAddress.Parse(System.Configuration.ConfigurationSettings.AppSettings["MicrocontrollerIp"]);
     Int32 port = Int32.Parse(System.Configuration.ConfigurationSettings.AppSettings["MicrocontrollerPort"]);
 
-    public void Receiver()
+    public async void Receiver()
     {
         UdpClient udpServer = new UdpClient(port);
 

@@ -11,19 +11,19 @@ namespace ImagineRIT.Graphulator
     {
         private int numTillUpdate = Int32.Parse(System.Configuration.ConfigurationSettings.AppSettings["NumPacketsTillUpdate"]);
         // below are the arrays that can be graphed.
-        private int[] pos1LowLvlTemperature;
-        private int[] pos2LowLvlTemperature;
-        private int[] pos3LowLvlTemperature;
-        private int[] pos4LowLvlTemperature;
-        private int[] pos5LowLvlTemperature;
-        private int[] pos6LowLvlTemperature;
-        private int[] pos7LowLvlTemperature;
-        private int[] pos8LowLvlTemperature;
-        private int[] nozzleTemperature;
-        private int[] engineForce;
-        private int[] barometricPressure;
-        private int[] nozzlePressure;
-        private int[] batteryVoltage;
+        List<int> pos1LowLvlTemperature = new List<int>();
+        List<int> pos2LowLvlTemperature = new List<int>();
+        List<int> pos3LowLvlTemperature = new List<int>();
+        List<int> pos4LowLvlTemperature = new List<int>();
+        List<int> pos5LowLvlTemperature = new List<int>();
+        List<int> pos6LowLvlTemperature = new List<int>();
+        List<int> pos7LowLvlTemperature = new List<int>();
+        List<int> pos8LowLvlTemperature = new List<int>();
+        List<int> nozzleTemperature = new List<int>();
+        List<int> engineForce = new List<int>();
+        List<int> barometricPressure = new List<int>();
+        List<int> nozzlePressure = new List<int>();
+        List<int> batteryVoltage = new List<int>();
 
         /* this array will hold all the graphable data.
          * 
@@ -46,11 +46,11 @@ namespace ImagineRIT.Graphulator
         private int graphedIndex; // which data we're going to graph.
 
         // can't be graphed, but...we still need to switch it around.
-        private Boolean[] pos1ValvePositions;
-        private Boolean[] pos2ValvePositions;
-        private Boolean[] pos3ValvePositions;
-        private Boolean[] pos4ValvePositions;
-        private Boolean[] pos5ValvePositions;
+        private List<Boolean> pos1ValvePositions = new List<Boolean>();
+        private List<Boolean> pos2ValvePositions = new List<Boolean>();
+        private List<Boolean> pos3ValvePositions = new List<Boolean>();
+        private List<Boolean> pos4ValvePositions = new List<Boolean>();
+        private List<Boolean> pos5ValvePositions = new List<Boolean>();
 
         // holds all the valve positions.
         private Boolean[] valvePositions;
@@ -108,7 +108,7 @@ namespace ImagineRIT.Graphulator
         {
             pushValues(set);
             //If we hit 100 packets, send update to UI
-            if (pos1LowLvlTemperature.Length > numTillUpdate)
+            if (pos1LowLvlTemperature.Count > numTillUpdate)
             {
                 //Average the data together and stick into common array
                 graphable = new int[13] {
@@ -129,11 +129,11 @@ namespace ImagineRIT.Graphulator
 
                 //Will pass the most recent valve position rather than the average
                 valvePositions = new Boolean[5] {
-                    pos1ValvePositions[pos1ValvePositions.Length],
-                    pos2ValvePositions[pos2ValvePositions.Length],
-                    pos3ValvePositions[pos3ValvePositions.Length],
-                    pos4ValvePositions[pos4ValvePositions.Length],
-                    pos5ValvePositions[pos5ValvePositions.Length],
+                    pos5ValvePositions[pos5ValvePositions.Count],
+                    pos2ValvePositions[pos2ValvePositions.Count],
+                    pos3ValvePositions[pos3ValvePositions.Count],
+                    pos4ValvePositions[pos4ValvePositions.Count],
+                    pos5ValvePositions[pos5ValvePositions.Count],
                 };
                 foreach(IObserver<UIData> observer in observers){
                     observer.OnNext(new UIData(valvePositions, graphable, graphedIndex));
@@ -146,62 +146,63 @@ namespace ImagineRIT.Graphulator
         //Unwinds the data set and pushed the values onto our arrays
         private void pushValues(DataSet set)
         {
-            pos1LowLvlTemperature[pos1LowLvlTemperature.Length] = set.Temperatures[0];
-            pos2LowLvlTemperature[pos2LowLvlTemperature.Length] = set.Temperatures[1];
-            pos3LowLvlTemperature[pos3LowLvlTemperature.Length] = set.Temperatures[2];
-            pos4LowLvlTemperature[pos4LowLvlTemperature.Length] = set.Temperatures[3];
-            pos5LowLvlTemperature[pos5LowLvlTemperature.Length] = set.Temperatures[4];
-            pos6LowLvlTemperature[pos6LowLvlTemperature.Length] = set.Temperatures[5];
-            pos7LowLvlTemperature[pos7LowLvlTemperature.Length] = set.Temperatures[6];
-            pos8LowLvlTemperature[pos8LowLvlTemperature.Length] = set.Temperatures[7];
+            pos1LowLvlTemperature.Add(set.Temperatures[0]);
+            pos2LowLvlTemperature.Add(set.Temperatures[1]);
+            pos3LowLvlTemperature.Add(set.Temperatures[2]);
+            pos4LowLvlTemperature.Add(set.Temperatures[3]);
+            pos5LowLvlTemperature.Add(set.Temperatures[4]);
+            pos6LowLvlTemperature.Add(set.Temperatures[5]);
+            pos7LowLvlTemperature.Add(set.Temperatures[6]);
+            pos8LowLvlTemperature.Add(set.Temperatures[7]);
 
-            nozzleTemperature[nozzleTemperature.Length] = set.NozzleTemp;
-            engineForce[engineForce.Length] = set.EngineForce;
-            barometricPressure[barometricPressure.Length] = set.BarometricPressure;
-            nozzlePressure[nozzlePressure.Length] = set.NozzlePressure;
-            batteryVoltage[batteryVoltage.Length] = set.BatteryVoltage;
+            nozzleTemperature.Add(set.NozzleTemp);
+            engineForce.Add(set.EngineForce);
+            barometricPressure.Add(set.BarometricPressure);
+            nozzlePressure.Add(set.NozzlePressure);
+            batteryVoltage.Add(set.BatteryVoltage);
 
-            pos1ValvePositions[pos1ValvePositions.Length] = set.ValvePositions[0];
-            pos2ValvePositions[pos2ValvePositions.Length] = set.ValvePositions[1];
-            pos3ValvePositions[pos3ValvePositions.Length] = set.ValvePositions[2];
-            pos4ValvePositions[pos4ValvePositions.Length] = set.ValvePositions[3];
-            pos5ValvePositions[pos5ValvePositions.Length] = set.ValvePositions[4];
+            pos5ValvePositions.Add(set.ValvePositions[0]);
+            pos2ValvePositions.Add(set.ValvePositions[1]);
+            pos3ValvePositions.Add(set.ValvePositions[2]);
+            pos4ValvePositions.Add(set.ValvePositions[3]);
+            pos5ValvePositions.Add(set.ValvePositions[4]);
         }
 
         private void wipeBuffers()
         {
-            Array.Clear(pos1LowLvlTemperature, 0, pos1LowLvlTemperature.Length);
-            Array.Clear(pos2LowLvlTemperature, 0, pos2LowLvlTemperature.Length);
-            Array.Clear(pos3LowLvlTemperature, 0, pos3LowLvlTemperature.Length);
-            Array.Clear(pos4LowLvlTemperature, 0, pos4LowLvlTemperature.Length);
-            Array.Clear(pos5LowLvlTemperature, 0, pos5LowLvlTemperature.Length);
-            Array.Clear(pos6LowLvlTemperature, 0, pos6LowLvlTemperature.Length);
-            Array.Clear(pos7LowLvlTemperature, 0, pos7LowLvlTemperature.Length);
-            Array.Clear(pos8LowLvlTemperature, 0, pos8LowLvlTemperature.Length);
+            pos1LowLvlTemperature.Clear();
+            pos2LowLvlTemperature.Clear();
+            pos3LowLvlTemperature.Clear();
+            pos4LowLvlTemperature.Clear();
+            pos5LowLvlTemperature.Clear();
+            pos6LowLvlTemperature.Clear();
+            pos7LowLvlTemperature.Clear();
+            pos8LowLvlTemperature.Clear();
 
-            Array.Clear(nozzleTemperature, 0, nozzleTemperature.Length);
-            Array.Clear(engineForce, 0, engineForce.Length);
-            Array.Clear(barometricPressure, 0, barometricPressure.Length);
-            Array.Clear(nozzlePressure, 0, nozzlePressure.Length);
-            Array.Clear(batteryVoltage, 0, batteryVoltage.Length);
+            nozzleTemperature.Clear();
+            engineForce.Clear();
+            barometricPressure.Clear();
+            nozzlePressure.Clear();
+            batteryVoltage.Clear();
 
-            Array.Clear(pos1ValvePositions, 0, pos1ValvePositions.Length);
-            Array.Clear(pos2ValvePositions, 0, pos2ValvePositions.Length);
-            Array.Clear(pos3ValvePositions, 0, pos3ValvePositions.Length);
-            Array.Clear(pos4ValvePositions, 0, pos4ValvePositions.Length);
-            Array.Clear(pos5ValvePositions, 0, pos5ValvePositions.Length);
+            pos5ValvePositions.Clear();
+            pos2ValvePositions.Clear();
+            pos3ValvePositions.Clear();
+            pos4ValvePositions.Clear();
+            pos5ValvePositions.Clear();
+        }
         
-        //Returns the average of an integer array of values
-        private int average(int[] values)
+        //Returns the average of an integer list of values
+        private int average(List<int> values)
         {
             int sum = 0;
-            for (int i = 0; i < values.Length; ++i)
+            for (int i = 0; i < values.Count; ++i)
             {
                 sum += values[i];
             }
-            if (values.Length > 0)
+            if (values.Count > 0)
             {
-                return sum / values.Length;
+                return sum / values.Count;
             }
             return 0;
         }
