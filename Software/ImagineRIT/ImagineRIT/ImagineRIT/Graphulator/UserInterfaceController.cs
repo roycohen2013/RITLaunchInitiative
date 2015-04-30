@@ -109,7 +109,7 @@ namespace ImagineRIT.Graphulator
     }
 
     // Just allows the observer to stop geting data. Needed to implment observable
-    private class Unsubscriber : IDisposable
+    class Unsubscriber : IDisposable
     {
         private List<IObserver<UIData>> _observers;
         private IObserver<UIData> _observer;

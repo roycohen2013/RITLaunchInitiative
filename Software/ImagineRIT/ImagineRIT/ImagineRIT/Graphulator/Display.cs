@@ -13,11 +13,12 @@ namespace ImagineRIT
 {
     public partial class Display : Form , IObserver<UIData>
     {
+        private UserInterfaceController ui;
         public Display()
         {
             InitializeComponent();
             this.ShowDialog();
-            UserInterfaceController ui = new UserInterfaceController;
+            UserInterfaceController ui = new UserInterfaceController();
             ui.Subscribe(this); // This is now observing UI controller
         }
 
@@ -34,8 +35,23 @@ namespace ImagineRIT
         private void YAxisDropBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             ComboBox box = (ComboBox)sender;
-            uIControl.setGraphIndex(box.SelectedIndex);
+            ui.setGraphIndex(box.SelectedIndex);
             this.LineGraph.Series.Clear(); // empty the graph.
+        }
+
+        public void OnCompleted()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void OnError(Exception error)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void OnNext(UIData value)
+        {
+            throw new NotImplementedException();
         }
     }
 }

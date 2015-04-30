@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace ImagineRIT.Graphulator
 {
     // This class is just the data the UI uses to display information.
-    class UIData
+    public class UIData
     {
         // Low level temperatures for each position
         private int pos1temp;
@@ -36,9 +36,9 @@ namespace ImagineRIT.Graphulator
         // the index of the data to be graphed.
         private int graphIndex;
         
-        public UIData(int[]graphableData, int index,  )
+        public UIData(int[]graphableData, int index )
         {
-
+            throw new NotImplementedException();
         }
 
     }

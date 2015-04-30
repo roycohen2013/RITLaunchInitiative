@@ -47,6 +47,8 @@
       <DependentUpon>Display.cs</DependentUpon>
     </Compile>
     <Compile Include="Graphulator\Runner.cs" />
+    <Compile Include="Graphulator\UIData.cs" />
+    <Compile Include="Graphulator\UserInterfaceController.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

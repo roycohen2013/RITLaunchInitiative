@@ -12,8 +12,8 @@ namespace ImagineRIT.Graphulator
         static void Main(string[] args)
         {
             // display the form.
-            Display UI = new Display();
-            
+           // Display UI = new Display();
+            PacketReceiver.Receiver();
         }
     }
 }
