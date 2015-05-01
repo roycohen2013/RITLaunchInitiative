@@ -34,6 +34,7 @@
 #include "inc/hw_ints.h"
 #include "driverlib/adc.h"
 #include "driverlib/debug.h"
+#include "driverlib/flash.h"
 #include "driverlib/gpio.h"
 #include "driverlib/interrupt.h"
 #include "driverlib/pin_map.h"
@@ -42,7 +43,10 @@
 #include "driverlib/sysctl.h"
 #include "driverlib/systick.h"
 #include "driverlib/uart.h"
+#include "utils/locator.h"
+#include "utils/lwiplib.h"
 #include "utils/uartstdio.h"
+#include "utils/ustdlib.h"
 #include "sensorlib/hw_bmp180.h"
 #include "sensorlib/i2cm_drv.h"
 #include "sensorlib/bmp180.h"
@@ -102,6 +106,35 @@ volatile uint_fast8_t g_vui8DataFlag;
 
 //*****************************************************************************
 //
+// Defines for setting up the mysterious clock
+//
+//*****************************************************************************
+#define SYSTICKHZ               100
+#define SYSTICKMS               (1000 / SYSTICKHZ)
+
+//*****************************************************************************
+//
+// Interrupt priority definitions.  The top 3 bits of these values are
+// significant with lower values indicating higher priority interrupts.
+//
+//*****************************************************************************
+#define SYSTICK_INT_PRIORITY    0x80
+#define ETHERNET_INT_PRIORITY   0xC0
+
+//*****************************************************************************
+//
+// The current IP address.
+//
+//*****************************************************************************
+uint32_t g_ui32IPAddress;
+
+// Data structures for UDP packets
+struct udp_pcb *remote_pcb;
+struct pbuf* pbuf1;
+char buf [120];
+
+//*****************************************************************************
+//
 // The error routine that is called if the driver library encounters an error.
 //
 //*****************************************************************************
@@ -111,6 +144,154 @@ __error__(char *pcFilename, uint32_t ui32Line)
 {
 }
 #endif
+
+//*****************************************************************************
+//
+// Required by lwIP library to support any host-related timer functions.
+// This ISR is the actual code that sends the data
+//
+//*****************************************************************************
+void
+lwIPHostTimerHandler(void)
+{
+    uint32_t ui32Idx, ui32NewIPAddress;
+
+    //
+    // Get the current IP address.
+    //
+    ui32NewIPAddress = lwIPLocalIPAddrGet();
+
+    //
+    // See if the IP address has changed.
+    //
+    if(ui32NewIPAddress != g_ui32IPAddress)
+    {
+        //
+        // See if there is an IP address assigned.
+        //
+        if(ui32NewIPAddress == 0xffffffff)
+        {
+            //
+            // Indicate that there is no link.
+            //
+            UARTprintf("Waiting for link.\n");
+        }
+        else if(ui32NewIPAddress == 0)
+        {
+            //
+            // There is no IP address, so indicate that the DHCP process is
+            // running.
+            //
+            UARTprintf("Waiting for IP address.\n");
+        }
+        else
+        {
+            //
+            // Display the new IP address.
+            //
+            UARTprintf("IP Address: ");
+            DisplayIPAddress(ui32NewIPAddress);
+            UARTprintf("\nOpen a browser and enter the IP address.\n");
+        }
+
+        //
+        // Save the new IP address.
+        //
+        g_ui32IPAddress = ui32NewIPAddress;
+
+        //
+        // Turn GPIO off.
+        //
+        MAP_GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_1, ~GPIO_PIN_1);
+    }
+
+    //
+    // If there is not an IP address.
+    //
+    if((ui32NewIPAddress == 0) || (ui32NewIPAddress == 0xffffffff))
+    {
+        //
+        // Loop through the LED animation.
+        //
+    	UARTprintf("no ip address");
+        for(ui32Idx = 1; ui32Idx < 17; ui32Idx++)
+        {
+
+            //
+            // Toggle the GPIO
+            //
+            MAP_GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_1,
+                    (MAP_GPIOPinRead(GPIO_PORTN_BASE, GPIO_PIN_1) ^
+                     GPIO_PIN_1));
+
+            SysCtlDelay(g_ui32SysClock/(ui32Idx << 1));
+        }
+    } else {
+
+    	UARTprintf("I have an IP");
+
+        //
+        // Transmit to UDP
+        //
+
+    	static int n = 0;
+
+    	// allocating buffer size
+    	pbuf1 = pbuf_alloc(PBUF_TRANSPORT, 100, PBUF_RAM);
+        pbuf1->payload = (void*)buf;
+        pbuf1->tot_len = 20;
+        pbuf1->len = 20;
+
+        // assigning data to the buffer
+        // thermistors 0-4 have data, 5-7 don't
+        buf[0] = (char)temps[0];
+        buf[1] = (char)temps[1];
+        buf[2] = (char)temps[2];
+        buf[3] = (char)temps[3];
+        buf[4] = (char)temps[4];
+        buf[5] = 0;
+        buf[6] = 0;
+        buf[7] = 0;
+        // nozzle temp
+        buf[8] = 0;
+        // engine force
+        buf[9] = 0;
+        // barometric pressure
+        buf[10] = (char)fPressureKpa;
+        // nozzle pressure
+//        int fPressureInt32 = (int)nozzlePressure;
+//        char *pressureBytePtr = &nozzlePressureInt32;
+//        buf[11] = *pressureBytePtr;
+//        ++pressureBytePtr;
+//        buf[12] = *pressureBytePtr;
+//        ++pressureBytePtr;
+//        buf[13] = *pressureBytePtr;
+//        ++pressureBytePtr;
+//        buf[14] = *pressureBytePtr;
+        buf[11] = 0;
+        buf[12] = 0;
+        buf[13] = 0;
+        buf[14] = 0;
+        //battery voltage
+        buf[15] = 0;
+        // valve positions read in
+        buf[16] = 0;
+        buf[17] = 0;
+        buf[18] = 0;
+        buf[19] = 0;
+        //buf[20] = 0;
+
+        struct ip_addr udpDestIpAddr;
+        IP4_ADDR(&udpDestIpAddr, 192, 168, 7, 1);
+        udp_sendto(remote_pcb, pbuf1, &udpDestIpAddr, 1234); // this does not work
+
+        pbuf_free(pbuf1);
+
+    }
+
+
+}
+
 
 //*****************************************************************************
 //
@@ -164,6 +345,8 @@ BMP180I2CIntHandler(void)
 void
 SysTickIntHandler()
 {
+	// BMP180 Stuff
+
     //
     // Turn on the LED to indicate we are reading.
     //
@@ -174,6 +357,11 @@ SysTickIntHandler()
     // called when the read is complete.
     //
     BMP180DataRead(&g_sBMP180Inst, BMP180AppCallback, &g_sBMP180Inst);
+
+    // Ethernet UDP Stuff
+    // Call the lwIP timer handler.
+	//
+	lwIPTimer(SYSTICKMS);
 }
 
 //*****************************************************************************
@@ -298,6 +486,29 @@ void UARTprintfloat(float num, int charcount, int decimals) {
 	UARTprintf("%3d.%3d", i32IntegerPart, i32FractionPart);
 }
 
+/*
+ * Readings stored in a huge scope
+ */
+// readings from BMP180 sensor
+float fTemperature, fPressure, fPressureKpa, fAltitude;
+uint32_t ui32SysClock;
+
+// holds digital values from each of the ADC0 channels
+volatile uint32_t readings[8];
+// holds temperature (celcius) values from each of the ADC0 channels
+volatile float temps[8];
+// Create an array that will be used for storing the data read from the ADC0 FIFO.
+// It must be as large as the FIFO for the sequencer in use.  We will be using
+// sequencer 0 which has a FIFO depth of 8.
+uint32_t ui32ACCValues[8];
+
+// holds raw digital value from the ADC1 channel
+volatile uint32_t lcreadings[1];
+// array that will be used for storing the data read from the ADC1 FIFO. It will
+// be 4 elements as that is the FIFO depth of sequencer 1
+uint32_t lcACCValues[4];
+
+
 //*****************************************************************************
 //
 // Main 'C' Language entry point.
@@ -306,24 +517,9 @@ void UARTprintfloat(float num, int charcount, int decimals) {
 int
 main(void)
 {
-	// readings from BMP180 sensor
-    float fTemperature, fPressure, fAltitude;
-    uint32_t ui32SysClock;
-
-    // holds digital values from each of the ADC0 channels
-	volatile uint32_t readings[8];
-	// holds temperature (celcius) values from each of the ADC0 channels
-	volatile float temps[8];
-	// Create an array that will be used for storing the data read from the ADC0 FIFO.
-	// It must be as large as the FIFO for the sequencer in use.  We will be using
-	// sequencer 0 which has a FIFO depth of 8.
-	uint32_t ui32ACCValues[8];
-
-	// holds raw digital value from the ADC1 channel
-	volatile uint32_t lcreadings[1];
-	// array that will be used for storing the data read from the ADC1 FIFO. It will
-	// be 4 elements as that is the FIFO depth of sequencer 1
-	uint32_t lcACCValues[4];
+	// ??????????? - Liam, 05/01/2015
+	uint32_t ui32User0, ui32User1;
+	uint8_t pui8MACArray[8];
 
     //
     // Configure the system frequency.
@@ -441,12 +637,96 @@ main(void)
     //
     g_vui8DataFlag = 0;
 
+    // Congfiure Animation LED for ethernet
     //
-    // Enable the system ticks at 10 Hz.
-    //
-    ROM_SysTickPeriodSet(ui32SysClock / (10 * 3));
-    ROM_SysTickIntEnable();
-    ROM_SysTickEnable();
+	// Configure Port N1 for as an output for the animation LED.
+	//
+	MAP_GPIOPinTypeGPIOOutput(GPIO_PORTN_BASE, GPIO_PIN_1);
+
+	//
+	// Initialize LED to OFF (0)
+	//
+	MAP_GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_1, ~GPIO_PIN_1);
+
+	//
+	// Enable the system ticks at 10 Hz.
+	//
+	ROM_SysTickPeriodSet(ui32SysClock / (10 * 3));
+	ROM_SysTickIntEnable();
+	ROM_SysTickEnable();
+
+	// Initialize UDP Ethernet
+	// Configure the hardware MAC address for Ethernet Controller filtering of
+	// incoming packets.  The MAC address will be stored in the non-volatile
+	// USER0 and USER1 registers.
+	//
+	MAP_FlashUserGet(&ui32User0, &ui32User1);
+	if((ui32User0 == 0xffffffff) || (ui32User1 == 0xffffffff))
+	{
+		//
+		// We should never get here.  This is an error if the MAC address has
+		// not been programmed into the device.  Exit the program.
+		// Let the user know there is no MAC address
+		//
+		UARTprintf("No MAC programmed!\n");
+		while(1)
+		{
+		}
+	}
+
+	// Convert the 24/24 split MAC address from NV ram into a 32/16 split MAC
+	// address needed to program the hardware registers, then program the MAC
+	// address into the Ethernet Controller registers.
+	//
+	pui8MACArray[0] = ((ui32User0 >>  0) & 0xff);
+	pui8MACArray[1] = ((ui32User0 >>  8) & 0xff);
+	pui8MACArray[2] = ((ui32User0 >> 16) & 0xff);
+	pui8MACArray[3] = ((ui32User1 >>  0) & 0xff);
+	pui8MACArray[4] = ((ui32User1 >>  8) & 0xff);
+	pui8MACArray[5] = ((ui32User1 >> 16) & 0xff);
+
+	// assigns the IP to the register that holds the boards IP address
+	lwIPInit(g_ui32SysClock, pui8MACArray, 0xC0A80702, 0xFFFFFF00, 0xC0A80701, IPADDR_USE_STATIC);
+
+	// Setup the device locator service.
+	//
+	LocatorInit();
+	LocatorMACAddrSet(pui8MACArray);
+	LocatorAppTitleSet("EK-TM4C1294XL enet_io");
+
+	// Initialize a sample httpd server.
+	//
+	httpd_init();
+
+
+	udp_init();
+
+	struct udp_pcb * mypcb;
+	mypcb = udp_new();
+	if (mypcb == NULL)
+	{
+		UARTprintf("udp failed.\n");
+		while(1);
+	}
+	else
+	{
+		UARTprintf("udp up.\n");
+	}
+
+	if (udp_bind(mypcb, IP_ADDR_ANY, 8760) != ERR_OK)
+	{
+		UARTprintf("udp bind failed.\n");
+		while(1);
+	}
+
+	// Set the interrupt priorities.  We set the SysTick interrupt to a higher
+	// priority than the Ethernet interrupt to ensure that the file system
+	// tick is processed if SysTick occurs while the Ethernet handler is being
+	// processed.  This is very likely since all the TCP/IP and HTTP work is
+	// done in the context of the Ethernet interrupt.
+	//
+	MAP_IntPrioritySet(INT_EMAC0, ETHERNET_INT_PRIORITY);
+	MAP_IntPrioritySet(FAULT_SYSTICK, SYSTICK_INT_PRIORITY);
 
     //
 	// Begin the data collection and printing.  Loop Forever.
@@ -520,6 +800,9 @@ main(void)
 		BMP180DataTemperatureGetFloat(&g_sBMP180Inst, &fTemperature);
 		BMP180DataPressureGetFloat(&g_sBMP180Inst, &fPressure);
 
+		//Convert pressure from Pa to kPA
+		fPressureKpa = fPressure / 1000;
+
 		// Calibrate -5 degrees
 		fTemperature -= 5;
 
@@ -527,8 +810,8 @@ main(void)
 		UARTprintfloat(fTemperature, 7, 3);
 		UARTprintf("\t");
 
-		UARTprintf("Pressure: ");
-		UARTprintfloat(fPressure, 7, 3);
+		UARTprintf("Pressure (kPa): ");
+		UARTprintfloat(fPressureKpa, 7, 3);
 		UARTprintf("\t");
 
 		//
@@ -544,5 +827,8 @@ main(void)
 		// Print new line.
 		//
 		UARTprintf("\r\n");
+
+		// UDP Ethernet Transmission
+
 	}//while end
 }
