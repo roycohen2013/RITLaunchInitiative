@@ -26,6 +26,7 @@
 #include <stdbool.h>
 #include <math.h>
 #include "adc_pinmux.h"
+#include "adc1_pinmux.h"
 #include "i2c0_pinmux.h"
 #include "inc/hw_gpio.h"
 #include "inc/hw_memmap.h"
@@ -234,6 +235,22 @@ ADCPortInit(void)
     MAP_GPIOPinTypeADC(GPIO_PORTE_BASE, GPIO_PIN_0);
 }
 
+/* Initialize the pins of the ADC1 for load cell a2d readings */
+void
+LoadCellPinInit(void)
+{
+    //
+    // Enable Peripheral Clocks
+    //
+    MAP_SysCtlPeripheralEnable(SYSCTL_PERIPH_ADC1);
+    MAP_SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOD);
+
+    //
+    // Enable pin PD2 for ADC AIN13
+    //
+    MAP_GPIOPinTypeADC(GPIO_PORTD_BASE, GPIO_PIN_2);
+}
+
 /*
  * This function takes the direct digital reading from the ADC, which should be
  * a value between 0 and 4095. This means that (voltSteps/4096)*3.3 V is the voltage
@@ -293,14 +310,20 @@ main(void)
     float fTemperature, fPressure, fAltitude;
     uint32_t ui32SysClock;
 
-    // holds digital values from each of the ADC channels
+    // holds digital values from each of the ADC0 channels
 	volatile uint32_t readings[8];
-	// holds temperature (celcius) values from each of the ADC channels
+	// holds temperature (celcius) values from each of the ADC0 channels
 	volatile float temps[8];
-	// Create an array that will be used for storing the data read from the ADC FIFO.
+	// Create an array that will be used for storing the data read from the ADC0 FIFO.
 	// It must be as large as the FIFO for the sequencer in use.  We will be using
 	// sequencer 0 which has a FIFO depth of 8.
 	uint32_t ui32ACCValues[8];
+
+	// holds raw digital value from the ADC1 channel
+	volatile uint32_t lcreadings[1];
+	// array that will be used for storing the data read from the ADC1 FIFO. It will
+	// be 4 elements as that is the FIFO depth of sequencer 1
+	uint32_t lcACCValues[4];
 
     //
     // Configure the system frequency.
@@ -325,12 +348,6 @@ main(void)
     //
     UARTStdioConfig(0, 115200, ui32SysClock);
 
-    //
-    // Clear the terminal and print the welcome message.
-    //
-    //UARTprintf("\033[2J\033[H");
-    //UARTprintf("BMP180 Example\n");
-
     // Enable ADC0 and pins
 	ADCPortInit();
 	// Configure ADC Sequencer 0
@@ -346,6 +363,14 @@ main(void)
 	ADCSequenceStepConfigure(ADC0_BASE, 0, 7, ADC_CTL_CH7|ADC_CTL_IE|ADC_CTL_END);
 	// Enable ADC0 Sequencer 0
 	ADCSequenceEnable(ADC0_BASE, 0);
+
+	// Enable ADC1 and pin for Load Cell readings
+	LoadCellPinInit();
+	// Configure ADC1 Sequencer 1 with 1 step
+	ADCSequenceConfigure(ADC1_BASE, 1, ADC_TRIGGER_PROCESSOR, 0);
+	ADCSequenceStepConfigure(ADC1_BASE, 1, 0, ADC_CTL_CH0|ADC_CTL_IE|ADC_CTL_END);
+	// Enable ADC1 Sequencer 1
+	ADCSequenceEnable(ADC1_BASE, 1);
 
     //
     // The I2C0 peripheral must be enabled before use.
@@ -455,20 +480,22 @@ main(void)
 
 		UARTprintf("\r\n");
 
-//		// Get Data From ADC1
-//		// Clear the ADC1 status flag
-//		ADCIntClear(ADC1_BASE, 1);
-//		// Trigger the ADC conversion with software.
-//		ADCProcessorTrigger(ADC1_BASE, 1);
-//		// Wait for the conversion process to complete
-//		while(!ADCIntStatus(ADC1_BASE, 1, false)) { }
-//		// Read the ADC value from the ADC Sample Sequencer 1 FIFO.
-//		ADCSequenceDataGet(ADC1_BASE, 1, lcACCValues);
-//
-//		// print the raw value
-//		UARTprintf("Raw Load Cell Value:\t\t");
-//		UARTprintfloat(lcACCValues[0], 7, 3);
-//		UARTprintf("\r\n");
+		// Get Data From ADC1
+		// Clear the ADC1 status flag
+		ADCIntClear(ADC1_BASE, 1);
+		// Trigger the ADC conversion with software.
+		ADCProcessorTrigger(ADC1_BASE, 1);
+		// Wait for the conversion process to complete
+		while(!ADCIntStatus(ADC1_BASE, 1, false)) { }
+		// Read the ADC value from the ADC Sample Sequencer 1 FIFO.
+		ADCSequenceDataGet(ADC1_BASE, 1, lcACCValues);
+
+		int lcRead = (int)lcACCValues[0];
+
+		// print the raw value
+		UARTprintf("Raw Load Cell Value:\t\t");
+		UARTprintf("%d", lcRead);
+		UARTprintf("\r\n");
 
 		//
 		// The reads are started by SysTick Interrupt, we poll here to detect

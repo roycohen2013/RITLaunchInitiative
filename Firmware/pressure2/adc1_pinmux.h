@@ -38,6 +38,6 @@
 #ifndef __ADC1_PINMUX_H__
 #define __ADC1_PINMUX_H__
 
-extern void LoadCellPortInit(void);
+extern void LoadCellPinInit(void);
 
 #endif //  __ADC1_PINMUX_H__
