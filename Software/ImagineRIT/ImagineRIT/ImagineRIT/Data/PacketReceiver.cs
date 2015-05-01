@@ -15,15 +15,23 @@ public class PacketReceiver : IObservable<DataSet>
     IPAddress ip = IPAddress.Parse(System.Configuration.ConfigurationSettings.AppSettings["MicrocontrollerIp"]);
     Int32 port = Int32.Parse(System.Configuration.ConfigurationSettings.AppSettings["MicrocontrollerPort"]);
 
+    public PacketReceiver()
+    {
+
+    }
+
     public async void Receiver()
     {
         UdpClient udpServer = new UdpClient(port);
+        //Console.WriteLine("Reciever is starting to receive");
 
         while (true)
         {
             var remoteEP = new IPEndPoint(ip, 11000);
             var data = udpServer.Receive(ref remoteEP);
-            Console.WriteLine(data[0]);
+            //Console.Write(data[0] + ", " + data[1] + ", " + data[2] + ", " + data[3] + ", " + data[4]
+              //  + ", " + data[5] + ", " + data[6] + ", " + data[7] + ", " + data[8] + ", " + data[9]
+               // + ", " + data[10] + ", " + data[11] + ", " + data[12] + ", " + data[13]+ ", " + data[14]);
 
             //Put the information into our DataSet object
 

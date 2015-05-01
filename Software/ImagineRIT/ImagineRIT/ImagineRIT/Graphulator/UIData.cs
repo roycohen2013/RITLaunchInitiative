@@ -30,98 +30,122 @@ namespace ImagineRIT.Graphulator
 
         public int getGraphData()
         {
-            return graphable[graphIndex];
+            if (graphIndex != -1)
+            {
+                return graphable[graphIndex];
+            }
+            return -1;
         }
 
-        public bool getPos1Valve()
+        public string getPos1Valve()
         {
-            return valves[0];
+            if (valves[0])
+            {
+                return "ON";
+            }
+            return "OFF";
         }
 
-        public bool getPos2Valve()
+        public string getPos2Valve()
         {
-            return valves[1];
+            if (valves[1])
+            {
+                return "ON";
+            }
+            return "OFF";
         }
 
-        public bool getPos3Valve()
+        public string getPos3Valve()
         {
-            return valves[2];
+            if (valves[2])
+            {
+                return "ON";
+            }
+            return "OFF";
         }
 
-        public bool getPos4Valve()
+        public string getPos4Valve()
         {
-            return valves[3];
+            if (valves[3])
+            {
+                return "ON";
+            }
+            return "OFF";
         }
 
-        public bool getPos5Valve()
+        public string getPos5Valve()
         {
-            return valves[5];
+            if (valves[4])
+            {
+                return "ON";
+            }
+            return "OFF";
         }
 
-        public int getPos1Temp()
+        public string getPos1Temp()
         {
-            return graphable[0];
+            return graphable[0].ToString();
         }
 
-        public int getPos2Temp()
+        public string getPos2Temp()
         {
-            return graphable[1];
+            return graphable[1].ToString();
         }
 
-        public int getPos3Temp()
+        public string getPos3Temp()
         {
-            return graphable[2];
+            return graphable[2].ToString();
         }
 
-        public int getPos4Temp()
+        public string getPos4Temp()
         {
-            return graphable[3];
+            return graphable[3].ToString();
         }
 
-        public int getPos5Temp()
+        public string getPos5Temp()
         {
-            return graphable[4];
+            return graphable[4].ToString();
 
         }
 
-        public int getPos6Temp()
+        public string getPos6Temp()
         {
-            return graphable[5];
+            return graphable[5].ToString();
         }
 
-        public int getPos7Temp()
+        public string getPos7Temp()
         {
-            return graphable[6];
+            return graphable[6].ToString();
         }
 
-        public int getPos8Temp()
+        public string getPos8Temp()
         {
-            return graphable[7];
+            return graphable[7].ToString();
         }
 
-        public int getNozzleTemp()
+        public string getNozzleTemp()
         {
-            return graphable[8];
+            return graphable[8].ToString();
         }
 
-        public int getEngineForce()
+        public string getEngineForce()
         {
-            return graphable[9];
+            return graphable[9].ToString();
         }
 
-        public int getBarometricPressure()
+        public string getBarometricPressure()
         {
-            return graphable[10];
+            return graphable[10].ToString();
         }
 
-        public int getNozzlePressure()
+        public string getNozzlePressure()
         {
-            return graphable[11];
+            return graphable[11].ToString();
         }
 
-        public int getBatteryVoltage()
+        public string getBatteryVoltage()
         {
-            return graphable[12];
+            return graphable[12].ToString();
         }
     }
 }

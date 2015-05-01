@@ -6,27 +6,30 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
 
 namespace ImagineRIT
 {
-    public partial class Display : Form , IObserver<UIData>
+    public partial class Display: Form
     {
         private UserInterfaceController ui;
+        private int time = 0;
+
         public Display()
         {
             InitializeComponent();
-            this.LineGraph.Series.Add("lineGraph");
-            this.LineGraph.Series["lineGraph"].ChartType = SeriesChartType.Line;
+            ui = new UserInterfaceController(this);
+            Thread recieveThread = new Thread(ui.StartReceiving);
+            recieveThread.Start();
             this.ShowDialog();
-            UserInterfaceController ui = new UserInterfaceController();
-            ui.Subscribe(this); // This is now observing UI controller
         }
 
         private void Display_Load(object sender, EventArgs e)
         {
+           
         }
 
         /*
@@ -39,51 +42,69 @@ namespace ImagineRIT
         {
             ComboBox box = (ComboBox)sender;
             ui.setGraphIndex(box.SelectedIndex);
-            this.LineGraph.Series.Clear(); // empty the graph.
-            this.LineGraph.Series["lineGraph"].AxisLabel = 
+            this.LineGraph.Series["LineGraph"].Points.Clear(); // empty the graph.
+            time = 0;
+            
+        }
+
+        private void moveGraphOver()
+        {
+            // Just have it so we add from index 1 to end back into the graph
+            DataPoint[] points =  new DataPoint[10];
+            this.LineGraph.Series["LineGraph"].Points.CopyTo(points,0);
+            this.LineGraph.Series["LineGraph"].Points.Clear();
+            for (int i = 1; i < points.Length; i++)
+            {
+                this.LineGraph.Series["LineGraph"].Points.AddXY(points[i].XValue, points[i].YValues);
+            }
         }
 
         private void addToGraph(int data)
         {
-            this.LineGraph.Series["lineGraph"].
-        }
-
-        public void OnCompleted()
-        {
-            // we will always get information.
-        }
-
-        public void OnError(Exception error)
-        {
-            // NO ERRORS!
+            if (data != -1)
+            {
+                if (time % 10 == 0)
+                {
+                    moveGraphOver();
+                }
+                this.LineGraph.Series["LineGraph"].Points.AddXY(++time, data);
+                
+            }
         }
 
         /*
          * updates all the labels and also passes the data that needs
          * to be added to the graph.
          */
-        public void OnNext(UIData value)
+        public void UpdateUI(UIData value)
         {
-            this.Pos1LowLevelTemperatureDisplay.Text = value.getPos1Temp().ToString();
-            this.Pos2LowLevelTemperatureDisplay.Text = value.getPos2Temp().ToString();
-            this.Pos3LowLevelTemperatureDisplay.Text = value.getPos3Temp().ToString();
-            this.Pos4LowLevelTemperatureDisplay.Text = value.getPos4Temp().ToString();
-            this.Pos5LowLevelTemperatureDisplay.Text = value.getPos5Temp().ToString();
-            this.Pos6LowLevelTemperatureDisplay.Text = value.getPos6Temp().ToString();
-            this.Pos7LowLevelTemperatureDisplay.Text = value.getPos7Temp().ToString();
-            this.Pos8LowLevelTemperatureDisplay.Text = value.getPos8Temp().ToString();
-            this.NozzlePressureDisplay.Text = value.getNozzlePressure().ToString();
-            this.NozzleTemperatureDisplay.Text = value.getNozzleTemp().ToString();
-            this.EngineForceDisplay.Text = value.getEngineForce().ToString();
-            this.BarometricPressureDisplay.Text = value.getBarometricPressure().ToString();
+            if (Pos1LowLevelTemperatureDisplay.InvokeRequired)
+            {
+                Pos1LowLevelTemperatureDisplay.Invoke(new Action<UIData>(UpdateUI), value);
+                return;
+            }
+            this.Pos1LowLevelTemperatureDisplay.Text = value.getPos1Temp();
+            this.Pos2LowLevelTemperatureDisplay.Text = value.getPos2Temp();
+            this.Pos3LowLevelTemperatureDisplay.Text = value.getPos3Temp();
+            this.Pos4LowLevelTemperatureDisplay.Text = value.getPos4Temp();
+            this.Pos5LowLevelTemperatureDisplay.Text = value.getPos5Temp();
+            this.Pos6LowLevelTemperatureDisplay.Text = value.getPos6Temp();
+            this.Pos7LowLevelTemperatureDisplay.Text = value.getPos7Temp();
+            this.Pos8LowLevelTemperatureDisplay.Text = value.getPos8Temp();
+            this.NozzlePressureDisplay.Text = value.getNozzlePressure();
+            this.NozzleTemperatureDisplay.Text = value.getNozzleTemp();
+            this.EngineForceDisplay.Text = value.getEngineForce();
+            this.BarometricPressureDisplay.Text = value.getBarometricPressure();
 
-            this.Pos1ValveDisplay.Text = value.getPos1Valve().ToString();
-            this.Pos2ValveDisplay.Text = value.getPos2Valve().ToString();
-            this.Pos3ValveDisplay.Text = value.getPos3Valve().ToString();
-            this.Pos4ValveDisplay.Text = value.getPos4Valve().ToString();
-            this.Pos5ValveDisplay.Text = value.getPos5Valve().ToString();
+            this.Pos1ValveDisplay.Text = value.getPos1Valve();
+            this.Pos2ValveDisplay.Text = value.getPos2Valve();
+            this.Pos3ValveDisplay.Text = value.getPos3Valve();
+            this.Pos4ValveDisplay.Text = value.getPos4Valve();
+            this.Pos5ValveDisplay.Text = value.getPos5Valve();
 
             addToGraph(value.getGraphData());
+
+            this.Update();
         }
     }
 }

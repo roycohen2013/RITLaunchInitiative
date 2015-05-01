@@ -7,7 +7,7 @@ using ImagineRIT.Data;
 
 namespace ImagineRIT.Graphulator
 {
-    class UserInterfaceController: IObservable<UIData>, IObserver<DataSet>
+    class UserInterfaceController: IObserver<DataSet>
     {
         private int numTillUpdate = Int32.Parse(System.Configuration.ConfigurationSettings.AppSettings["NumPacketsTillUpdate"]);
         // below are the arrays that can be graphed.
@@ -55,13 +55,25 @@ namespace ImagineRIT.Graphulator
         // holds all the valve positions.
         private Boolean[] valvePositions;
 
-        private List<IObserver<UIData>> observers;
+        //private List<IObserver<UIData>> observers;
+        PacketReceiver receive;
 
-        public UserInterfaceController()
+        Display ui;
+
+        public UserInterfaceController(Display UI)
         {
-            observers = new List<IObserver<UIData>>();
+            graphedIndex = -1;
+            //observers = new List<IObserver<UIData>>();
+            ui = UI;
+            receive = new PacketReceiver();
+            receive.Subscribe(this);
+  
         }
 
+        public void StartReceiving()
+        {
+            receive.Receiver();
+        }
         
         /*
          * This helps determine which one of the graphable data is going to be
@@ -72,20 +84,7 @@ namespace ImagineRIT.Graphulator
             graphedIndex = i;
         }
 
-        /*
-         * Implements the observable interface. Basically just has observers
-         * go into the observers list and returns back something to allow them
-         * to unsubscribe from messages.
-         */
-        public IDisposable Subscribe(IObserver<UIData> observer)
-        {
-            if (!observers.Contains(observer))
-            {
-                observers.Add(observer);
-            }
-            return new Unsubscriber<UIData>(observers, observer);
-        }
-
+      
         // observer interface
         public void OnCompleted()
         {
@@ -112,33 +111,32 @@ namespace ImagineRIT.Graphulator
             {
                 //Average the data together and stick into common array
                 graphable = new int[13] {
-                    average(pos1LowLvlTemperature),
-                    average(pos2LowLvlTemperature),
-                    average(pos3LowLvlTemperature),
-                    average(pos4LowLvlTemperature),
-                    average(pos5LowLvlTemperature),
-                    average(pos6LowLvlTemperature),
-                    average(pos7LowLvlTemperature),
-                    average(pos8LowLvlTemperature),
-                    average(nozzleTemperature),
-                    average(engineForce),
-                    average(barometricPressure),
-                    average(nozzlePressure),
-                    average(batteryVoltage)
+                    (int)pos1LowLvlTemperature.Average(),
+                    (int)pos2LowLvlTemperature.Average(),
+                    (int)pos3LowLvlTemperature.Average(),
+                    (int)pos4LowLvlTemperature.Average(),
+                    (int)pos5LowLvlTemperature.Average(),
+                    (int)pos6LowLvlTemperature.Average(),
+                    (int)pos7LowLvlTemperature.Average(),
+                    (int)pos8LowLvlTemperature.Average(),
+                    (int)nozzleTemperature.Average(),
+                    (int)engineForce.Average(),
+                    (int)barometricPressure.Average(),
+                    (int)nozzlePressure.Average(),
+                    (int)batteryVoltage.Average()
                 };
 
                 //Will pass the most recent valve position rather than the average
                 valvePositions = new Boolean[5] {
-                    pos5ValvePositions[pos5ValvePositions.Count],
-                    pos2ValvePositions[pos2ValvePositions.Count],
-                    pos3ValvePositions[pos3ValvePositions.Count],
-                    pos4ValvePositions[pos4ValvePositions.Count],
-                    pos5ValvePositions[pos5ValvePositions.Count],
+                    pos5ValvePositions[pos5ValvePositions.Count-1],
+                    pos2ValvePositions[pos2ValvePositions.Count-1],
+                    pos3ValvePositions[pos3ValvePositions.Count-1],
+                    pos4ValvePositions[pos4ValvePositions.Count-1],
+                    pos5ValvePositions[pos5ValvePositions.Count-1],
                 };
-                foreach(IObserver<UIData> observer in observers){
-                    observer.OnNext(new UIData(valvePositions, graphable, graphedIndex));
-                }
-
+                
+                ui.UpdateUI(new UIData(valvePositions, graphable, graphedIndex));
+                
                 wipeBuffers();
             }
         }
