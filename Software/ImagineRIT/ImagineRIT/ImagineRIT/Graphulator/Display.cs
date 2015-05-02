@@ -65,7 +65,7 @@ namespace ImagineRIT
             {
                 if (time % 10 == 0)
                 {
-                    moveGraphOver();
+               //     moveGraphOver();
                 }
                 this.LineGraph.Series["LineGraph"].Points.AddXY(++time, data);
                 

@@ -34,6 +34,7 @@ public class PacketReceiver : IObservable<DataSet>
                // + ", " + data[10] + ", " + data[11] + ", " + data[12] + ", " + data[13]+ ", " + data[14]);
 
             //Put the information into our DataSet object
+            Console.WriteLine(data[0]);
 
             //The temperatures are the first 8 bytes
             byte[] temperatures = new byte[8];
