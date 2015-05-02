@@ -44,7 +44,7 @@
 	<variableList>
 		<variable>
 			<name>ORIGINAL_PROJECT_ROOT</name>
-			<value>file:/D:/ti/TivaWare_C_Series-2.1.0.12573/examples/boards/ek-tm4c1294xl-boostxl-senshub/pressure_bmp180/ccs/</value>
+			<value>file:/C:/ti/TivaWare_C_Series-2.1.0.12573/examples/boards/ek-tm4c1294xl-boostxl-senshub/pressure_bmp180/ccs</value>
 		</variable>
 		<variable>
 			<name>SW_ROOT</name>
