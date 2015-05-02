@@ -204,6 +204,11 @@ namespace ImagineRIT.Graphulator
             }
             return 0;
         }
+
+        public void DisconnectFromSocket()
+        {
+            receive.UnconnectFromSocket();
+        }
     }
 
 

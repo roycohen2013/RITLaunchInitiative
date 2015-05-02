@@ -14,6 +14,7 @@ public class PacketReceiver : IObservable<DataSet>
     //Grab ip address and port for microcontroller from our config file
     IPAddress ip = IPAddress.Parse(System.Configuration.ConfigurationSettings.AppSettings["MicrocontrollerIp"]);
     Int32 port = Int32.Parse(System.Configuration.ConfigurationSettings.AppSettings["MicrocontrollerPort"]);
+    UdpClient udpServer;
 
     public PacketReceiver()
     {
@@ -22,7 +23,7 @@ public class PacketReceiver : IObservable<DataSet>
 
     public async void Receiver()
     {
-        UdpClient udpServer = new UdpClient(port);
+        udpServer = new UdpClient(port);
         //Console.WriteLine("Reciever is starting to receive");
 
         while (true)
@@ -60,5 +61,11 @@ public class PacketReceiver : IObservable<DataSet>
     {
         observers.Add(observer);
         return new Unsubscriber<DataSet>(observers, observer);
+    }
+
+    public void UnconnectFromSocket()
+    {
+        udpServer.Close();
+        udpServer = null;
     }
 }

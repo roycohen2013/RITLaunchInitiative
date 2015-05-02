@@ -50,6 +50,7 @@
     <Compile Include="Graphulator\Runner.cs" />
     <Compile Include="Graphulator\UIData.cs" />
     <Compile Include="Graphulator\UserInterfaceController.cs" />
+    <Compile Include="Simulation-ish\SimulateData.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
