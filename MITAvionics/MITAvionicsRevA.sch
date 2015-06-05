@@ -736,13 +736,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="87.122" y="4.5974" size="1.016" layer="21" font="vector" ratio="15" rot="R90">A13</text>
 <text x="89.662" y="4.5974" size="1.016" layer="21" font="vector" ratio="15" rot="R90">A14</text>
 <text x="92.075" y="4.5974" size="1.016" layer="21" font="vector" ratio="15" rot="R90">A15</text>
-<text x="50.419" y="7.493" size="1.27" layer="21" font="vector" ratio="15">A-IN</text>
-<text x="65.913" y="44.5135" size="1.27" layer="21" font="vector" ratio="15" rot="R180">COMMS</text>
+<text x="80.899" y="8.128" size="1.27" layer="21" font="vector" ratio="15">A-IN</text>
+<text x="86.233" y="42.6085" size="1.27" layer="21" font="vector" ratio="15" rot="R180">COMMS</text>
 <text x="89.154" y="9.144" size="1.27" layer="21" font="vector" ratio="15" rot="R90">D-IO</text>
 <text x="98.425" y="6.8834" size="1.016" layer="21" font="vector" ratio="15">GND</text>
 <text x="61.341" y="45.212" size="1.016" layer="21" font="vector" ratio="15" rot="R90">TX0</text>
 <text x="63.881" y="45.212" size="1.016" layer="21" font="vector" ratio="15" rot="R90">RX0</text>
-<text x="27.94" y="43.815" size="1.27" layer="21" font="vector" ratio="15">PWM</text>
+<text x="57.785" y="46.355" size="1.27" layer="21" font="vector" ratio="15" rot="R180">PWM</text>
 <text x="68.961" y="43.942" size="1.016" layer="21" font="vector" ratio="15" rot="R90">TX3</text>
 <text x="71.501" y="43.942" size="1.016" layer="21" font="vector" ratio="15" rot="R90">RX3</text>
 <text x="74.041" y="43.942" size="1.016" layer="21" font="vector" ratio="15" rot="R90">TX2</text>
@@ -751,11 +751,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="81.661" y="43.942" size="1.016" layer="21" font="vector" ratio="15" rot="R90">RX1</text>
 <text x="84.201" y="43.942" size="1.016" layer="21" font="vector" ratio="15" rot="R90">SDA</text>
 <text x="86.741" y="43.942" size="1.016" layer="21" font="vector" ratio="15" rot="R90">SCL</text>
-<text x="44.704" y="7.493" size="1.27" layer="21" font="vector" ratio="15">PWR</text>
 <text x="33.528" y="4.5974" size="1.016" layer="21" font="vector" ratio="15" rot="R90">RST</text>
 <text x="36.068" y="4.5974" size="1.016" layer="21" font="vector" ratio="15" rot="R90">3v3</text>
 <text x="38.608" y="4.5974" size="1.016" layer="21" font="vector" ratio="15" rot="R90">5V</text>
-<text x="40.132" y="7.4676" size="1.016" layer="21" font="vector" ratio="15" rot="R270">GND</text>
+<text x="40.132" y="6.8326" size="1.016" layer="21" font="vector" ratio="15" rot="R270">GND</text>
 <text x="46.228" y="4.5974" size="1.016" layer="21" font="vector" ratio="15" rot="R90">Vin</text>
 <text x="25.654" y="49.022" size="1.016" layer="21" font="vector" ratio="15" rot="R270">GND</text>
 <text x="23.241" y="49.022" size="1.016" layer="21" font="vector" ratio="15" rot="R270">AREF</text>
@@ -844,17 +843,19 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <rectangle x1="32.766" y1="2.286" x2="33.274" y2="2.794" layer="51"/>
 <wire x1="27.94" y1="45.72" x2="41.91" y2="45.72" width="0.3048" layer="21"/>
 <wire x1="41.91" y1="45.72" x2="43.18" y2="46.99" width="0.3048" layer="21"/>
-<wire x1="43.18" y1="46.99" x2="59.69" y2="46.99" width="0.3048" layer="21"/>
-<wire x1="86.995" y1="8.255" x2="55.88" y2="8.255" width="0.3048" layer="21"/>
-<wire x1="55.88" y1="8.255" x2="54.61" y2="9.525" width="0.3048" layer="21"/>
-<wire x1="54.61" y1="9.525" x2="50.165" y2="9.525" width="0.3048" layer="21"/>
-<wire x1="32.385" y1="8.255" x2="42.545" y2="8.255" width="0.3048" layer="21"/>
-<wire x1="42.545" y1="8.255" x2="43.815" y2="9.525" width="0.3048" layer="21"/>
-<wire x1="43.815" y1="9.525" x2="48.26" y2="9.525" width="0.3048" layer="21"/>
-<text x="42.672" y="7.4676" size="1.016" layer="21" font="vector" ratio="15" rot="R270">GND</text>
-<wire x1="60.325" y1="42.545" x2="66.04" y2="42.545" width="0.3048" layer="21"/>
-<wire x1="66.04" y1="42.545" x2="66.3575" y2="43.18" width="0.3048" layer="21"/>
-<wire x1="66.3575" y1="43.18" x2="87.63" y2="43.18" width="0.3048" layer="21"/>
+<wire x1="43.18" y1="46.99" x2="51.435" y2="46.99" width="0.3048" layer="21"/>
+<wire x1="77.47" y1="6.985" x2="50.8" y2="6.985" width="0.3048" layer="21"/>
+<wire x1="32.385" y1="7.62" x2="44.45" y2="7.62" width="0.3048" layer="21"/>
+<text x="42.672" y="6.8326" size="1.016" layer="21" font="vector" ratio="15" rot="R270">GND</text>
+<wire x1="66.04" y1="43.18" x2="77.47" y2="43.18" width="0.3048" layer="21"/>
+<wire x1="85.09" y1="10.16" x2="80.645" y2="10.16" width="0.3048" layer="21"/>
+<wire x1="80.645" y1="10.16" x2="77.47" y2="6.985" width="0.3048" layer="21"/>
+<wire x1="64.77" y1="44.45" x2="59.69" y2="44.45" width="0.3048" layer="21"/>
+<wire x1="64.77" y1="44.45" x2="66.04" y2="43.18" width="0.3048" layer="21"/>
+<wire x1="77.47" y1="43.18" x2="80.01" y2="40.64" width="0.3048" layer="21"/>
+<wire x1="80.01" y1="40.64" x2="86.36" y2="40.64" width="0.3048" layer="21"/>
+<wire x1="58.42" y1="44.45" x2="53.975" y2="44.45" width="0.3048" layer="21"/>
+<wire x1="53.975" y1="44.45" x2="51.435" y2="46.99" width="0.3048" layer="21"/>
 </package>
 <package name="ARDUINO_MEGA-PRO-3.3V">
 <description>Arduino Mega Pro footprint</description>
@@ -8363,6 +8364,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U4" library="SparkFun-Connectors" deviceset="USD-SOCKET" device=""/>
 <part name="GND32" library="supply1" deviceset="GND" device=""/>
 <part name="+3V16" library="supply1" deviceset="+3V3" device=""/>
+<part name="JP7" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
 </parts>
 <sheets>
 <sheet>
@@ -8651,6 +8653,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="U4" gate="G$1" x="447.04" y="48.26"/>
 <instance part="GND32" gate="1" x="434.34" y="22.86"/>
 <instance part="+3V16" gate="G$1" x="431.8" y="71.12"/>
+<instance part="JP7" gate="G$1" x="-30.48" y="10.16"/>
 </instances>
 <busses>
 </busses>
