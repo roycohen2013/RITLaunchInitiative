@@ -1,0 +1,16 @@
+Mechanical
+
+all through hole connectors for things that could be sheared off
+larger/screw terminal connectors for ease of use on feild.
+
+
+Electronics
+
+	power system:
+		seperate power rails for digital systems and control surfaces
+		current limits on each rail
+		much larger battery
+		
+	embedded System:
+		redundant logging
+		non re-writing storage
