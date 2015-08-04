@@ -30,6 +30,16 @@
 			<type>1</type>
 			<locationURI>LAUNCH_LOCATION/Firmware/Tiva/driverlib/ccs/Debug/driverlib.lib</locationURI>
 		</link>
+		<link>
+			<name>uartstdio.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Tiva/utils/uartstdio.c</locationURI>
+		</link>
+		<link>
+			<name>uartstdio.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Tiva/utils/uartstdio.h</locationURI>
+		</link>
 	</linkedResources>
 	<variableList>
 		<variable>

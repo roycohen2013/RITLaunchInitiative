@@ -3,10 +3,16 @@
 #include "inc/hw_ints.h"
 
 #include "inc/hw_memmap.h"
+
+
 #include "driverlib/flash.h"
 #include "driverlib/interrupt.h"
 #include "driverlib/gpio.h"
 #include "driverlib/timer.h"
+#include "driverlib/sysctl.h"
+#include "driverlib/uart.h"
+#include "driverlib/sysctl.h"
+#include "driverlib/uart.h"
 
 
 #include "driverlib/rom_map.h"
@@ -31,6 +37,8 @@
 #include "driverlib/pin_map.h"
 #include "driverlib/rom_map.h"
 #include "driverlib/gpio.h"
+
+#include "BareEthernetPinout.h"
 
 
 //#include "drivers/pinout.h"
@@ -424,6 +432,16 @@ main(void)
 	uint8_t buf[16];
 	uint8_t sequenceNum = 0;
 
+
+	//UARTStdioConfig(0, 115200, ui32SysClock);
+	//UARTStdioInit(0); //use UART0, 115200
+	//
+	// Clear the terminal and print banner.
+	//
+	    UARTprintf("\033[2J\033[H");
+	    UARTprintf("Ethernet lwIP example\n\n");
+
+
 	while(1)
 	{
 
@@ -455,6 +473,7 @@ main(void)
         SysCtlDelay(10000000);
 
         PacketTransmit(payload,len);
+
 
 		//
 		// Do main loop things...
