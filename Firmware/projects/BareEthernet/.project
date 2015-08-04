@@ -28,7 +28,7 @@
 		<link>
 			<name>driverlib.lib</name>
 			<type>1</type>
-			<locationURI>TIVAWARE_INSTALL/driverlib/ccs/Debug/driverlib.lib</locationURI>
+			<location>C:/Users/Roy/Documents/GitHub/RITLaunchInitiative/Firmware/Tiva/driverlib/ccs/Debug/driverlib.lib</location>
 		</link>
 	</linkedResources>
 	<variableList>
