@@ -24,4 +24,10 @@
 		<nature>org.eclipse.cdt.core.ccnature</nature>
 		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
 	</natures>
+	<variableList>
+		<variable>
+			<name>TIVAWARE_INSTALL</name>
+			<value>file:/C:/Users/Roy/Documents/GitHub/RITLaunchInitiative/Firmware/Tiva</value>
+		</variable>
+	</variableList>
 </projectDescription>

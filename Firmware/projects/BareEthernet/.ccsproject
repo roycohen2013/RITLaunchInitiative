@@ -10,4 +10,5 @@
 	<linkerCommandFile value="tm4c129cncpdt.cmd"/>
 	<rts value="libc.a"/>
 	<templateProperties value="id=com.ti.common.project.core.emptyProjectWithMainTemplate,"/>
+	<isTargetManual value="false"/>
 </projectOptions>
