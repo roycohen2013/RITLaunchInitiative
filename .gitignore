@@ -239,3 +239,4 @@ $RECYCLE.BIN/
 #Exception created to allow Tivaware library to be included
 
 !/Firmware/Tiva/driverlib/ccs/Debug
+Firmware/projects/BareEthernet/.launches/BareEthernet.launch
