@@ -120,6 +120,8 @@ ProcessReceivedPacket(void)
 
 				//OUR SHIT GOES HERE ROY @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
+				UARTwrite(g_psRxDescriptor[g_ui32RxDescIndex].pvBuffer1,i32FrameLen);
+
 		//		ApplicationProcessFrame(i32FrameLen,
 		//				g_psRxDescriptor[g_ui32RxDescIndex].pvBuffer1);
 
@@ -466,7 +468,7 @@ main(void)
 	{
 
 
-	    UARTprintf("test");
+	    //UARTprintf("test");
 
         payload = (void*)buf;
         //tot_len = 20;
