@@ -21,6 +21,8 @@
 //"C:\Users\Roy\Documents\GitHub\RITLaunchInitiative\Firmware\Tiva\driverlib\ccs\Debug"
 
 #include "inc/hw_nvic.h"
+#include "Inc/hw_ints.h"
+#include "driverlib/interrupt.h"
 
 #include "inc/hw_types.h"
 #include "inc/hw_memmap.h"
@@ -105,10 +107,10 @@ ProcessReceivedPacket(void)
 				//
 
 
-				//OUR SHIT GOES HERE ROY
+				//OUR SHIT GOES HERE ROY @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
-				//ApplicationProcessFrame(i32FrameLen,
-				//		g_psRxDescriptor[g_ui32RxDescIndex].pvBuffer1);
+		//		ApplicationProcessFrame(i32FrameLen,
+		//				g_psRxDescriptor[g_ui32RxDescIndex].pvBuffer1);
 
 
 			}
@@ -405,7 +407,7 @@ main(void)
 	//
 	// Enable the Ethernet interrupt.
 	//
-	//IntEnable(INT_EMAC0);
+	IntEnable(INT_EMAC0);
 	//
 	// Enable the Ethernet RX Packet interrupt source.
 	//
@@ -450,7 +452,7 @@ main(void)
 
 
 
-        SysCtlDelay(2000000);
+        SysCtlDelay(10000000);
 
         PacketTransmit(payload,len);
 

@@ -2,7 +2,7 @@
 //
 // Startup code for use with TI's Code Composer Studio.
 //
-// Copyright (c) 2011-2013 Texas Instruments Incorporated.  All rights reserved.
+// Copyright (c) 2011-2014 Texas Instruments Incorporated.  All rights reserved.
 // Software License Agreement
 // 
 // Software License Agreement
@@ -57,7 +57,6 @@ extern uint32_t __STACK_TOP;
 // To be added by user
 
 extern void EthernetIntHandler(void);
-
 
 //*****************************************************************************
 //
