@@ -440,8 +440,8 @@ main(void)
 	//
 	// Clear the terminal and print banner.
 	//
-	    UARTprintf("\033[2J\033[H");
-	    UARTprintf("Ethernet lwIP example\n\n");
+//	    UARTprintf("\033[2J\033[H");
+//	    UARTprintf("Ethernet lwIP example\n\n");
 
 
 	while(1)
