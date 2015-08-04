@@ -33,6 +33,10 @@
 	</linkedResources>
 	<variableList>
 		<variable>
+			<name>LAUNCH_LOCATION</name>
+			<value>file:/C:/Users/Roy/Documents/GitHub/RITLaunchInitiative</value>
+		</variable>
+		<variable>
 			<name>TIVAWARE_INSTALL</name>
 			<value>file:/C:/Users/Roy/Documents/GitHub/RITLaunchInitiative/Firmware/Tiva</value>
 		</variable>
