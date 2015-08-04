@@ -38,6 +38,8 @@
 #include "driverlib/rom_map.h"
 #include "driverlib/gpio.h"
 
+#include "utils/uartstdio.h"
+
 #include "BareEthernetPinout.h"
 
 
@@ -434,7 +436,7 @@ main(void)
 
 
 	//UARTStdioConfig(0, 115200, ui32SysClock);
-	//UARTStdioInit(0); //use UART0, 115200
+	UARTStdioInit(0); //use UART0, 115200
 	//
 	// Clear the terminal and print banner.
 	//
