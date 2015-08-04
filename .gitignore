@@ -7,7 +7,6 @@
 *.userosscache
 *.sln.docstates
 
-!.\Firmware\Tiva\driverlib\ccs\Debug/
 
 
 # Build results
@@ -232,3 +231,7 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+#Exception created to allow Tivaware library to be included
+
+!/Firmware/Tiva/driverlib/ccs/Debug
