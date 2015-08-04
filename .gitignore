@@ -14,6 +14,8 @@
 [Dd]ebugPublic/
 [Rr]elease/
 [Rr]eleases/
+
+
 x64/
 x86/
 build/
@@ -61,6 +63,8 @@ dlldata.c
 *.pidb
 *.svclog
 *.scc
+*.launch
+
 
 # Chutzpah Test files
 _Chutzpah*
