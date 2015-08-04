@@ -74,13 +74,13 @@ PortFunctionInit(void)
     // Enable pin PF1 for EPHY0 EN0LED2
     //
     MAP_GPIOPinConfigure(GPIO_PF1_EN0LED2);
-    MAP_GPIOPinTypeEthernetLED(GPIO_PORTF_BASE, GPIO_PIN_1);
+    GPIOPinTypeEthernetLED(GPIO_PORTF_BASE, GPIO_PIN_1);
 
     //
     // Enable pin PF0 for EPHY0 EN0LED0
     //
     MAP_GPIOPinConfigure(GPIO_PF0_EN0LED0);
-    MAP_GPIOPinTypeEthernetLED(GPIO_PORTF_BASE, GPIO_PIN_0);
+    GPIOPinTypeEthernetLED(GPIO_PORTF_BASE, GPIO_PIN_0);
 
     //
     // Enable pin PF4 for EPHY0 EN0LED1
