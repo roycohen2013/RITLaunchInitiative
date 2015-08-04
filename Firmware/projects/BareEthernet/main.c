@@ -18,9 +18,6 @@
 #include "utils/uartstdio.h"
 #include "inc/hw_emac.h"
 #include "driverlib/emac.h"
-#include "emac.h"
-
-
 //"C:\Users\Roy\Documents\GitHub\RITLaunchInitiative\Firmware\Tiva\driverlib\ccs\Debug"
 
 #include "inc/hw_nvic.h"
