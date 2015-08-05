@@ -122,6 +122,11 @@ ProcessReceivedPacket(void)
 
 				UARTwrite(g_psRxDescriptor[g_ui32RxDescIndex].pvBuffer1,i32FrameLen);
 
+
+				//Enhanced Transmit Descriptor 0
+
+				UARTprintf("\n\r");
+
 		//		ApplicationProcessFrame(i32FrameLen,
 		//				g_psRxDescriptor[g_ui32RxDescIndex].pvBuffer1);
 
@@ -363,7 +368,7 @@ main(void)
 	EMACPHYConfigSet(EMAC0_BASE,
 			(EMAC_PHY_TYPE_INTERNAL |
 					EMAC_PHY_INT_MDIX_EN |
-					EMAC_PHY_AN_100B_T_FULL_DUPLEX));
+					EMAC_PHY_AN_10B_T_HALF_DUPLEX));
 	//
 	// Reset the MAC to latch the PHY configuration.
 	//
@@ -378,7 +383,7 @@ main(void)
 	// Set MAC configuration options.
 	//
 	EMACConfigSet(EMAC0_BASE,
-			(EMAC_CONFIG_FULL_DUPLEX |
+			(EMAC_CONFIG_HALF_DUPLEX |
 					EMAC_CONFIG_CHECKSUM_OFFLOAD |
 					EMAC_CONFIG_7BYTE_PREAMBLE |
 					EMAC_CONFIG_IF_GAP_96BITS |
@@ -461,7 +466,7 @@ main(void)
 	// Clear the terminal and print banner.
 	//
 
-	//UARTprintf("Ethernet lwIP example\n\n");
+	UARTprintf("Ethernet RX initalized");
 
 
 	while(1)
@@ -495,9 +500,9 @@ main(void)
 
 
 
-        SysCtlDelay(10000000);
+        SysCtlDelay(1000000000);
 
-        PacketTransmit(payload,len);
+        //PacketTransmit(payload,len);
 
 
 		//
