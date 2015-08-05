@@ -1,0 +1,3 @@
+[submodule "external/zcm"]
+	path = external/zcm
+	url = bendesServer:repos/zcm.git
