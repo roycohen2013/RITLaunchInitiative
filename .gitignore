@@ -240,3 +240,4 @@ $RECYCLE.BIN/
 
 !/Firmware/Tiva/driverlib/ccs/Debug
 Firmware/projects/BareEthernet/.launches/BareEthernet.launch
+Firmware/projects/BareEthernet/.launches/BareEthernet.launch
