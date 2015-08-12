@@ -31,6 +31,7 @@ int main(void) {
 
 
 	SysCtlPeripheralEnable(SYSCTL_PERIPH_GPION);
+	SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOF);
 
 
 
@@ -42,6 +43,9 @@ int main(void) {
 	//ledUnit_t StatusLed1;
 	//ledUnit_t StatusLed2;
 
+
+
+	pulse_all_leds(5);
 
 
 

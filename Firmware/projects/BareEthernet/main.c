@@ -482,7 +482,7 @@ main(void)
 		buf[16] = 'y';
 
 
-		SysCtlDelay(10000000);
+		SysCtlDelay(1000000);
 
 		PacketTransmit(payload,len);
 

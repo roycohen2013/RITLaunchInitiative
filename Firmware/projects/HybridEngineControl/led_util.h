@@ -22,21 +22,22 @@ extern "C" {
 #define LED_MODE_PULSE		0x03	// Pulses set number of times and turns off
 
 
+// Defines for RGB led control additions@@@
 
-//Led Controller Type
-#define LED_TYPE_SINGLE		0x00	//Single led
-#define LED_TYPE_RGB		0x01		//Tri color Led Red green blue
-#define LED_TYPE_RG    		0x02			//Bi color Led Red green
-
-
-//Color Selection
-#define RED			0x00
-#define GREEN		0x00
-#define BLUE		0x00
-#define WHITE		0x00
-#define CYAN		0x00
-#define YELLOW		0x00
-#define MAGENTA		0x00
+////Led Controller Type
+//#define LED_TYPE_SINGLE		0x00	//Single led
+//#define LED_TYPE_RGB		0x01		//Tri color Led Red green blue
+//#define LED_TYPE_RG    		0x02			//Bi color Led Red green
+//
+//
+////Color Selection
+//#define RED			0x00
+//#define GREEN		0x00
+//#define BLUE		0x00
+//#define WHITE		0x00
+//#define CYAN		0x00
+//#define YELLOW		0x00
+//#define MAGENTA		0x00
 
 
 
@@ -49,6 +50,13 @@ extern "C" {
 //	uint8_t invert;
 //
 //} led_t;
+
+
+#define LED_D1 0
+#define LED_D2 1
+#define LED_D3 2
+#define LED_D4 3
+
 
 
 #define INIT_LED_MANAGER(PERIPHERAL_TIMER_NUM, PERIOD)\
@@ -80,30 +88,38 @@ extern "C" {
 typedef struct ledUnit_t
 {
 
-	uint32_t port;    	// GPIO_PORTx_BASE
-	uint32_t pin;    	// GPIO_PIN_x
-	uint8_t invert;
+	uint32_t port;    		// GPIO_PORTx_BASE
+	uint32_t pin;    		// GPIO_PIN_x
+	bool invert;
 
 	uint8_t mode;			//LED_MODE_BLINK,LED_MODE_PULSE,LED_MODE_ON,LED_MODE_OFF
-	uint32_t onDuration;
-	uint32_t offDuration;
+	uint32_t onDuration;	//
+	uint32_t offDuration;	//
 
-	//led_t physicalLed;
+	bool led_status;		//
+	bool locked;			//
 
-	bool led_status;
-
-	uint32_t blinkPeriod;
-	uint32_t periodLeft;
-	uint32_t cnt_left;	//
+	uint32_t blinkPeriod;	//
+	uint32_t periodLeft;	//
+	uint32_t cnt_left;		//
 
 
 } ledUnit_t;
 
 
-
 void ledManagerHandler(void);
 void ledManagerInit(uint32_t);
-void initLed(ledUnit_t led);
+void initLed(ledUnit_t *led, uint32_t port,uint32_t pin,bool invert);
+
+
+
+void stop_blinking(uint8_t);
+void pulse_all_leds(uint16_t num_pulses);
+void blink_all_leds(uint16_t period);
+void pulse_led(uint8_t, uint16_t num_pulses, uint16_t period);
+void blink_led(uint8_t, uint16_t period);
+void lock_led(uint8_t);
+void unlock_led(uint8_t);
 
 
 
