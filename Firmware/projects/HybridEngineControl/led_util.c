@@ -12,10 +12,11 @@
 #include "inc/hw_ints.h"
 #include "driverlib/gpio.h"
 #include "inc/hw_types.h"
+#include "driverlib/sysctl.h"
 
 #include "led_util.h"
 
-#include "driverlib/timer.h"
+//#include "driverlib/timer.h"
 
 #define NUM_LEDS 4
 
@@ -26,18 +27,11 @@ ledUnit_t statusLeds[NUM_LEDS];
 uint32_t ledManagerPeriod;
 
 
-//tSchedulerTask ledTaskInit(uint8_t taskNumber){
-//
-//	ledTaskNum = taskNumber;
-//	tSchedulerTask ledTask;
-//
-//	ledTask
-//
-//
-//}
-
 
 void ledManagerInit(uint32_t period) {
+
+	SysCtlPeripheralEnable(SYSCTL_PERIPH_GPION);
+	SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOF);
 
 	ledManagerPeriod = period;
 
@@ -50,9 +44,8 @@ void ledManagerInit(uint32_t period) {
 	statusLeds[LED_D2].port = GPIO_PORTN_BASE;
 	statusLeds[LED_D2].pin = GPIO_PIN_0;
 	statusLeds[LED_D2].mode = LED_MODE_BLINK;
-	statusLeds[LED_D2].blinkPeriod = 10000;
-	statusLeds[LED_D2].periodLeft = 10000;
-
+	statusLeds[LED_D2].blinkPeriod = 2000;
+	statusLeds[LED_D2].periodLeft = 2000;
 
 	lock_led(LED_D2);
 
@@ -243,12 +236,12 @@ void ledManagerHandler(void) {
 }
 
 
-void Timer0IntHandler(void) {
-// Clear the timer interrupt
-	TimerIntClear(TIMER0_BASE, TIMER_TIMA_TIMEOUT);
-// Read the current state of the GPIO pin and
-// write back the opposite state
-	// Read the current state of the GPIO pin and
-	// write back the opposite state
-	ledManagerHandler();
-}
+//void Timer0IntHandler(void) {
+//// Clear the timer interrupt
+//	TimerIntClear(TIMER0_BASE, TIMER_TIMA_TIMEOUT);
+//// Read the current state of the GPIO pin and
+//// write back the opposite state
+//	// Read the current state of the GPIO pin and
+//	// write back the opposite state
+//	ledManagerHandler();
+//}
