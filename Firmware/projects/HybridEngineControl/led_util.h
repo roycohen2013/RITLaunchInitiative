@@ -9,7 +9,7 @@
 #define LED_UTIL_H_
 
 
-#include <stdint.h>
+//#include <stdint.h>
 
 #ifdef __cplusplus
 extern "C" {
@@ -107,19 +107,22 @@ typedef struct ledUnit_t
 } ledUnit_t;
 
 
-void ledManagerHandler(void);
-void ledManagerInit(uint32_t);
-void initLed(ledUnit_t *led, uint32_t port,uint32_t pin,bool invert);
+void Timer0IntHandler(void);
+
+extern void ledTaskHandler(void *pvParam);
+extern void ledManagerHandler(void);
+extern void ledManagerInit(uint32_t);
+extern void initLed(ledUnit_t *led, uint32_t port,uint32_t pin,bool invert);
 
 
 
-void stop_blinking(uint8_t);
-void pulse_all_leds(uint16_t num_pulses);
-void blink_all_leds(uint16_t period);
-void pulse_led(uint8_t, uint16_t num_pulses, uint16_t period);
-void blink_led(uint8_t, uint16_t period);
-void lock_led(uint8_t);
-void unlock_led(uint8_t);
+extern void stop_blinking(uint8_t);
+extern void pulse_all_leds(uint16_t num_pulses);
+extern void blink_all_leds(uint16_t period);
+extern void pulse_led(uint8_t, uint16_t num_pulses, uint16_t period);
+extern void blink_led(uint8_t, uint16_t period);
+extern void lock_led(uint8_t);
+extern void unlock_led(uint8_t);
 
 
 

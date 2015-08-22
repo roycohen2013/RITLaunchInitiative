@@ -30,5 +30,15 @@
 			<type>1</type>
 			<locationURI>LAUNCH_LOCATION/Firmware/Tiva/driverlib/ccs/Debug/driverlib.lib</locationURI>
 		</link>
+		<link>
+			<name>scheduler.c</name>
+			<type>1</type>
+			<locationURI>LAUNCH_LOCATION/Firmware/Tiva/utils/scheduler.c</locationURI>
+		</link>
+		<link>
+			<name>scheduler.h</name>
+			<type>1</type>
+			<locationURI>LAUNCH_LOCATION/Firmware/Tiva/utils/scheduler.h</locationURI>
+		</link>
 	</linkedResources>
 </projectDescription>

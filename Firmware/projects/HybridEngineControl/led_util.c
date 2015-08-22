@@ -19,8 +19,23 @@
 
 #define NUM_LEDS 4
 
+
+uint8_t ledTaskNum;
+
 ledUnit_t statusLeds[NUM_LEDS];
 uint32_t ledManagerPeriod;
+
+
+//tSchedulerTask ledTaskInit(uint8_t taskNumber){
+//
+//	ledTaskNum = taskNumber;
+//	tSchedulerTask ledTask;
+//
+//	ledTask
+//
+//
+//}
+
 
 void ledManagerInit(uint32_t period) {
 
@@ -137,7 +152,7 @@ void blink_all_leds(uint16_t period){
 
 	uint8_t i;
 	for (i = 0; i < NUM_LEDS; ++i) {
-		blink_led(i, period)
+		blink_led(i, period);
 	}
 
 }
@@ -158,8 +173,12 @@ void turnOffLed(uint8_t index) {
 }
 
 
+void ledTaskHandler(void *pvParam){
 
-void ledManagerHandler() {
+	ledManagerHandler();
+}
+
+void ledManagerHandler(void) {
 
 	uint8_t i;
 	for (i = 0; i < NUM_LEDS; ++i) {
@@ -223,3 +242,13 @@ void ledManagerHandler() {
 	}
 }
 
+
+void Timer0IntHandler(void) {
+// Clear the timer interrupt
+	TimerIntClear(TIMER0_BASE, TIMER_TIMA_TIMEOUT);
+// Read the current state of the GPIO pin and
+// write back the opposite state
+	// Read the current state of the GPIO pin and
+	// write back the opposite state
+	ledManagerHandler();
+}
