@@ -7,17 +7,27 @@
 
 #include <stdint.h>
 #include <stdbool.h>
+#include <math.h>
+
 #include "inc/tm4c1294ncpdt.h"
 #include "inc/hw_memmap.h"
 #include "inc/hw_types.h"
+#include "inc/hw_gpio.h"
+
 #include "driverlib/sysctl.h"
 #include "driverlib/gpio.h"
 #include "driverlib/interrupt.h"
 #include "driverlib/timer.h"
+#include "driverlib/pwm.h"
+#include "driverlib/fpu.h"
+#include "driverlib/pin_map.h"
+
+
 
 #include "utils/scheduler.h"
 #include "led_util.h"
 #include "i2c_util.h"
+#include "servo_util.h"
 
 
 //uint8_t ui8PinData = 1;
@@ -71,8 +81,11 @@
 
 int main(void) {
 
+
+
+
 	uint32_t ui32Period;
-	uint32_t ui32SysClkFreq;
+	//SysCtlClockFreqSet;
 
 	ui32SysClkFreq = SysCtlClockFreqSet((SYSCTL_XTAL_25MHZ |
 	SYSCTL_OSC_MAIN |
@@ -80,14 +93,12 @@ int main(void) {
 	SYSCTL_CFG_VCO_480), 120000000);
 
 
-
-
-
 	//INIT_LED_MANAGER(0, 1000); 	//Selects the proper timer and sets the period
 	ledManagerInit(TICKS_PER_SECOND);
+
 	InitI2C0();
 
-
+//	SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOF);
 
 
 	//
@@ -102,11 +113,25 @@ int main(void) {
 
 
 
+	ui32Index = 1000;
 
 	while (1) {
 
 
 		SchedulerRun();
+
+
+
+
+		PWMPulseWidthSet(PWM0_BASE, PWM_OUT_4, ui32Index);
+
+
+		ui32Index++;
+		if (ui32Index == 2000)
+		{
+			ui32Index = 1000;
+		}
+		SysCtlDelay(ui32SysClkFreq/(STEPS));
 
 
 
