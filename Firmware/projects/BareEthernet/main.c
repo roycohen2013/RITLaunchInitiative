@@ -5,6 +5,8 @@
 #include "inc/hw_memmap.h"
 
 
+#include "BareEthernetPinout.h"
+
 #include "driverlib/flash.h"
 #include "driverlib/interrupt.h"
 #include "driverlib/gpio.h"
@@ -37,10 +39,9 @@
 #include "driverlib/pin_map.h"
 #include "driverlib/rom_map.h"
 #include "driverlib/gpio.h"
-
 #include "utils/uartstdio.h"
 
-#include "BareEthernetPinout.h"
+
 
 
 //#include "drivers/pinout.h"
@@ -119,8 +120,15 @@ ProcessReceivedPacket(void)
 
 				//OUR SHIT GOES HERE ROY @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
-				//		ApplicationProcessFrame(i32FrameLen,
-				//				g_psRxDescriptor[g_ui32RxDescIndex].pvBuffer1);
+				UARTwrite(g_psRxDescriptor[g_ui32RxDescIndex].pvBuffer1,i32FrameLen);
+
+
+				//Enhanced Transmit Descriptor 0
+
+				UARTprintf("\n\r");
+
+		//		ApplicationProcessFrame(i32FrameLen,
+		//				g_psRxDescriptor[g_ui32RxDescIndex].pvBuffer1);
 
 
 			}
@@ -300,6 +308,17 @@ main(void)
 			SYSCTL_USE_PLL |
 			SYSCTL_CFG_VCO_480), 120000000);
 	//
+
+
+//	SysCtlPeripheralEnable(SYSCTL_PERIPH_UART0);
+//	SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOA);
+//	GPIOPinConfigure(GPIO_PA0_U0RX);
+//	GPIOPinConfigure(GPIO_PA1_U0TX);
+//	GPIOPinTypeUART(GPIO_PORTA_BASE, GPIO_PIN_0 | GPIO_PIN_1);
+
+
+
+	PortFunctionInit();
 	// Configure the device pins.
 	//
 	//PinoutSet();
@@ -349,7 +368,7 @@ main(void)
 	EMACPHYConfigSet(EMAC0_BASE,
 			(EMAC_PHY_TYPE_INTERNAL |
 					EMAC_PHY_INT_MDIX_EN |
-					EMAC_PHY_AN_100B_T_HALF_DUPLEX));
+					EMAC_PHY_AN_100B_T_FULL_DUPLEX));
 	//
 	// Reset the MAC to latch the PHY configuration.
 	//
@@ -435,13 +454,20 @@ main(void)
 	uint8_t sequenceNum = 0;
 
 
-	//UARTStdioConfig(0, 115200, ui32SysClock);
-	//UARTStdioInit(0); //use UART0, 115200
+	UARTConfigSetExpClk(UART0_BASE, ui32SysClock, 115200,(UART_CONFIG_WLEN_8 |
+			UART_CONFIG_STOP_ONE | UART_CONFIG_PAR_NONE));
+//
+	UARTStdioConfig(0, 115200, ui32SysClock);
+//    UARTprintf("test");
+
+
+
 	//
 	// Clear the terminal and print banner.
 	//
-	//	    UARTprintf("\033[2J\033[H");
-	//	    UARTprintf("Ethernet lwIP example\n\n");
+
+
+	UARTprintf("Ethernet RX initalized");
 
 
 	while(1)
@@ -487,8 +513,13 @@ main(void)
 		PacketTransmit(payload,len);
 
 
+
 		//
 		// Do main loop things...
 		//
 	}
 }
+
+
+
+

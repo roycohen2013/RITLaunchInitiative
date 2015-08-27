@@ -68,25 +68,25 @@ PortFunctionInit(void)
     // Enable pin PG0 for EMAC0 EN0PPS
     //
     MAP_GPIOPinConfigure(GPIO_PG0_EN0PPS);
-    MAP_GPIOPinTypeEthernetMII(GPIO_PORTG_BASE, GPIO_PIN_0);
+    GPIOPinTypeEthernetMII(GPIO_PORTG_BASE, GPIO_PIN_0);
 
     //
     // Enable pin PF1 for EPHY0 EN0LED2
     //
     MAP_GPIOPinConfigure(GPIO_PF1_EN0LED2);
-    MAP_GPIOPinTypeEthernetLED(GPIO_PORTF_BASE, GPIO_PIN_1);
+    GPIOPinTypeEthernetLED(GPIO_PORTF_BASE, GPIO_PIN_1);
 
     //
     // Enable pin PF0 for EPHY0 EN0LED0
     //
     MAP_GPIOPinConfigure(GPIO_PF0_EN0LED0);
-    MAP_GPIOPinTypeEthernetLED(GPIO_PORTF_BASE, GPIO_PIN_0);
+    GPIOPinTypeEthernetLED(GPIO_PORTF_BASE, GPIO_PIN_0);
 
     //
     // Enable pin PF4 for EPHY0 EN0LED1
     //
     MAP_GPIOPinConfigure(GPIO_PF4_EN0LED1);
-    MAP_GPIOPinTypeEthernetLED(GPIO_PORTF_BASE, GPIO_PIN_4);
+    GPIOPinTypeEthernetLED(GPIO_PORTF_BASE, GPIO_PIN_4);
 
     //
     // Enable pin PK7 for UART0 U0RI
