@@ -1,0 +1,3 @@
+https://training.ti.com/tm4c129x-mcus-series-part-3-guidelines-ethernet -- TI Ethernet routing guidelines
+http://www.eetimes.com/document.asp?doc_id=1277940 -- bob smith termination
+

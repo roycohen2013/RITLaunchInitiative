@@ -368,7 +368,7 @@ main(void)
 	EMACPHYConfigSet(EMAC0_BASE,
 			(EMAC_PHY_TYPE_INTERNAL |
 					EMAC_PHY_INT_MDIX_EN |
-					EMAC_PHY_AN_10B_T_HALF_DUPLEX));
+					EMAC_PHY_AN_100B_T_FULL_DUPLEX));
 	//
 	// Reset the MAC to latch the PHY configuration.
 	//
@@ -436,7 +436,7 @@ main(void)
 	//
 	// Enable the Ethernet interrupt.
 	//
-	IntEnable(INT_EMAC0);
+	//IntEnable(INT_EMAC0);
 	//
 	// Enable the Ethernet RX Packet interrupt source.
 	//
@@ -447,10 +447,10 @@ main(void)
 
 
 	uint8_t *payload;
-	int32_t len = 16;
+	int32_t len = 50;
 	uint8_t i;
 
-	uint8_t buf[16];
+	uint8_t buf[50];
 	uint8_t sequenceNum = 0;
 
 
@@ -466,43 +466,52 @@ main(void)
 	// Clear the terminal and print banner.
 	//
 
+
 	UARTprintf("Ethernet RX initalized");
 
 
 	while(1)
 	{
 
+		payload = (void*)buf;
+		//tot_len = 20;
 
-	    //UARTprintf("test");
+		//00-23-56-0C-99-12
+		sequenceNum++;
 
-        payload = (void*)buf;
-        //tot_len = 20;
+		if(sequenceNum >= 255){
+			sequenceNum = 0;
+		}
 
-        //00-23-56-0C-99-12
-        sequenceNum++;
+		for (i = 0; i < 16; i++) { //increment temps and assign to buf
 
-        if(sequenceNum >= 255){
-        	sequenceNum = 0;
-        }
+			//buf[i] = i*16;
+			buf[i] = sequenceNum;
+		}
 
-        for (i = 0; i < 16; i++) { //increment temps and assign to buf
+		buf[0] = 0x00;
+		buf[1] = 0x1a;
+		buf[2] = 0xb6;
+		buf[3] = 0x02;
+		buf[4] = 0xeb;
+		buf[5] = 0x48;
+		buf[6] = 'h';
+		buf[7] = 'e';
+		buf[8] = 'l';
+		buf[9] = 'l';
+		buf[10] = 'o';
+		buf[11] = 'r';
+		buf[12] = 'o';
+		buf[13] = 'y';
+		buf[14] = 'r';
+		buf[15] = 'o';
+		buf[16] = 'y';
 
-        	//buf[i] = i*16;
-        	buf[i] = sequenceNum;
-        }
 
-        buf[0] = 0x00;
-        buf[1] = 0x23;
-        buf[2] = 0x56;
-        buf[3] = 0x0C;
-        buf[4] = 0x99;
-        buf[5] = 0x12;
+		SysCtlDelay(1000000);
 
+		PacketTransmit(payload,len);
 
-
-        SysCtlDelay(1000000000);
-
-        //PacketTransmit(payload,len);
 
 
 		//
