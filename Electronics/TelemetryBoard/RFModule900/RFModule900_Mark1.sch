@@ -5390,10 +5390,10 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 </net>
 <net name="RADIO_ENABLE" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="SDN"/>
-<wire x1="-88.9" y1="73.66" x2="-127" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="R7" gate="G$1" pin="2"/>
 <wire x1="-127" y1="73.66" x2="-127" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="SDN"/>
+<wire x1="-88.9" y1="73.66" x2="-127" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="-68.58" y1="-43.18" x2="-63.5" y2="-43.18" width="0.1524" layer="91"/>
