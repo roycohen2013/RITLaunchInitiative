@@ -11705,6 +11705,27 @@
 <text x="-1" y="2" size="0.6096" layer="25">&gt;NAME</text>
 <text x="-0.5" y="-2.5" size="0.4064" layer="27">&gt;VALUE</text>
 </package>
+<package name="TSOP-6">
+<wire x1="-1.5" y1="0.8" x2="1.5" y2="0.8" width="0.1016" layer="21"/>
+<wire x1="1.5" y1="0.8" x2="1.5" y2="-0.8" width="0.1016" layer="21"/>
+<wire x1="1.5" y1="-0.8" x2="-1.5" y2="-0.8" width="0.1016" layer="21"/>
+<wire x1="-1.5" y1="-0.8" x2="-1.5" y2="0.8" width="0.1016" layer="21"/>
+<circle x="-1.075" y="-0.5" radius="0.2136" width="0" layer="21"/>
+<smd name="1" x="-0.99" y="-1.2" dx="0.7" dy="1" layer="1"/>
+<smd name="2" x="0" y="-1.2" dx="0.7" dy="1" layer="1"/>
+<smd name="3" x="0.99" y="-1.2" dx="0.7" dy="1" layer="1"/>
+<smd name="4" x="0.99" y="1.2" dx="0.7" dy="1" layer="1" rot="R180"/>
+<smd name="6" x="-0.99" y="1.2" dx="0.7" dy="1" layer="1" rot="R180"/>
+<text x="-2.54" y="2.54" size="1.778" layer="25">&gt;NAME</text>
+<text x="-2.54" y="-3.81" size="1.778" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.2" y1="0.825" x2="-0.7" y2="1.5" layer="51"/>
+<rectangle x1="0.7" y1="0.825" x2="1.2" y2="1.5" layer="51"/>
+<rectangle x1="0.7" y1="-1.5" x2="1.2" y2="-0.825" layer="51"/>
+<rectangle x1="-0.25" y1="-1.5" x2="0.25" y2="-0.825" layer="51"/>
+<rectangle x1="-1.2" y1="-1.5" x2="-0.7" y2="-0.825" layer="51"/>
+<rectangle x1="-0.25" y1="0.825" x2="0.25" y2="1.5" layer="51"/>
+<smd name="5" x="0" y="1.2" dx="0.7" dy="1" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="INA125UA">
@@ -12136,6 +12157,20 @@
 <text x="-12.7" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
 <wire x1="-2.794" y1="-6.604" x2="-10.16" y2="-6.604" width="0.254" layer="94"/>
 <wire x1="-3.048" y1="1.016" x2="-10.16" y2="1.016" width="0.254" layer="94"/>
+</symbol>
+<symbol name="AO6602">
+<wire x1="-7.62" y1="10.16" x2="7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<pin name="G1" x="-12.7" y="7.62" visible="pin" length="middle"/>
+<pin name="S2" x="-12.7" y="2.54" visible="pin" length="middle"/>
+<pin name="G2" x="-12.7" y="-2.54" visible="pin" length="middle"/>
+<pin name="D1" x="12.7" y="7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="S1" x="12.7" y="2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="D2" x="12.7" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<text x="-7.874" y="10.668" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -12583,6 +12618,30 @@ Datasheet: http://optoelectronics.liteon.com/upload/download/DS22-2001-076/S_110
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AO6602">
+<description>http://aosmd.com/res/data_sheets/AO6602.pdf</description>
+<gates>
+<gate name="G$1" symbol="AO6602" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="TSOP-6">
+<connects>
+<connect gate="G$1" pin="D1" pad="6"/>
+<connect gate="G$1" pin="D2" pad="4"/>
+<connect gate="G$1" pin="G1" pad="1"/>
+<connect gate="G$1" pin="G2" pad="3"/>
+<connect gate="G$1" pin="S1" pad="5"/>
+<connect gate="G$1" pin="S2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGI" value="785-1077-1-ND" constant="no"/>
+<attribute name="MPN" value="AO6602L" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
