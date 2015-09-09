@@ -4552,9 +4552,9 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <wire x1="114.3" y1="226.06" x2="114.3" y2="325.12" width="0.1524" layer="94"/>
 <text x="157.48" y="327.66" size="3.81" layer="94">RF PA Power MANAGMENT</text>
 <text x="157.48" y="213.36" size="3.81" layer="94">RF POWER AMPLIFIER</text>
-<wire x1="-154.94" y1="162.56" x2="30.48" y2="162.56" width="0.1524" layer="94"/>
-<wire x1="30.48" y1="162.56" x2="30.48" y2="30.48" width="0.1524" layer="94"/>
-<wire x1="30.48" y1="30.48" x2="-154.94" y2="30.48" width="0.1524" layer="94"/>
+<wire x1="-154.94" y1="162.56" x2="22.86" y2="162.56" width="0.1524" layer="94"/>
+<wire x1="22.86" y1="162.56" x2="22.86" y2="30.48" width="0.1524" layer="94"/>
+<wire x1="22.86" y1="30.48" x2="-154.94" y2="30.48" width="0.1524" layer="94"/>
 <wire x1="-154.94" y1="30.48" x2="-154.94" y2="162.56" width="0.1524" layer="94"/>
 <text x="-93.98" y="165.1" size="3.81" layer="94">MAIN RF TRANSCEIVER</text>
 <wire x1="-121.92" y1="231.14" x2="-5.08" y2="231.14" width="0.1524" layer="94"/>
@@ -4584,6 +4584,8 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <text x="119.38" y="40.64" size="2.1844" layer="94">Finalize Connector configuration for daughter board interface</text>
 <text x="119.38" y="38.1" size="2.1844" layer="94">Breakout GPIO's </text>
 <text x="119.38" y="35.56" size="2.1844" layer="94">Try finding The proper values for the two Ferrites L4 L5</text>
+<text x="33.02" y="76.2" size="3.81" layer="94">&lt;- RF IN </text>
+<text x="27.94" y="119.38" size="3.81" layer="94">RF OUT -&gt; </text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="-68.58" y="109.22"/>
