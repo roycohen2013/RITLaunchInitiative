@@ -2168,8 +2168,8 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <instance part="GND-ISO1" gate="G$1" x="-55.88" y="-45.72"/>
 <instance part="SUPPLY3" gate="G$1" x="-12.7" y="-25.4"/>
 <instance part="C6" gate="G$1" x="-20.32" y="-33.02"/>
-<instance part="GND-ISO2" gate="G$1" x="-20.32" y="-40.64"/>
-<instance part="GND-ISO3" gate="G$1" x="-27.94" y="-50.8"/>
+<instance part="GND-ISO2" gate="G$1" x="-20.32" y="-38.1"/>
+<instance part="GND-ISO3" gate="G$1" x="-27.94" y="-48.26"/>
 <instance part="C7" gate="G$1" x="-27.94" y="-43.18"/>
 <instance part="GND-ISO4" gate="G$1" x="-5.08" y="22.86"/>
 <instance part="SUPPLY4" gate="G$1" x="55.88" y="33.02"/>
@@ -2273,12 +2273,10 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <segment>
 <pinref part="C6" gate="G$1" pin="2"/>
 <pinref part="GND-ISO2" gate="G$1" pin="GND-ISO"/>
-<wire x1="-20.32" y1="-38.1" x2="-20.32" y2="-35.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C7" gate="G$1" pin="2"/>
 <pinref part="GND-ISO3" gate="G$1" pin="GND-ISO"/>
-<wire x1="-27.94" y1="-48.26" x2="-27.94" y2="-45.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND-ISO4" gate="G$1" pin="GND-ISO"/>
