@@ -11727,38 +11727,22 @@
 <smd name="5" x="0" y="1.2" dx="0.7" dy="1" layer="1"/>
 </package>
 <package name="TPS2556">
-<pad name="1" x="-3.81" y="3.81" drill="0.8" shape="long"/>
-<pad name="2" x="-3.81" y="1.27" drill="0.8" shape="long"/>
-<pad name="3" x="-3.81" y="-1.27" drill="0.8" shape="long"/>
-<pad name="4" x="-3.81" y="-3.81" drill="0.8" shape="long"/>
-<pad name="5" x="3.81" y="-3.81" drill="0.8" shape="long"/>
-<pad name="6" x="3.81" y="-1.27" drill="0.8" shape="long"/>
-<pad name="7" x="3.81" y="1.27" drill="0.8" shape="long"/>
-<pad name="8" x="3.81" y="3.81" drill="0.8" shape="long"/>
-<wire x1="2.54" y1="5.08" x2="2.54" y2="-5.08" width="0.254" layer="51"/>
-<wire x1="2.54" y1="-5.08" x2="-2.54" y2="-5.08" width="0.254" layer="51"/>
-<wire x1="-2.54" y1="-5.08" x2="-2.54" y2="5.08" width="0.254" layer="51"/>
-<wire x1="-2.54" y1="5.08" x2="-1.27" y2="5.08" width="0.254" layer="51"/>
-<wire x1="-1.27" y1="5.08" x2="0" y2="3.81" width="0.254" layer="51" curve="90"/>
-<wire x1="0" y1="3.81" x2="1.27" y2="5.08" width="0.254" layer="51" curve="90"/>
-<wire x1="1.27" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="51"/>
-<wire x1="-2.54" y1="5.08" x2="-1.27" y2="5.08" width="0.254" layer="21"/>
-<wire x1="-1.27" y1="5.08" x2="0" y2="3.81" width="0.254" layer="21" curve="90"/>
-<wire x1="0" y1="3.81" x2="1.27" y2="5.08" width="0.254" layer="21" curve="90"/>
-<wire x1="1.27" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="21"/>
-<wire x1="2.54" y1="5.08" x2="2.54" y2="4.445" width="0.254" layer="21"/>
-<wire x1="2.54" y1="3.175" x2="2.54" y2="1.905" width="0.254" layer="21"/>
-<wire x1="2.54" y1="0.635" x2="2.54" y2="-0.635" width="0.254" layer="21"/>
-<wire x1="2.54" y1="-1.905" x2="2.54" y2="-3.175" width="0.254" layer="21"/>
-<wire x1="2.54" y1="-4.445" x2="2.54" y2="-5.08" width="0.254" layer="21"/>
-<wire x1="2.54" y1="-5.08" x2="-2.54" y2="-5.08" width="0.254" layer="21"/>
-<wire x1="-2.54" y1="-5.08" x2="-2.54" y2="-4.445" width="0.254" layer="21"/>
-<wire x1="-2.54" y1="-3.175" x2="-2.54" y2="-1.905" width="0.254" layer="21"/>
-<wire x1="-2.54" y1="-0.635" x2="-2.54" y2="0.635" width="0.254" layer="21"/>
-<wire x1="-2.54" y1="1.905" x2="-2.54" y2="3.175" width="0.254" layer="21"/>
-<wire x1="-2.54" y1="4.445" x2="-2.54" y2="5.08" width="0.254" layer="21"/>
-<text x="-2.54" y="5.715" size="1.27" layer="25" font="vector">&gt;NAME</text>
-<text x="-2.54" y="-6.985" size="1.27" layer="27" font="vector">TPS2556</text>
+<smd name="P$1" x="-1.325" y="0.975" dx="0.3" dy="0.5" layer="1" rot="R90"/>
+<smd name="P$2" x="-1.325" y="0.325" dx="0.3" dy="0.5" layer="1" rot="R90"/>
+<smd name="P$3" x="-1.325" y="-0.325" dx="0.3" dy="0.5" layer="1" rot="R90"/>
+<smd name="P$4" x="-1.325" y="-0.975" dx="0.3" dy="0.5" layer="1" rot="R90"/>
+<smd name="P$5" x="1.325" y="-0.975" dx="0.3" dy="0.5" layer="1" rot="R90"/>
+<smd name="P$6" x="1.325" y="-0.325" dx="0.3" dy="0.5" layer="1" rot="R90"/>
+<smd name="P$7" x="1.325" y="0.325" dx="0.3" dy="0.5" layer="1" rot="R90"/>
+<smd name="P$8" x="1.325" y="0.975" dx="0.3" dy="0.5" layer="1" rot="R90"/>
+<smd name="P$9" x="0" y="-0.2" dx="1.65" dy="2" layer="1" rot="R180"/>
+<polygon width="0" layer="1">
+<vertex x="-0.825" y="0.8"/>
+<vertex x="-0.825" y="1.2"/>
+<vertex x="0.5" y="1.2"/>
+<vertex x="0.825" y="0.86"/>
+<vertex x="0.825" y="0.8"/>
+</polygon>
 </package>
 <package name="LMZ21701">
 <text x="-2.54" y="2.54" size="0.8" layer="25" font="vector">&gt;NAME</text>
@@ -12260,20 +12244,20 @@
 <text x="-7.62" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="TPS2556">
-<wire x1="-7.62" y1="12.7" x2="-7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="12.7" x2="-7.62" y2="0" width="0.254" layer="95"/>
 <wire x1="-7.62" y1="0" x2="7.62" y2="0" width="0.254" layer="94"/>
 <wire x1="7.62" y1="0" x2="7.62" y2="12.7" width="0.254" layer="94"/>
 <wire x1="7.62" y1="12.7" x2="-7.62" y2="12.7" width="0.254" layer="94"/>
 <pin name="GND" x="-10.16" y="10.16" length="short"/>
 <pin name="IN" x="-10.16" y="7.62" length="short"/>
-<pin name="INNC" x="-10.16" y="5.08" length="short"/>
+<pin name="IN2" x="-10.16" y="5.08" length="short"/>
 <pin name="EN" x="-10.16" y="2.54" length="short"/>
 <pin name="ILIM" x="10.16" y="2.54" length="short" rot="R180"/>
 <pin name="OUT" x="10.16" y="5.08" length="short" rot="R180"/>
-<pin name="OUTNC" x="10.16" y="7.62" length="short" rot="R180"/>
-<pin name="FAULT" x="10.16" y="10.16" length="short" rot="R180"/>
+<pin name="OUT2" x="10.16" y="7.62" length="short" rot="R180"/>
+<pin name="FA" x="10.16" y="10.16" length="short" rot="R180"/>
 <text x="-10.16" y="-2.54" size="1.778" layer="95">&gt;NAME</text>
-<text x="2.54" y="-2.54" size="1.778" layer="95">TPS2556</text>
+<text x="2.54" y="-2.54" size="1.7" layer="96" font="vector" ratio="11">&gt;VALUE</text>
 </symbol>
 <symbol name="LMZ21701">
 <wire x1="-63.5" y1="20.32" x2="-63.5" y2="7.62" width="0.254" layer="94"/>
@@ -12788,16 +12772,6 @@ Datasheet: http://optoelectronics.liteon.com/upload/download/DS22-2001-076/S_110
 </gates>
 <devices>
 <device name="" package="TPS2556">
-<connects>
-<connect gate="G$1" pin="EN" pad="4"/>
-<connect gate="G$1" pin="FAULT" pad="8"/>
-<connect gate="G$1" pin="GND" pad="1"/>
-<connect gate="G$1" pin="ILIM" pad="5"/>
-<connect gate="G$1" pin="IN" pad="2"/>
-<connect gate="G$1" pin="INNC" pad="3"/>
-<connect gate="G$1" pin="OUT" pad="6"/>
-<connect gate="G$1" pin="OUTNC" pad="7"/>
-</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -12810,6 +12784,16 @@ Datasheet: http://optoelectronics.liteon.com/upload/download/DS22-2001-076/S_110
 </gates>
 <devices>
 <device name="" package="LMZ21701">
+<connects>
+<connect gate="G$1" pin="EN" pad="P$7"/>
+<connect gate="G$1" pin="FB" pad="P$2"/>
+<connect gate="G$1" pin="GND" pad="P$5 P$9 P$10"/>
+<connect gate="G$1" pin="PG" pad="P$3"/>
+<connect gate="G$1" pin="SS" pad="P$1"/>
+<connect gate="G$1" pin="VIN" pad="P$8"/>
+<connect gate="G$1" pin="VOS" pad="P$6"/>
+<connect gate="G$1" pin="VOUT" pad="P$4"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>

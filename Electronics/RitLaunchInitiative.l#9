@@ -11761,30 +11761,30 @@
 <text x="-2.54" y="-6.985" size="1.27" layer="27" font="vector">TPS2556</text>
 </package>
 <package name="LMZ21701">
-<smd name="P$1" x="-1.475" y="-1.2" dx="0.5" dy="0.55" layer="1"/>
-<smd name="P$2" x="-1.475" y="-0.4" dx="0.5" dy="0.55" layer="1"/>
-<smd name="P$3" x="-1.475" y="0.4" dx="0.5" dy="0.55" layer="1"/>
-<smd name="P$4" x="-1.475" y="1.2" dx="0.5" dy="0.55" layer="1"/>
-<smd name="P$5" x="1.475" y="1.2" dx="0.5" dy="0.55" layer="1"/>
-<smd name="P$6" x="1.475" y="0.4" dx="0.5" dy="0.55" layer="1"/>
-<smd name="P$7" x="1.475" y="-0.4" dx="0.5" dy="0.55" layer="1"/>
-<smd name="P$8" x="1.475" y="-1.2" dx="0.5" dy="0.55" layer="1"/>
-<smd name="P$9" x="0.55" y="0" dx="1.9" dy="0.8" layer="1" rot="R90"/>
-<smd name="P$10" x="-0.55" y="0.475" dx="0.95" dy="0.8" layer="1" rot="R90"/>
-<polygon width="0" layer="1">
-<vertex x="-0.15" y="0"/>
-<vertex x="-0.15" y="-0.95"/>
-<vertex x="-0.65" y="-0.95"/>
-<vertex x="-0.95" y="-0.65"/>
-<vertex x="-0.95" y="0"/>
-</polygon>
-<wire x1="-1.8" y1="-1.56" x2="-1.8" y2="1.54" width="0.127" layer="21"/>
-<wire x1="-1.8" y1="1.54" x2="1.86" y2="1.54" width="0.127" layer="21"/>
-<wire x1="1.86" y1="1.54" x2="1.86" y2="-1.6" width="0.127" layer="21"/>
-<wire x1="1.86" y1="-1.6" x2="1.84" y2="-1.58" width="0.127" layer="21"/>
-<wire x1="1.84" y1="-1.58" x2="-1.8" y2="-1.58" width="0.127" layer="21"/>
 <text x="-2.54" y="2.54" size="0.8" layer="25" font="vector">&gt;NAME</text>
 <text x="-2.54" y="-3.81" size="0.8" layer="27" font="vector">&gt;VALUE</text>
+<smd name="P$1" x="-1.475" y="1.2" dx="0.5" dy="0.55" layer="1"/>
+<smd name="P$2" x="-1.475" y="0.4" dx="0.5" dy="0.55" layer="1"/>
+<smd name="P$3" x="-1.475" y="-0.4" dx="0.5" dy="0.55" layer="1"/>
+<smd name="P$4" x="-1.475" y="-1.2" dx="0.5" dy="0.55" layer="1"/>
+<smd name="P$5" x="1.475" y="-1.2" dx="0.5" dy="0.55" layer="1"/>
+<smd name="P$6" x="1.475" y="-0.4" dx="0.5" dy="0.55" layer="1"/>
+<smd name="P$7" x="1.475" y="0.4" dx="0.5" dy="0.55" layer="1"/>
+<smd name="P$8" x="1.475" y="1.2" dx="0.5" dy="0.55" layer="1"/>
+<smd name="P$9" x="0.55" y="0" dx="1.9" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$10" x="-0.55" y="-0.475" dx="0.95" dy="0.8" layer="1" rot="R270"/>
+<polygon width="0" layer="1">
+<vertex x="-0.95" y="0"/>
+<vertex x="-0.95" y="0.65"/>
+<vertex x="-0.65" y="0.95"/>
+<vertex x="-0.15" y="0.95"/>
+<vertex x="-0.15" y="0"/>
+</polygon>
+<wire x1="-1.82" y1="1.6" x2="1.84" y2="1.6" width="0.127" layer="21"/>
+<wire x1="1.84" y1="1.6" x2="1.84" y2="-1.64" width="0.127" layer="21"/>
+<wire x1="1.84" y1="-1.64" x2="-1.84" y2="-1.64" width="0.127" layer="21"/>
+<wire x1="-1.84" y1="-1.64" x2="-1.82" y2="-1.62" width="0.127" layer="21"/>
+<wire x1="-1.82" y1="-1.62" x2="-1.82" y2="1.6" width="0.127" layer="21"/>
 </package>
 <package name="SIL0008E">
 <text x="-2.515" y="2.045" size="0.8" layer="25" font="vector">&gt;NAME</text>

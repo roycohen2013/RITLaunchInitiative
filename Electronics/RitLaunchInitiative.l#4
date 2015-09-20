@@ -11804,6 +11804,18 @@
 <wire x1="-1.82" y1="-1.56" x2="-1.82" y2="1.54" width="0.127" layer="21"/>
 <circle x="-2.4" y="-1.6" radius="0.244128125" width="0.127" layer="48"/>
 </package>
+<package name="CHIPFET">
+<smd name="P$1" x="0" y="2.54" dx="1.87" dy="1.5" layer="1" rot="R90"/>
+<smd name="P$2" x="-1.27" y="3.81" dx="0.2" dy="0.3" layer="1"/>
+<smd name="P$3" x="-1.27" y="2.54" dx="0.2" dy="0.3" layer="1"/>
+<smd name="P$4" x="-1.27" y="1.27" dx="0.2" dy="0.3" layer="1"/>
+<smd name="P$5" x="-1.27" y="0" dx="0.35" dy="0.3" layer="1" rot="R180"/>
+<smd name="P$6" x="0" y="0" dx="0.5" dy="0.25" layer="1" rot="R180"/>
+<smd name="P$7" x="1.27" y="0" dx="0.35" dy="0.3" layer="1" rot="R180"/>
+<smd name="P$8" x="1.27" y="1.27" dx="0.2" dy="0.3" layer="1" rot="R180"/>
+<smd name="P$9" x="1.27" y="2.54" dx="0.2" dy="0.3" layer="1" rot="R180"/>
+<smd name="P$10" x="1.27" y="3.81" dx="0.2" dy="0.3" layer="1" rot="R180"/>
+</package>
 </packages>
 <symbols>
 <symbol name="INA125UA">
@@ -12779,6 +12791,16 @@ Datasheet: http://optoelectronics.liteon.com/upload/download/DS22-2001-076/S_110
 </gates>
 <devices>
 <device name="" package="TPS2556">
+<connects>
+<connect gate="G$1" pin="EN" pad="P$4"/>
+<connect gate="G$1" pin="FA" pad="P$8"/>
+<connect gate="G$1" pin="GND" pad="P$1 P$9"/>
+<connect gate="G$1" pin="ILIM" pad="P$5"/>
+<connect gate="G$1" pin="IN" pad="P$2"/>
+<connect gate="G$1" pin="IN2" pad="P$3"/>
+<connect gate="G$1" pin="OUT" pad="P$7"/>
+<connect gate="G$1" pin="OUT2" pad="P$6"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
