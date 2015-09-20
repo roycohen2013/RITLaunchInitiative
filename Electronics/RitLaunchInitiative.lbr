@@ -11938,6 +11938,26 @@
 <smd name="GND@5" x="2.54" y="-4.3825" dx="2.415" dy="5.08" layer="1" rot="R90" cream="no"/>
 <smd name="GND@1" x="2.54" y="4.3825" dx="2.415" dy="5.08" layer="16" rot="R90" cream="no"/>
 <smd name="GND@3" x="2.54" y="-4.3825" dx="2.415" dy="5.08" layer="16" rot="R90" cream="no"/>
+=======
+<package name="SMD-457-04">
+<smd name="P$1" x="0" y="1.875" dx="0.5" dy="0.85" layer="1" rot="R90"/>
+<smd name="P$2" x="0" y="-1.875" dx="0.55" dy="0.7" layer="1" rot="R90"/>
+<wire x1="-0.44" y1="1.58" x2="-1.34" y2="1.58" width="0.127" layer="21"/>
+<wire x1="-1.34" y1="1.58" x2="-1.34" y2="-1.54" width="0.127" layer="21"/>
+<wire x1="-1.34" y1="-1.56" x2="-0.4" y2="-1.56" width="0.127" layer="21"/>
+<wire x1="-0.4" y1="-1.56" x2="-0.4" y2="-1.54" width="0.127" layer="21"/>
+<wire x1="0.4" y1="-1.58" x2="1.3" y2="-1.58" width="0.127" layer="21"/>
+<wire x1="1.3" y1="-1.58" x2="1.3" y2="1.56" width="0.127" layer="21"/>
+<wire x1="1.3" y1="1.56" x2="0.46" y2="1.56" width="0.127" layer="21"/>
+<wire x1="0.46" y1="1.56" x2="0.46" y2="1.54" width="0.127" layer="21"/>
+<wire x1="1.3" y1="1.56" x2="-1.36" y2="1.56" width="0.127" layer="51"/>
+<wire x1="-1.36" y1="1.56" x2="-1.36" y2="-1.56" width="0.127" layer="51"/>
+<wire x1="-1.36" y1="-1.56" x2="1.3" y2="-1.56" width="0.127" layer="51"/>
+<wire x1="1.3" y1="-1.56" x2="1.3" y2="-1.54" width="0.127" layer="51"/>
+<wire x1="1.3" y1="-1.54" x2="1.32" y2="-1.54" width="0.127" layer="51"/>
+<wire x1="1.32" y1="-1.54" x2="1.32" y2="1" width="0.127" layer="51"/>
+<wire x1="1.32" y1="1" x2="1.32" y2="1.54" width="0.127" layer="51"/>
+<wire x1="1.32" y1="1" x2="-1.32" y2="1" width="0.127" layer="51"/>
 </package>
 </packages>
 <symbols>
@@ -12606,6 +12626,22 @@
 <text x="2.54" y="-3.302" size="1.778" layer="95" rot="R180">&gt;NAME</text>
 <pin name="1" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
 <pin name="GND" x="-2.54" y="2.54" visible="off" length="short" direction="pwr"/>
+=======
+<symbol name="MBRM110LT1G">
+<text x="-9.906" y="2.286" size="1.778" layer="95">&gt;NAME</text>
+<text x="-9.906" y="-4.064" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="P$1" x="-10.16" y="0" visible="off" length="short"/>
+<pin name="P$2" x="0.058" y="0" visible="off" length="short" rot="R180"/>
+<wire x1="-7.62" y1="2.032" x2="-3.048" y2="0" width="0.254" layer="97"/>
+<wire x1="-3.048" y1="0" x2="-7.62" y2="-2.032" width="0.254" layer="97"/>
+<wire x1="-7.62" y1="-2.032" x2="-7.62" y2="2.032" width="0.254" layer="97"/>
+<wire x1="-3.048" y1="0" x2="-3.048" y2="1.778" width="0.254" layer="97"/>
+<wire x1="-3.048" y1="1.778" x2="-3.556" y2="1.778" width="0.254" layer="97"/>
+<wire x1="-3.556" y1="1.778" x2="-3.556" y2="1.524" width="0.254" layer="97"/>
+<wire x1="-3.048" y1="0" x2="-3.048" y2="-1.778" width="0.254" layer="97"/>
+<wire x1="-3.048" y1="-1.778" x2="-2.54" y2="-1.778" width="0.254" layer="97"/>
+<wire x1="-2.54" y1="-1.778" x2="-2.54" y2="-1.524" width="0.254" layer="97"/>
+<wire x1="-3.048" y1="0" x2="-2.54" y2="0" width="0.254" layer="97"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -13350,6 +13386,19 @@ Datasheet: http://optoelectronics.liteon.com/upload/download/DS22-2001-076/S_110
 <attribute name="DIGI" value="WM5534-ND" constant="no"/>
 <attribute name="MPN" value="0732511150" constant="no"/>
 </technology>
+=======
+<deviceset name="MBRM110LT1G">
+<gates>
+<gate name="G$1" symbol="MBRM110LT1G" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SMD-457-04">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
