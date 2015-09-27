@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -11961,6 +11961,16 @@
 </package>
 <package name="DO-216AA">
 </package>
+<package name="DO-214AC-SMA">
+<smd name="P$1" x="-2" y="0" dx="2" dy="2" layer="1"/>
+<smd name="P$2" x="2" y="0" dx="2" dy="2" layer="1"/>
+<wire x1="-3.175" y1="-1.27" x2="-3.175" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-3.175" y1="1.27" x2="3.175" y2="1.27" width="0.127" layer="21"/>
+<wire x1="3.175" y1="1.27" x2="3.175" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="3.175" y1="-1.27" x2="-3.175" y2="-1.27" width="0.127" layer="21"/>
+<text x="-3.81" y="2.54" size="1.1" layer="25">&gt;NAME</text>
+<text x="-3.81" y="-3.81" size="1.1" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="INA125UA">
@@ -12644,6 +12654,19 @@
 <wire x1="-5.588" y1="-1.778" x2="-5.08" y2="-1.778" width="0.254" layer="97"/>
 <wire x1="-5.08" y1="-1.778" x2="-5.08" y2="-1.524" width="0.254" layer="97"/>
 <wire x1="-5.588" y1="0" x2="-5.08" y2="0" width="0.254" layer="97"/>
+</symbol>
+<symbol name="MBRA210LT3">
+<pin name="P$1" x="-10.16" y="2.54" visible="pad" length="short"/>
+<pin name="P$2" x="-2.54" y="2.54" visible="pad" length="short" rot="R180"/>
+<wire x1="-7.62" y1="3.81" x2="-7.112" y2="3.81" width="0.254" layer="97"/>
+<wire x1="-7.112" y1="3.81" x2="-5.08" y2="3.81" width="0.254" layer="97"/>
+<wire x1="-5.08" y1="3.81" x2="-5.08" y2="1.27" width="0.254" layer="97"/>
+<wire x1="-5.08" y1="1.27" x2="-7.112" y2="1.27" width="0.254" layer="97"/>
+<wire x1="-7.112" y1="1.27" x2="-7.62" y2="1.27" width="0.254" layer="97"/>
+<wire x1="-7.62" y1="1.27" x2="-7.62" y2="3.81" width="0.254" layer="97"/>
+<wire x1="-7.112" y1="1.27" x2="-7.112" y2="3.81" width="0.254" layer="97"/>
+<text x="-12.7" y="5.08" size="1.27" layer="95">&gt;NAME</text>
+<text x="-12.7" y="-2.54" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -13404,6 +13427,22 @@ Datasheet: http://optoelectronics.liteon.com/upload/download/DS22-2001-076/S_110
 <attribute name="DIGI" value="MBRM110LT1GOSCT-ND" constant="no"/>
 <attribute name="MPN" value="MBRM110LT1G" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MBRA210LT3">
+<gates>
+<gate name="G$1" symbol="MBRA210LT3" x="5.08" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="DO-214AC-SMA">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
