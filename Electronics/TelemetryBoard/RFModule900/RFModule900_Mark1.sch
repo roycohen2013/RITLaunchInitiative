@@ -581,6 +581,123 @@
 <rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.2951" layer="51"/>
 <rectangle x1="-0.2032" y1="-0.3556" x2="0.2032" y2="0.3556" layer="21"/>
 </package>
+<package name="16-TSSOP">
+<wire x1="-2.3146" y1="-2.1328" x2="-2.5146" y2="-1.9328" width="0.1524" layer="51" curve="-90"/>
+<wire x1="-2.5146" y1="-1.9328" x2="-2.5146" y2="1.9328" width="0.1524" layer="21"/>
+<wire x1="-2.5146" y1="1.9328" x2="-2.3146" y2="2.1328" width="0.1524" layer="51" curve="-90"/>
+<wire x1="-2.3146" y1="2.1328" x2="2.3146" y2="2.1328" width="0.1524" layer="51"/>
+<wire x1="2.3146" y1="2.1328" x2="2.5146" y2="1.9328" width="0.1524" layer="51" curve="-90"/>
+<wire x1="2.5146" y1="1.9328" x2="2.5146" y2="-1.9328" width="0.1524" layer="21"/>
+<wire x1="2.5146" y1="-1.9328" x2="2.3146" y2="-2.1328" width="0.1524" layer="51" curve="-90"/>
+<wire x1="2.3146" y1="-2.1328" x2="-2.3146" y2="-2.1328" width="0.1524" layer="51"/>
+<circle x="-1.6256" y="-1.2192" radius="0.4572" width="0.1524" layer="21"/>
+<smd name="1" x="-2.275" y="-2.97" dx="0.42" dy="1.78" layer="1"/>
+<smd name="2" x="-1.625" y="-2.97" dx="0.42" dy="1.78" layer="1"/>
+<smd name="3" x="-0.975" y="-2.97" dx="0.42" dy="1.78" layer="1"/>
+<smd name="4" x="-0.325" y="-2.97" dx="0.42" dy="1.78" layer="1"/>
+<smd name="5" x="0.325" y="-2.97" dx="0.42" dy="1.78" layer="1"/>
+<smd name="6" x="0.975" y="-2.97" dx="0.42" dy="1.78" layer="1"/>
+<smd name="7" x="1.625" y="-2.97" dx="0.42" dy="1.78" layer="1"/>
+<smd name="8" x="2.275" y="-2.97" dx="0.42" dy="1.78" layer="1"/>
+<smd name="9" x="2.275" y="2.97" dx="0.42" dy="1.78" layer="1" rot="R180"/>
+<smd name="10" x="1.625" y="2.97" dx="0.42" dy="1.78" layer="1" rot="R180"/>
+<smd name="11" x="0.975" y="2.97" dx="0.42" dy="1.78" layer="1" rot="R180"/>
+<smd name="12" x="0.325" y="2.97" dx="0.42" dy="1.78" layer="1" rot="R180"/>
+<smd name="13" x="-0.325" y="2.97" dx="0.42" dy="1.78" layer="1" rot="R180"/>
+<smd name="14" x="-0.975" y="2.97" dx="0.42" dy="1.78" layer="1" rot="R180"/>
+<smd name="15" x="-1.625" y="2.97" dx="0.42" dy="1.78" layer="1" rot="R180"/>
+<smd name="16" x="-2.275" y="2.97" dx="0.42" dy="1.78" layer="1" rot="R180"/>
+<text x="-2.8956" y="-2.0828" size="1.016" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="3.8862" y="-2.0828" size="1.016" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<rectangle x1="-2.375" y1="-3.2" x2="-2.175" y2="-2.2" layer="51"/>
+<rectangle x1="-1.725" y1="-3.2" x2="-1.525" y2="-2.2" layer="51"/>
+<rectangle x1="-1.075" y1="-3.2" x2="-0.875" y2="-2.2" layer="51"/>
+<rectangle x1="-0.425" y1="-3.2" x2="-0.225" y2="-2.2" layer="51"/>
+<rectangle x1="0.225" y1="-3.2" x2="0.425" y2="-2.2" layer="51"/>
+<rectangle x1="0.875" y1="-3.2" x2="1.075" y2="-2.2" layer="51"/>
+<rectangle x1="1.525" y1="-3.2" x2="1.725" y2="-2.2" layer="51"/>
+<rectangle x1="2.175" y1="-3.2" x2="2.375" y2="-2.2" layer="51"/>
+<rectangle x1="2.175" y1="2.2" x2="2.375" y2="3.2" layer="51" rot="R180"/>
+<rectangle x1="1.525" y1="2.2" x2="1.725" y2="3.2" layer="51" rot="R180"/>
+<rectangle x1="0.875" y1="2.2" x2="1.075" y2="3.2" layer="51" rot="R180"/>
+<rectangle x1="0.225" y1="2.2" x2="0.425" y2="3.2" layer="51" rot="R180"/>
+<rectangle x1="-0.425" y1="2.2" x2="-0.225" y2="3.2" layer="51" rot="R180"/>
+<rectangle x1="-1.075" y1="2.2" x2="-0.875" y2="3.2" layer="51" rot="R180"/>
+<rectangle x1="-1.725" y1="2.2" x2="-1.525" y2="3.2" layer="51" rot="R180"/>
+<rectangle x1="-2.375" y1="2.2" x2="-2.175" y2="3.2" layer="51" rot="R180"/>
+</package>
+<package name="42-QFN">
+<smd name="P$6" x="0" y="4.925" dx="0.5" dy="0.95" layer="1"/>
+<smd name="P$26" x="0" y="-4.925" dx="0.5" dy="0.95" layer="1"/>
+<smd name="P$16" x="4.925" y="0" dx="0.5" dy="0.95" layer="1" rot="R90"/>
+<smd name="P$36" x="-4.925" y="0" dx="0.5" dy="0.95" layer="1" rot="R90"/>
+<smd name="P$2" x="-3.2" y="4.925" dx="0.5" dy="0.95" layer="1"/>
+<smd name="P$1" x="-4.575" y="4.575" dx="1.65" dy="1.65" layer="1" rot="R90"/>
+<smd name="P$3" x="-2.4" y="4.925" dx="0.5" dy="0.95" layer="1"/>
+<smd name="P$4" x="-1.6" y="4.925" dx="0.5" dy="0.95" layer="1"/>
+<smd name="P$5" x="-0.8" y="4.925" dx="0.5" dy="0.95" layer="1"/>
+<smd name="P$7" x="0.8" y="4.925" dx="0.5" dy="0.95" layer="1"/>
+<smd name="P$8" x="1.6" y="4.925" dx="0.5" dy="0.95" layer="1"/>
+<smd name="P$9" x="2.4" y="4.925" dx="0.5" dy="0.95" layer="1"/>
+<smd name="P$10" x="3.2" y="4.925" dx="0.5" dy="0.95" layer="1"/>
+<smd name="P$11" x="4.575" y="4.575" dx="1.65" dy="1.65" layer="1" rot="R90"/>
+<smd name="P$12" x="4.925" y="3.2" dx="0.5" dy="0.95" layer="1" rot="R90"/>
+<smd name="P$13" x="4.925" y="2.4" dx="0.5" dy="0.95" layer="1" rot="R90"/>
+<smd name="P$14" x="4.925" y="1.6" dx="0.5" dy="0.95" layer="1" rot="R90"/>
+<smd name="P$15" x="4.925" y="0.8" dx="0.5" dy="0.95" layer="1" rot="R90"/>
+<smd name="P$17" x="4.925" y="-0.8" dx="0.5" dy="0.95" layer="1" rot="R90"/>
+<smd name="P$18" x="4.925" y="-1.6" dx="0.5" dy="0.95" layer="1" rot="R90"/>
+<smd name="P$19" x="4.925" y="-2.4" dx="0.5" dy="0.95" layer="1" rot="R90"/>
+<smd name="P$20" x="4.925" y="-3.2" dx="0.5" dy="0.95" layer="1" rot="R90"/>
+<smd name="P$21" x="4.575" y="-4.575" dx="1.65" dy="1.65" layer="1" rot="R180"/>
+<smd name="P$22" x="3.2" y="-4.925" dx="0.5" dy="0.95" layer="1"/>
+<smd name="P$23" x="2.4" y="-4.925" dx="0.5" dy="0.95" layer="1" rot="R180"/>
+<smd name="P$24" x="1.6" y="-4.925" dx="0.5" dy="0.95" layer="1" rot="R180"/>
+<smd name="P$25" x="0.8" y="-4.925" dx="0.5" dy="0.95" layer="1" rot="R180"/>
+<smd name="P$27" x="-0.8" y="-4.925" dx="0.5" dy="0.95" layer="1"/>
+<smd name="P$28" x="-1.6" y="-4.925" dx="0.5" dy="0.95" layer="1"/>
+<smd name="P$29" x="-2.4" y="-4.925" dx="0.5" dy="0.95" layer="1"/>
+<smd name="P$30" x="-3.2" y="-4.925" dx="0.5" dy="0.95" layer="1"/>
+<smd name="P$31" x="-4.575" y="-4.575" dx="1.65" dy="1.65" layer="1" rot="R90"/>
+<smd name="P$32" x="-4.925" y="-3.2" dx="0.5" dy="0.95" layer="1" rot="R90"/>
+<smd name="P$33" x="-4.925" y="-2.4" dx="0.5" dy="0.95" layer="1" rot="R90"/>
+<smd name="P$34" x="-4.925" y="-1.6" dx="0.5" dy="0.95" layer="1" rot="R90"/>
+<smd name="P$35" x="-4.925" y="-0.8" dx="0.5" dy="0.95" layer="1" rot="R90"/>
+<smd name="P$37" x="-4.925" y="0.8" dx="0.5" dy="0.95" layer="1" rot="R90"/>
+<smd name="P$38" x="-4.925" y="1.6" dx="0.5" dy="0.95" layer="1" rot="R90"/>
+<smd name="P$39" x="-4.925" y="2.4" dx="0.5" dy="0.95" layer="1" rot="R90"/>
+<smd name="P$40" x="-4.925" y="3.2" dx="0.5" dy="0.95" layer="1" rot="R90"/>
+<smd name="P$41" x="-3.55" y="0" dx="3.29" dy="1.4" layer="1" rot="R90"/>
+<smd name="P$42" x="3.55" y="0" dx="3.29" dy="1.4" layer="1" rot="R90"/>
+<smd name="P$42L" x="0.525" y="0" dx="4.65" dy="0.525" layer="1" rot="R180"/>
+<polygon width="0" layer="1">
+<vertex x="2.85" y="1.645"/>
+<vertex x="2.25" y="1.645"/>
+<vertex x="2.25" y="0.8625"/>
+<vertex x="-1.8" y="0.8625"/>
+<vertex x="-1.8" y="0.2625"/>
+<vertex x="2.85" y="0.2625"/>
+</polygon>
+<polygon width="0" layer="1">
+<vertex x="2.85" y="-1.645"/>
+<vertex x="2.25" y="-1.645"/>
+<vertex x="2.25" y="-0.8625"/>
+<vertex x="-1.8" y="-0.8625"/>
+<vertex x="-1.8" y="-0.2625"/>
+<vertex x="2.85" y="-0.2625"/>
+</polygon>
+<wire x1="-5.715" y1="5.715" x2="-3.81" y2="5.715" width="0.2286" layer="21"/>
+<wire x1="-5.715" y1="5.715" x2="-5.715" y2="3.81" width="0.2286" layer="21"/>
+<wire x1="-5.715" y1="-3.81" x2="-5.715" y2="-5.715" width="0.2286" layer="21"/>
+<wire x1="-5.715" y1="-5.715" x2="-3.81" y2="-5.715" width="0.2286" layer="21"/>
+<wire x1="3.81" y1="-5.715" x2="5.715" y2="-5.715" width="0.2286" layer="21"/>
+<wire x1="5.715" y1="-5.715" x2="5.715" y2="-3.81" width="0.2286" layer="21"/>
+<wire x1="3.81" y1="5.715" x2="5.715" y2="5.715" width="0.2286" layer="21"/>
+<wire x1="5.715" y1="5.715" x2="5.715" y2="3.81" width="0.2286" layer="21"/>
+<circle x="-6.35" y="6.35" radius="0.635" width="0.2286" layer="21"/>
+<text x="0" y="6.35" size="1.016" layer="25">&gt;NAME</text>
+<text x="0.635" y="-6.985" size="1.016" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="SI4463">
@@ -912,6 +1029,69 @@
 <text x="-2.54" y="-6.35" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="1" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="2" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+</symbol>
+<symbol name="ADC128D818">
+<wire x1="-7.62" y1="12.7" x2="7.62" y2="12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="12.7" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-10.16" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-10.16" x2="-7.62" y2="12.7" width="0.254" layer="94"/>
+<pin name="IN0" x="12.7" y="10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="IN1" x="12.7" y="7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="IN2" x="12.7" y="5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="IN3" x="12.7" y="2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="IN4" x="12.7" y="0" visible="pin" length="middle" rot="R180"/>
+<pin name="IN5" x="12.7" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="IN6" x="12.7" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="IN7" x="12.7" y="-7.62" visible="pin" length="middle" rot="R180"/>
+<text x="-7.62" y="13.462" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="VCC" x="-12.7" y="10.16" visible="pin" length="middle"/>
+<pin name="SDA" x="-12.7" y="5.08" visible="pin" length="middle"/>
+<pin name="SCL" x="-12.7" y="2.54" visible="pin" length="middle"/>
+<pin name="GND" x="-12.7" y="-7.62" visible="pin" length="middle"/>
+<pin name="INT" x="-12.7" y="0" visible="pin" length="middle"/>
+<pin name="VREF" x="-12.7" y="7.62" visible="pin" length="middle"/>
+<pin name="A0" x="-12.7" y="-2.54" visible="pin" length="middle"/>
+<pin name="A1" x="-12.7" y="-5.08" visible="pin" length="middle"/>
+<wire x1="-5.08" y1="1.016" x2="-1.778" y2="1.016" width="0.2286" layer="94"/>
+</symbol>
+<symbol name="LMZ31704">
+<wire x1="-12.7" y1="22.86" x2="12.7" y2="22.86" width="0.254" layer="94"/>
+<wire x1="12.7" y1="22.86" x2="12.7" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-25.4" x2="-12.7" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-25.4" x2="-12.7" y2="22.86" width="0.254" layer="94"/>
+<pin name="ISHARE" x="-17.78" y="2.54" visible="pin" length="middle"/>
+<pin name="PH" x="-17.78" y="7.62" visible="pin" length="middle"/>
+<pin name="OCP_SEL" x="-17.78" y="5.08" visible="pin" length="middle"/>
+<pin name="PVIN" x="-17.78" y="20.32" visible="pin" length="middle"/>
+<pin name="VIN" x="-17.78" y="17.78" visible="pin" length="middle"/>
+<pin name="INH_UVLO" x="-17.78" y="-5.08" visible="pin" length="middle"/>
+<pin name="SYNC_OUT" x="-17.78" y="-7.62" visible="pin" length="middle"/>
+<pin name="RT_CLK" x="-17.78" y="-17.78" visible="pin" length="middle"/>
+<pin name="PWRGD" x="17.78" y="20.32" visible="pin" length="middle" rot="R180"/>
+<pin name="VOUT" x="17.78" y="15.24" visible="pin" length="middle" rot="R180"/>
+<pin name="SENSE+" x="17.78" y="10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="SS_TR" x="-17.78" y="-22.86" visible="pin" length="middle"/>
+<pin name="ILIM" x="17.78" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="VADJ" x="17.78" y="-12.7" visible="pin" length="middle" rot="R180"/>
+<pin name="PGND" x="17.78" y="-20.32" visible="pin" length="middle" rot="R180"/>
+<pin name="AGND" x="17.78" y="-22.86" visible="pin" length="middle" rot="R180"/>
+<text x="-12.7" y="23.622" size="1.778" layer="95">&gt;NAME</text>
+<text x="-12.7" y="-27.94" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="STSEL" x="-17.78" y="-10.16" visible="pin" length="middle"/>
+</symbol>
+<symbol name="MIC5504-3.3YM5">
+<wire x1="-10.16" y1="5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-5.08" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
+<pin name="VIN" x="-15.24" y="2.54" visible="pin" length="middle"/>
+<pin name="VOUT" x="15.24" y="2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="GND" x="0" y="-10.16" visible="off" length="middle" rot="R90"/>
+<text x="-2.286" y="-4.318" size="1.4224" layer="95">GND</text>
+<pin name="EN" x="-15.24" y="-2.54" visible="pin" length="middle"/>
+<text x="-10.16" y="5.588" size="1.778" layer="95">&gt;NAME</text>
+<text x="3.556" y="-6.858" size="1.27" layer="95">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1312,6 +1492,97 @@ http://www.nxp.com/documents/data_sheet/LM75B.pdf</description>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ADC128D818" prefix="U">
+<description>8 Channel i2c ADC. Pseudo-Differential, Single Ended| 3 V ~ 5.5 V| http://www.ti.com/lit/ds/symlink/adc128d818.pdf</description>
+<gates>
+<gate name="G$1" symbol="ADC128D818" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="16-TSSOP">
+<connects>
+<connect gate="G$1" pin="A0" pad="7"/>
+<connect gate="G$1" pin="A1" pad="8"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="IN0" pad="16"/>
+<connect gate="G$1" pin="IN1" pad="15"/>
+<connect gate="G$1" pin="IN2" pad="14"/>
+<connect gate="G$1" pin="IN3" pad="13"/>
+<connect gate="G$1" pin="IN4" pad="12"/>
+<connect gate="G$1" pin="IN5" pad="11"/>
+<connect gate="G$1" pin="IN6" pad="10"/>
+<connect gate="G$1" pin="IN7" pad="9"/>
+<connect gate="G$1" pin="INT" pad="6"/>
+<connect gate="G$1" pin="SCL" pad="3"/>
+<connect gate="G$1" pin="SDA" pad="2"/>
+<connect gate="G$1" pin="VCC" pad="5"/>
+<connect gate="G$1" pin="VREF" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGI" value="296-41182-1-ND" constant="no"/>
+<attribute name="MPN" value="ADC128D818CIMTX/NOPB" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LMZ31704">
+<description>Switching Buck converter | DC/DC CONVERTER 0.6-5.5V 22W QFN|http://www.ti.com/lit/ds/symlink/lmz31704.pdf</description>
+<gates>
+<gate name="G$1" symbol="LMZ31704" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="42-QFN">
+<connects>
+<connect gate="G$1" pin="AGND" pad="P$2 P$23"/>
+<connect gate="G$1" pin="ILIM" pad="P$6"/>
+<connect gate="G$1" pin="INH_UVLO" pad="P$30"/>
+<connect gate="G$1" pin="ISHARE" pad="P$25"/>
+<connect gate="G$1" pin="OCP_SEL" pad="P$4"/>
+<connect gate="G$1" pin="PGND" pad="P$20 P$21 P$31 P$32 P$33"/>
+<connect gate="G$1" pin="PH" pad="P$10 P$13 P$14 P$15 P$16 P$17 P$18 P$19 P$42 P$42L"/>
+<connect gate="G$1" pin="PVIN" pad="P$1 P$11 P$12 P$39 P$40"/>
+<connect gate="G$1" pin="PWRGD" pad="P$8"/>
+<connect gate="G$1" pin="RT_CLK" pad="P$22"/>
+<connect gate="G$1" pin="SENSE+" pad="P$27"/>
+<connect gate="G$1" pin="SS_TR" pad="P$28"/>
+<connect gate="G$1" pin="STSEL" pad="P$29"/>
+<connect gate="G$1" pin="SYNC_OUT" pad="P$7"/>
+<connect gate="G$1" pin="VADJ" pad="P$26"/>
+<connect gate="G$1" pin="VIN" pad="P$3"/>
+<connect gate="G$1" pin="VOUT" pad="P$34 P$35 P$36 P$37 P$38 P$41"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGI" value="296-37135-1-ND" constant="no"/>
+<attribute name="MPN" value="LMZ31704RVQT" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MIC5504-3.3YM5" prefix="U">
+<description>IC REG LDO 3.3V 0.3A SOT-23-5 | http://www.micrel.com/_PDF/MIC550X.pdf</description>
+<gates>
+<gate name="G$1" symbol="MIC5504-3.3YM5" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-5">
+<connects>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="VIN" pad="1"/>
+<connect gate="G$1" pin="VOUT" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGI" value="576-4764-1-ND" constant="no"/>
+<attribute name="MPN" value="MIC5504-3.3YM5 TR" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -5167,6 +5438,9 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <attribute name="MPN" value="NCP15XH103F03RC"/>
 </part>
 <part name="R28" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="10k"/>
+<part name="U7" library="RitLaunchInitiative" deviceset="ADC128D818" device=""/>
+<part name="U$15" library="RitLaunchInitiative" deviceset="LMZ31704" device=""/>
+<part name="U8" library="RitLaunchInitiative" deviceset="MIC5504-3.3YM5" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5183,10 +5457,10 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <wire x1="12.7" y1="93.98" x2="307.34" y2="93.98" width="0.1524" layer="94"/>
 <wire x1="307.34" y1="93.98" x2="307.34" y2="210.82" width="0.1524" layer="94"/>
 <wire x1="307.34" y1="210.82" x2="12.7" y2="210.82" width="0.1524" layer="94"/>
-<wire x1="-22.86" y1="368.3" x2="266.7" y2="368.3" width="0.1524" layer="94"/>
+<wire x1="-210.82" y1="368.3" x2="266.7" y2="368.3" width="0.1524" layer="94"/>
 <wire x1="266.7" y1="368.3" x2="266.7" y2="226.06" width="0.1524" layer="94"/>
-<wire x1="266.7" y1="226.06" x2="-22.86" y2="226.06" width="0.1524" layer="94"/>
-<wire x1="-22.86" y1="226.06" x2="-22.86" y2="368.3" width="0.1524" layer="94"/>
+<wire x1="266.7" y1="226.06" x2="-210.82" y2="226.06" width="0.1524" layer="94"/>
+<wire x1="-210.82" y1="226.06" x2="-210.82" y2="368.3" width="0.1524" layer="94"/>
 <text x="127" y="213.36" size="3.81" layer="94">RF POWER AMPLIFIER</text>
 <wire x1="-231.14" y1="162.56" x2="-53.34" y2="162.56" width="0.1524" layer="94"/>
 <wire x1="-53.34" y1="162.56" x2="-53.34" y2="30.48" width="0.1524" layer="94"/>
@@ -5205,14 +5479,14 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <text x="762" y="109.22" size="3.81" layer="94">Antenna</text>
 <text x="756.92" y="78.74" size="3.81" layer="94">sma connector</text>
 <text x="535.94" y="45.72" size="1.6764" layer="94">TX RX status led</text>
-<text x="-208.28" y="350.52" size="5.08" layer="94">TODO</text>
-<text x="-208.28" y="381" size="2.1844" layer="94">Set resistor values for Current Limits on Load switches</text>
-<text x="-208.28" y="378.46" size="2.1844" layer="94">Calculate resistors for led current limiiting</text>
-<text x="-208.28" y="342.9" size="2.1844" layer="94">Add more tantilum caps for decoupling on both major IC's </text>
-<text x="-208.28" y="337.82" size="2.1844" layer="94">Find Model Number of thermistor</text>
-<text x="-208.28" y="335.28" size="2.1844" layer="94">Finalize Connector configuration for daughter board interface</text>
-<text x="-208.28" y="332.74" size="2.1844" layer="94">Breakout GPIO's </text>
-<text x="-208.28" y="373.38" size="2.1844" layer="94">Try finding The proper values for the two Ferrites L4 L5</text>
+<text x="-330.2" y="388.62" size="5.08" layer="94">TODO</text>
+<text x="-330.2" y="419.1" size="2.1844" layer="94">Set resistor values for Current Limits on Load switches</text>
+<text x="-330.2" y="416.56" size="2.1844" layer="94">Calculate resistors for led current limiiting</text>
+<text x="-330.2" y="381" size="2.1844" layer="94">Add more tantilum caps for decoupling on both major IC's </text>
+<text x="-330.2" y="378.46" size="2.1844" layer="94">Find Model Number of thermistor</text>
+<text x="-330.2" y="375.92" size="2.1844" layer="94">Finalize Connector configuration for daughter board interface</text>
+<text x="-330.2" y="373.38" size="2.1844" layer="94">Breakout GPIO's </text>
+<text x="-330.2" y="411.48" size="2.1844" layer="94">Try finding The proper values for the two Ferrites L4 L5</text>
 <text x="-43.18" y="76.2" size="3.81" layer="94">&lt;- RF IN </text>
 <text x="-48.26" y="119.38" size="3.81" layer="94">RF OUT -&gt; </text>
 <text x="571.5" y="246.38" size="5.08" layer="91" rot="R180">A(C + !B)</text>
@@ -5222,7 +5496,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <text x="398.78" y="104.14" size="1.778" layer="91">Will fix this later in footprint</text>
 <text x="401.32" y="363.22" size="3.81" layer="91">VSWR Hardware breaker</text>
 <text x="411.48" y="353.06" size="1.778" layer="91">Threshold comparason</text>
-<text x="-208.28" y="375.92" size="1.778" layer="91">Add Temp sensor LM75B</text>
+<text x="-330.2" y="414.02" size="1.778" layer="91">Add Temp sensor LM75B</text>
 <text x="477.52" y="297.18" size="2.54" layer="91">C</text>
 <text x="441.96" y="317.5" size="2.54" layer="91">B</text>
 <text x="533.4" y="294.64" size="2.54" layer="91">A</text>
@@ -5240,10 +5514,13 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <text x="-35.56" y="-114.3" size="1.016" layer="91">1.75v</text>
 <text x="-35.56" y="-116.84" size="1.016" layer="91">1.75v</text>
 <text x="66.04" y="167.64" size="1.4224" layer="91">Divide sense voltages down to bring into ADC input range</text>
-<text x="-208.28" y="327.66" size="1.4224" layer="91">Add ADC ADC128D818CIMTX/NOPB</text>
-<text x="-208.28" y="330.2" size="1.4224" layer="91">add MIC5504-3.3YM5 TR LDO as 3v3 supply</text>
+<text x="-330.2" y="406.4" size="1.4224" layer="91">Add ADC ADC128D818CIMTX/NOPB</text>
+<text x="-330.2" y="408.94" size="1.4224" layer="91">add MIC5504-3.3YM5 TR LDO as 3v3 supply</text>
 <text x="50.8" y="203.2" size="1.4224" layer="91">I2C adress:</text>
 <text x="177.8" y="353.06" size="1.4224" layer="91">I2C adress:</text>
+<text x="-276.86" y="396.24" size="1.4224" layer="91">576-4310-1-ND</text>
+<text x="-276.86" y="393.7" size="1.4224" layer="91">576-4764-1-ND</text>
+<text x="-330.2" y="358.14" size="1.778" layer="91">Add switching supply to bring 12v to 3.6 lmz31704</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="-144.78" y="109.22"/>
@@ -5594,6 +5871,9 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <attribute name="MPN" x="40.64" y="152.4" size="1.4224" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="R28" gate="G$1" x="40.64" y="167.64" rot="R90"/>
+<instance part="U7" gate="G$1" x="-127" y="347.98"/>
+<instance part="U$15" gate="G$1" x="-129.54" y="302.26"/>
+<instance part="U8" gate="G$1" x="-129.54" y="256.54"/>
 </instances>
 <busses>
 </busses>
@@ -7254,6 +7534,16 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <wire x1="137.16" y1="147.32" x2="121.92" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="C56" gate="G$1" pin="1"/>
 <junction x="160.02" y="147.32"/>
+</segment>
+</net>
+<net name="N$51" class="0">
+<segment>
+<wire x1="-281.686" y1="397.002" x2="-277.114" y2="397.002" width="0.1524" layer="91"/>
+<wire x1="-277.114" y1="397.002" x2="-277.114" y2="392.43" width="0.1524" layer="91"/>
+<wire x1="-277.114" y1="392.43" x2="-262.636" y2="392.43" width="0.1524" layer="91"/>
+<wire x1="-262.636" y1="392.43" x2="-262.636" y2="398.272" width="0.1524" layer="91"/>
+<wire x1="-262.636" y1="398.272" x2="-277.114" y2="398.272" width="0.1524" layer="91"/>
+<wire x1="-277.114" y1="398.272" x2="-277.114" y2="397.002" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
