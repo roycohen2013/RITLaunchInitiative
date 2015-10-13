@@ -1560,6 +1560,10 @@ Please make sure your boards conform to these design rules.</description>
 </element>
 <element name="R34" library="SparkFun-Resistors" package="0402-RES" value="5k" x="-95.25" y="-407.67"/>
 <element name="R35" library="SparkFun-Resistors" package="0402-RES" value="5k" x="-95.25" y="-411.48"/>
+<element name="R36" library="SparkFun-Resistors" package="0402-RES" value="5k" x="-95.25" y="-415.29"/>
+<element name="R37" library="SparkFun-Resistors" package="0402-RES" value="5k" x="-95.25" y="-419.1"/>
+<element name="R38" library="SparkFun-Resistors" package="0402-RES" value="5k" x="-95.25" y="-422.91"/>
+<element name="R39" library="SparkFun-Resistors" package="0402-RES" value="DNP" x="-95.25" y="-426.72"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -1656,7 +1660,6 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="U5" pad="P$2"/>
 <contactref element="C49" pad="C"/>
 <contactref element="C50" pad="C"/>
-<contactref element="U6" pad="P$4"/>
 <contactref element="C11" pad="2"/>
 <contactref element="C17" pad="1"/>
 <contactref element="U6" pad="P$10"/>
@@ -1710,7 +1713,15 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="C66" pad="2"/>
 <contactref element="R34" pad="1"/>
 <contactref element="R35" pad="1"/>
+<contactref element="R36" pad="1"/>
+<contactref element="R37" pad="1"/>
+<contactref element="R38" pad="1"/>
+<contactref element="R39" pad="1"/>
 <wire x1="-95.83" y1="-407.67" x2="-95.83" y2="-411.48" width="0" layer="19" extent="1-1"/>
+<wire x1="-95.83" y1="-415.29" x2="-95.83" y2="-411.48" width="0" layer="19" extent="1-1"/>
+<wire x1="-95.83" y1="-419.1" x2="-95.83" y2="-415.29" width="0" layer="19" extent="1-1"/>
+<wire x1="-95.83" y1="-422.91" x2="-95.83" y2="-419.1" width="0" layer="19" extent="1-1"/>
+<wire x1="-95.83" y1="-426.72" x2="-95.83" y2="-422.91" width="0" layer="19" extent="1-1"/>
 <wire x1="-94.67" y1="-403.86" x2="-95.83" y2="-407.67" width="0" layer="19" extent="1-1"/>
 <wire x1="-94.67" y1="-400.05" x2="-94.67" y2="-403.86" width="0" layer="19" extent="1-1"/>
 <wire x1="-94.67" y1="-396.24" x2="-94.67" y2="-400.05" width="0" layer="19" extent="1-1"/>
@@ -1763,7 +1774,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="-18.47" y1="55.88" x2="-31.06" y2="52.07" width="0" layer="19" extent="1-1"/>
 <wire x1="11.3999" y1="68.58" x2="-18.47" y2="55.88" width="0" layer="19" extent="1-1"/>
 <wire x1="31.425" y1="52.91" x2="11.3999" y2="68.58" width="0" layer="19" extent="1-1"/>
-<wire x1="36.125" y1="47.76" x2="31.425" y2="52.91" width="0" layer="19" extent="1-1"/>
+<wire x1="40.075" y1="49.26" x2="31.425" y2="52.91" width="0" layer="19" extent="1-1"/>
 <wire x1="100.8634" y1="19.6479" x2="100.8634" y2="19.6479" width="0" layer="19" extent="1-16"/>
 <wire x1="100.8634" y1="10.8829" x2="100.8634" y2="10.8829" width="0" layer="19" extent="1-16"/>
 <wire x1="15.24" y1="2.54" x2="16.24" y2="1.065" width="0" layer="19" extent="1-1"/>
@@ -2248,10 +2259,14 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="RF_POWER_IN">
 <contactref element="U5" pad="P$4"/>
 <contactref element="U$6" pad="3"/>
+<contactref element="U7" pad="16"/>
+<wire x1="29.475" y1="58.85" x2="68.9" y2="63.5301" width="0" layer="19" extent="1-1"/>
 <wire x1="93.03" y1="1.721" x2="68.9" y2="63.5301" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RF_POWER_OUT">
 <contactref element="U4" pad="P$4"/>
+<contactref element="U7" pad="15"/>
+<wire x1="30.125" y1="58.85" x2="92.0725" y2="26.219" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$38">
 <contactref element="U$9" pad="1"/>
@@ -2473,17 +2488,23 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="PA_PWR_SENSE">
 <contactref element="R14" pad="1"/>
 <contactref element="R13" pad="2"/>
+<contactref element="U7" pad="13"/>
 <wire x1="-87.05" y1="-281.94" x2="-88.21" y2="-285.75" width="0" layer="19" extent="1-1"/>
+<wire x1="31.425" y1="58.85" x2="-87.05" y2="-281.94" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PA_PWR_REF">
 <contactref element="R21" pad="1"/>
 <contactref element="R20" pad="2"/>
+<contactref element="U7" pad="14"/>
 <wire x1="-87.05" y1="-289.56" x2="-88.21" y2="-293.37" width="0" layer="19" extent="1-1"/>
+<wire x1="30.775" y1="58.85" x2="-87.05" y2="-289.56" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PA_TEMP">
 <contactref element="R28" pad="1"/>
 <contactref element="U$16" pad="1"/>
+<contactref element="U7" pad="12"/>
 <wire x1="-88.21" y1="-311.15" x2="-88.21" y2="-313.69" width="0" layer="19" extent="1-1"/>
+<wire x1="32.075" y1="58.85" x2="-88.21" y2="-311.15" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$54">
 <contactref element="U$15" pad="P$26"/>
@@ -2546,6 +2567,29 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="U7" pad="7"/>
 <contactref element="R34" pad="2"/>
 <wire x1="33.375" y1="52.91" x2="-94.67" y2="-407.67" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$61">
+<contactref element="U3" pad="P$5"/>
+<contactref element="R36" pad="2"/>
+<wire x1="-94.67" y1="-415.29" x2="-86.2175" y2="-278.88" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$62">
+<contactref element="U3" pad="P$6"/>
+<contactref element="R37" pad="2"/>
+<wire x1="-94.67" y1="-419.1" x2="-86.2175" y2="-278.38" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$63">
+<contactref element="U3" pad="P$7"/>
+<contactref element="R38" pad="2"/>
+<wire x1="-94.67" y1="-422.91" x2="-86.2175" y2="-277.88" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="PA_OVERTEMP_ALARM">
+<contactref element="U3" pad="P$3"/>
+</signal>
+<signal name="N$64">
+<contactref element="U6" pad="P$4"/>
+<contactref element="R39" pad="2"/>
+<wire x1="-94.67" y1="-426.72" x2="36.125" y2="47.76" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
