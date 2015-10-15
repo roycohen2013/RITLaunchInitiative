@@ -14433,17 +14433,17 @@ http://www.nxp.com/documents/data_sheet/LM75B.pdf</description>
 </devices>
 </deviceset>
 <deviceset name="TCA9535" prefix="U">
-<description>IC I/O EXPANDER I2C 16B 24WQFN</description>
+<description>IC I/O EXPANDER I2C 16B 24WQFN | http://www.ti.com/lit/ds/symlink/tca9535.pdf |</description>
 <gates>
 <gate name="G$1" symbol="TCA9535" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="24-VFQFN">
+<device name="" package="24-WQFN">
 <connects>
 <connect gate="G$1" pin="A0" pad="P$18"/>
 <connect gate="G$1" pin="A1" pad="P$23"/>
 <connect gate="G$1" pin="A2" pad="P$24"/>
-<connect gate="G$1" pin="GND" pad="P$9 P$GND_PAD"/>
+<connect gate="G$1" pin="GND" pad="GND_PAD P$9"/>
 <connect gate="G$1" pin="INT" pad="P$22"/>
 <connect gate="G$1" pin="P00" pad="P$1"/>
 <connect gate="G$1" pin="P01" pad="P$2"/>
@@ -14466,10 +14466,7 @@ http://www.nxp.com/documents/data_sheet/LM75B.pdf</description>
 <connect gate="G$1" pin="VCC" pad="P$21"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="DIGI" value="296-25156-1-ND" constant="no"/>
-<attribute name="MPN" value="TCA9535RTWR" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
