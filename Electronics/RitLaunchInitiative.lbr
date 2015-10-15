@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -12154,6 +12154,79 @@
 <text x="-3" y="1.5" size="0.6096" layer="25">&gt;NAME</text>
 <text x="-3" y="-2" size="0.6096" layer="27">&gt;VALUE</text>
 </package>
+<package name="PCIE_MINI_CARDEDGE">
+<wire x1="-3.2" y1="15" x2="-3.2" y2="13.65" width="0.127" layer="20"/>
+<wire x1="-3.2" y1="13.65" x2="-2.4" y2="12.85" width="0.127" layer="20" curve="90"/>
+<wire x1="-2.4" y1="12.85" x2="0" y2="12.85" width="0.127" layer="20"/>
+<wire x1="0" y1="-12.85" x2="-2.4" y2="-12.85" width="0.127" layer="20"/>
+<wire x1="-2.4" y1="-12.85" x2="-3.2" y2="-13.65" width="0.127" layer="20" curve="90"/>
+<wire x1="-3.2" y1="-13.65" x2="-3.2" y2="-15" width="0.127" layer="20"/>
+<wire x1="-100" y1="-15" x2="-100" y2="15" width="0.127" layer="20"/>
+<wire x1="-100" y1="15" x2="-3.2" y2="15" width="0.127" layer="20"/>
+<wire x1="-100" y1="-15" x2="-3.2" y2="-15" width="0.127" layer="20"/>
+<hole x="-48.05" y="-12.1" drill="2.6"/>
+<hole x="-48.05" y="12.1" drill="2.6"/>
+<wire x1="-16" y1="-3.85" x2="-6" y2="-3.85" width="0.127" layer="21"/>
+<wire x1="0" y1="-3.1" x2="0" y2="12.85" width="0.127" layer="20"/>
+<wire x1="0" y1="-12.85" x2="0" y2="-4.6" width="0.127" layer="20"/>
+<wire x1="0" y1="-4.6" x2="-3.25" y2="-4.6" width="0.127" layer="20"/>
+<wire x1="0" y1="-3.1" x2="-3.25" y2="-3.1" width="0.127" layer="20"/>
+<wire x1="-5" y1="-3.1" x2="-5" y2="-4.6" width="0.127" layer="20"/>
+<wire x1="-4" y1="-2.1" x2="-4" y2="-5.6" width="0.127" layer="21"/>
+<wire x1="-3.25" y1="-4.6" x2="-3.25" y2="-3.1" width="0.127" layer="20" curve="-180" cap="flat"/>
+<smd name="P$17" x="-1.275" y="-2.2" dx="0.6" dy="2.3" layer="1" rot="R90" thermals="no" cream="no"/>
+<smd name="P$15" x="-1.275" y="-6.2" dx="0.6" dy="2.3" layer="1" rot="R90" thermals="no" cream="no"/>
+<smd name="P$13" x="-1.275" y="-7" dx="0.6" dy="2.3" layer="1" rot="R90" thermals="no" cream="no"/>
+<smd name="P$11" x="-1.275" y="-7.8" dx="0.6" dy="2.3" layer="1" rot="R90" thermals="no" cream="no"/>
+<smd name="P$9" x="-1.275" y="-8.6" dx="0.6" dy="2.3" layer="1" rot="R90" thermals="no" cream="no"/>
+<smd name="P$7" x="-1.275" y="-9.4" dx="0.6" dy="2.3" layer="1" rot="R90" thermals="no" cream="no"/>
+<smd name="P$5" x="-1.275" y="-10.2" dx="0.6" dy="2.3" layer="1" rot="R90" thermals="no" cream="no"/>
+<smd name="P$3" x="-1.275" y="-11" dx="0.6" dy="2.3" layer="1" rot="R90" thermals="no" cream="no"/>
+<smd name="P$1" x="-1.275" y="-11.8" dx="0.6" dy="2.3" layer="1" rot="R90" thermals="no" cream="no"/>
+<smd name="P$19" x="-1.275" y="-1.4" dx="0.6" dy="2.3" layer="1" rot="R90" thermals="no" cream="no"/>
+<smd name="P$21" x="-1.275" y="-0.6" dx="0.6" dy="2.3" layer="1" rot="R90" thermals="no" cream="no"/>
+<smd name="P$23" x="-1.275" y="0.2" dx="0.6" dy="2.3" layer="1" rot="R90" thermals="no" cream="no"/>
+<smd name="P$25" x="-1.275" y="1" dx="0.6" dy="2.3" layer="1" rot="R90" thermals="no" cream="no"/>
+<smd name="P$27" x="-1.275" y="1.8" dx="0.6" dy="2.3" layer="1" rot="R90" thermals="no" cream="no"/>
+<smd name="P$29" x="-1.275" y="2.6" dx="0.6" dy="2.3" layer="1" rot="R90" thermals="no" cream="no"/>
+<smd name="P$31" x="-1.275" y="3.4" dx="0.6" dy="2.3" layer="1" rot="R90" thermals="no" cream="no"/>
+<smd name="P$33" x="-1.275" y="4.2" dx="0.6" dy="2.3" layer="1" rot="R90" thermals="no" cream="no"/>
+<smd name="P$35" x="-1.275" y="5" dx="0.6" dy="2.3" layer="1" rot="R90" thermals="no" cream="no"/>
+<smd name="P$37" x="-1.275" y="5.8" dx="0.6" dy="2.3" layer="1" rot="R90" thermals="no" cream="no"/>
+<smd name="P$39" x="-1.275" y="6.6" dx="0.6" dy="2.3" layer="1" rot="R90" thermals="no" cream="no"/>
+<smd name="P$41" x="-1.275" y="7.4" dx="0.6" dy="2.3" layer="1" rot="R90" thermals="no" cream="no"/>
+<smd name="P$43" x="-1.275" y="8.2" dx="0.6" dy="2.3" layer="1" rot="R90" thermals="no" cream="no"/>
+<smd name="P$45" x="-1.275" y="9" dx="0.6" dy="2.3" layer="1" rot="R90" thermals="no" cream="no"/>
+<smd name="P$47" x="-1.275" y="9.8" dx="0.6" dy="2.3" layer="1" rot="R90" thermals="no" cream="no"/>
+<smd name="P$49" x="-1.275" y="10.6" dx="0.6" dy="2.3" layer="1" rot="R90" thermals="no" cream="no"/>
+<smd name="P$51" x="-1.275" y="11.4" dx="0.6" dy="2.3" layer="1" rot="R90" thermals="no" cream="no"/>
+<smd name="P$18" x="-1.275" y="-1.8" dx="0.6" dy="2.3" layer="16" rot="R90" thermals="no" cream="no"/>
+<smd name="P$16" x="-1.275" y="-5.8" dx="0.6" dy="2.3" layer="16" rot="R90" thermals="no" cream="no"/>
+<smd name="P$14" x="-1.275" y="-6.6" dx="0.6" dy="2.3" layer="16" rot="R90" thermals="no" cream="no"/>
+<smd name="P$12" x="-1.275" y="-7.4" dx="0.6" dy="2.3" layer="16" rot="R90" thermals="no" cream="no"/>
+<smd name="P$10" x="-1.275" y="-8.2" dx="0.6" dy="2.3" layer="16" rot="R90" thermals="no" cream="no"/>
+<smd name="P$8" x="-1.275" y="-9" dx="0.6" dy="2.3" layer="16" rot="R90" thermals="no" cream="no"/>
+<smd name="P$6" x="-1.275" y="-9.8" dx="0.6" dy="2.3" layer="16" rot="R90" thermals="no" cream="no"/>
+<smd name="P$4" x="-1.275" y="-10.6" dx="0.6" dy="2.3" layer="16" rot="R90" thermals="no" cream="no"/>
+<smd name="P$2" x="-1.275" y="-11.4" dx="0.6" dy="2.3" layer="16" rot="R90" thermals="no" cream="no"/>
+<smd name="P$20" x="-1.275" y="-1" dx="0.6" dy="2.3" layer="16" rot="R90" thermals="no" cream="no"/>
+<smd name="P$22" x="-1.275" y="-0.2" dx="0.6" dy="2.3" layer="16" rot="R90" thermals="no" cream="no"/>
+<smd name="P$24" x="-1.275" y="0.6" dx="0.6" dy="2.3" layer="16" rot="R90" thermals="no" cream="no"/>
+<smd name="P$26" x="-1.275" y="1.4" dx="0.6" dy="2.3" layer="16" rot="R90" thermals="no" cream="no"/>
+<smd name="P$28" x="-1.275" y="2.2" dx="0.6" dy="2.3" layer="16" rot="R90" thermals="no" cream="no"/>
+<smd name="P$30" x="-1.275" y="3" dx="0.6" dy="2.3" layer="16" rot="R90" thermals="no" cream="no"/>
+<smd name="P$32" x="-1.275" y="3.8" dx="0.6" dy="2.3" layer="16" rot="R90" thermals="no" cream="no"/>
+<smd name="P$34" x="-1.275" y="4.6" dx="0.6" dy="2.3" layer="16" rot="R90" thermals="no" cream="no"/>
+<smd name="P$36" x="-1.275" y="5.4" dx="0.6" dy="2.3" layer="16" rot="R90" thermals="no" cream="no"/>
+<smd name="P$38" x="-1.275" y="6.2" dx="0.6" dy="2.3" layer="16" rot="R90" thermals="no" cream="no"/>
+<smd name="P$40" x="-1.275" y="7" dx="0.6" dy="2.3" layer="16" rot="R90" thermals="no" cream="no"/>
+<smd name="P$42" x="-1.275" y="7.8" dx="0.6" dy="2.3" layer="16" rot="R90" thermals="no" cream="no"/>
+<smd name="P$44" x="-1.275" y="8.6" dx="0.6" dy="2.3" layer="16" rot="R90" thermals="no" cream="no"/>
+<smd name="P$46" x="-1.275" y="9.4" dx="0.6" dy="2.3" layer="16" rot="R90" thermals="no" cream="no"/>
+<smd name="P$48" x="-1.275" y="10.2" dx="0.6" dy="2.3" layer="16" rot="R90" thermals="no" cream="no"/>
+<smd name="P$50" x="-1.275" y="11" dx="0.6" dy="2.3" layer="16" rot="R90" thermals="no" cream="no"/>
+<smd name="P$52" x="-1.275" y="11.8" dx="0.6" dy="2.3" layer="16" rot="R90" thermals="no" cream="no"/>
+</package>
 </packages>
 <symbols>
 <symbol name="INA125UA">
@@ -13075,6 +13148,100 @@
 <wire x1="3.048" y1="0.762" x2="3.048" y2="0" width="0.254" layer="94"/>
 <wire x1="3.048" y1="0" x2="3.048" y2="-1.27" width="0.254" layer="94"/>
 <wire x1="3.048" y1="-1.27" x2="2.54" y2="-0.762" width="0.254" layer="94"/>
+</symbol>
+<symbol name="PCIE_MINI_EDGECONNECTOR">
+<wire x1="0" y1="-38.1" x2="0" y2="30.48" width="0.254" layer="94"/>
+<wire x1="0" y1="30.48" x2="-15.24" y2="30.48" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="30.48" x2="-15.24" y2="-38.1" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-38.1" x2="0" y2="-38.1" width="0.254" layer="94"/>
+<pin name="P$1" x="5.08" y="27.94" visible="pin" length="middle" rot="R180"/>
+<pin name="P$2" x="5.08" y="25.4" visible="pin" length="middle" rot="R180"/>
+<pin name="P$3" x="5.08" y="22.86" visible="pin" length="middle" rot="R180"/>
+<pin name="P$4" x="5.08" y="20.32" visible="pin" length="middle" rot="R180"/>
+<pin name="P$5" x="5.08" y="17.78" visible="pin" length="middle" rot="R180"/>
+<pin name="P$6" x="5.08" y="15.24" visible="pin" length="middle" rot="R180"/>
+<pin name="P$7" x="5.08" y="12.7" visible="pin" length="middle" rot="R180"/>
+<pin name="P$8" x="5.08" y="10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="P$9" x="5.08" y="7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="P$10" x="5.08" y="5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="P$11" x="5.08" y="2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="P$12" x="5.08" y="0" visible="pin" length="middle" rot="R180"/>
+<pin name="P$13" x="5.08" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="P$14" x="5.08" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="P$15" x="5.08" y="-7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="P$16" x="5.08" y="-10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="P$17" x="5.08" y="-12.7" visible="pin" length="middle" rot="R180"/>
+<pin name="P$18" x="5.08" y="-15.24" visible="pin" length="middle" rot="R180"/>
+<pin name="P$19" x="5.08" y="-17.78" visible="pin" length="middle" rot="R180"/>
+<pin name="P$20" x="5.08" y="-20.32" visible="pin" length="middle" rot="R180"/>
+<pin name="P$21" x="5.08" y="-22.86" visible="pin" length="middle" rot="R180"/>
+<pin name="P$22" x="5.08" y="-25.4" visible="pin" length="middle" rot="R180"/>
+<pin name="P$23" x="5.08" y="-27.94" visible="pin" length="middle" rot="R180"/>
+<pin name="P$24" x="5.08" y="-30.48" visible="pin" length="middle" rot="R180"/>
+<pin name="P$25" x="5.08" y="-33.02" visible="pin" length="middle" rot="R180"/>
+<pin name="P$26" x="5.08" y="-35.56" visible="pin" length="middle" rot="R180"/>
+<pin name="P$27" x="-20.32" y="-35.56" visible="pin" length="middle"/>
+<pin name="P$28" x="-20.32" y="-33.02" visible="pin" length="middle"/>
+<pin name="P$29" x="-20.32" y="-30.48" visible="pin" length="middle"/>
+<pin name="P$30" x="-20.32" y="-27.94" visible="pin" length="middle"/>
+<pin name="P$31" x="-20.32" y="-25.4" visible="pin" length="middle"/>
+<pin name="P$32" x="-20.32" y="-22.86" visible="pin" length="middle"/>
+<pin name="P$33" x="-20.32" y="-20.32" visible="pin" length="middle"/>
+<pin name="P$34" x="-20.32" y="-17.78" visible="pin" length="middle"/>
+<pin name="P$35" x="-20.32" y="-15.24" visible="pin" length="middle"/>
+<pin name="P$36" x="-20.32" y="-12.7" visible="pin" length="middle"/>
+<pin name="P$37" x="-20.32" y="-10.16" visible="pin" length="middle"/>
+<pin name="P$38" x="-20.32" y="-7.62" visible="pin" length="middle"/>
+<pin name="P$39" x="-20.32" y="-5.08" visible="pin" length="middle"/>
+<pin name="P$40" x="-20.32" y="-2.54" visible="pin" length="middle"/>
+<pin name="P$41" x="-20.32" y="0" visible="pin" length="middle"/>
+<pin name="P$42" x="-20.32" y="2.54" visible="pin" length="middle"/>
+<pin name="P$43" x="-20.32" y="5.08" visible="pin" length="middle"/>
+<pin name="P$44" x="-20.32" y="7.62" visible="pin" length="middle"/>
+<pin name="P$45" x="-20.32" y="10.16" visible="pin" length="middle"/>
+<pin name="P$46" x="-20.32" y="12.7" visible="pin" length="middle"/>
+<pin name="P$47" x="-20.32" y="15.24" visible="pin" length="middle"/>
+<pin name="P$48" x="-20.32" y="17.78" visible="pin" length="middle"/>
+<pin name="P$49" x="-20.32" y="20.32" visible="pin" length="middle"/>
+<pin name="P$50" x="-20.32" y="22.86" visible="pin" length="middle"/>
+<pin name="P$51" x="-20.32" y="25.4" visible="pin" length="middle"/>
+<pin name="P$52" x="-20.32" y="27.94" visible="pin" length="middle"/>
+<text x="-15.24" y="30.988" size="1.778" layer="95">&gt;NAME</text>
+<text x="-15.24" y="-40.64" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="RADIO_HEAD_EDGECONNECTOR">
+<wire x1="15.24" y1="20.32" x2="15.24" y2="-43.18" width="0.254" layer="94"/>
+<wire x1="15.24" y1="20.32" x2="-17.78" y2="20.32" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="20.32" x2="-17.78" y2="-43.18" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-43.18" x2="15.24" y2="-43.18" width="0.254" layer="94"/>
+<pin name="GND" x="20.32" y="-40.64" visible="pin" length="middle" rot="R180"/>
+<pin name="3.3V" x="20.32" y="-38.1" visible="pin" length="middle" rot="R180"/>
+<pin name="5V" x="20.32" y="-35.56" visible="pin" length="middle" rot="R180"/>
+<pin name="12V" x="20.32" y="-33.02" visible="pin" length="middle" rot="R180"/>
+<pin name="UART_TX" x="20.32" y="-22.86" visible="pin" length="middle" rot="R180"/>
+<pin name="UART_RX" x="20.32" y="-20.32" visible="pin" length="middle" rot="R180"/>
+<pin name="I2C_SDL" x="20.32" y="-15.24" visible="pin" length="middle" rot="R180"/>
+<pin name="I2C_SCL" x="20.32" y="-12.7" visible="pin" length="middle" rot="R180"/>
+<pin name="IRQ" x="20.32" y="-7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="DIFF_A+" x="-22.86" y="-27.94" visible="pin" length="middle"/>
+<pin name="DIFF_A-" x="-22.86" y="-25.4" visible="pin" length="middle"/>
+<pin name="DIFF_B+" x="-22.86" y="-20.32" visible="pin" length="middle"/>
+<pin name="DIFF_B-" x="-22.86" y="-17.78" visible="pin" length="middle"/>
+<pin name="ANALOG_6" x="-22.86" y="-12.7" visible="pin" length="middle"/>
+<pin name="ANALOG_5" x="-22.86" y="-10.16" visible="pin" length="middle"/>
+<pin name="ANALOG_4" x="-22.86" y="-7.62" visible="pin" length="middle"/>
+<pin name="ANALOG_3" x="-22.86" y="-5.08" visible="pin" length="middle"/>
+<pin name="DIG_2" x="-22.86" y="-40.64" visible="pin" length="middle"/>
+<pin name="DIG_1" x="-22.86" y="-38.1" visible="pin" length="middle"/>
+<pin name="ANALOG_2" x="-22.86" y="-2.54" visible="pin" length="middle"/>
+<pin name="ANALOG_1" x="-22.86" y="0" visible="pin" length="middle"/>
+<pin name="RESET" x="20.32" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="SPI_CS" x="20.32" y="5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="SPI_MISO" x="20.32" y="10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="SPI_CLK" x="20.32" y="7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="SPI_MOSI" x="20.32" y="12.7" visible="pin" length="middle" rot="R180"/>
+<text x="-18.034" y="20.828" size="1.778" layer="95">&gt;NAME</text>
+<text x="-17.78" y="-45.72" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -14085,6 +14252,112 @@ http://www.nxp.com/documents/data_sheet/LM75B.pdf</description>
 <attribute name="DIGI" value="DFLT13ADICT-ND" constant="no"/>
 <attribute name="MPN" value="DFLT13A-7" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PCIE_MINI_CARD" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="PCIE_MINI_EDGECONNECTOR" x="7.62" y="5.08"/>
+</gates>
+<devices>
+<device name="" package="PCIE_MINI_CARDEDGE">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$10" pad="P$10"/>
+<connect gate="G$1" pin="P$11" pad="P$11"/>
+<connect gate="G$1" pin="P$12" pad="P$12"/>
+<connect gate="G$1" pin="P$13" pad="P$13"/>
+<connect gate="G$1" pin="P$14" pad="P$14"/>
+<connect gate="G$1" pin="P$15" pad="P$15"/>
+<connect gate="G$1" pin="P$16" pad="P$16"/>
+<connect gate="G$1" pin="P$17" pad="P$17"/>
+<connect gate="G$1" pin="P$18" pad="P$18"/>
+<connect gate="G$1" pin="P$19" pad="P$19"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="P$20" pad="P$20"/>
+<connect gate="G$1" pin="P$21" pad="P$21"/>
+<connect gate="G$1" pin="P$22" pad="P$22"/>
+<connect gate="G$1" pin="P$23" pad="P$23"/>
+<connect gate="G$1" pin="P$24" pad="P$24"/>
+<connect gate="G$1" pin="P$25" pad="P$25"/>
+<connect gate="G$1" pin="P$26" pad="P$26"/>
+<connect gate="G$1" pin="P$27" pad="P$27"/>
+<connect gate="G$1" pin="P$28" pad="P$28"/>
+<connect gate="G$1" pin="P$29" pad="P$29"/>
+<connect gate="G$1" pin="P$3" pad="P$3"/>
+<connect gate="G$1" pin="P$30" pad="P$30"/>
+<connect gate="G$1" pin="P$31" pad="P$31"/>
+<connect gate="G$1" pin="P$32" pad="P$32"/>
+<connect gate="G$1" pin="P$33" pad="P$33"/>
+<connect gate="G$1" pin="P$34" pad="P$34"/>
+<connect gate="G$1" pin="P$35" pad="P$35"/>
+<connect gate="G$1" pin="P$36" pad="P$36"/>
+<connect gate="G$1" pin="P$37" pad="P$37"/>
+<connect gate="G$1" pin="P$38" pad="P$38"/>
+<connect gate="G$1" pin="P$39" pad="P$39"/>
+<connect gate="G$1" pin="P$4" pad="P$4"/>
+<connect gate="G$1" pin="P$40" pad="P$40"/>
+<connect gate="G$1" pin="P$41" pad="P$41"/>
+<connect gate="G$1" pin="P$42" pad="P$42"/>
+<connect gate="G$1" pin="P$43" pad="P$43"/>
+<connect gate="G$1" pin="P$44" pad="P$44"/>
+<connect gate="G$1" pin="P$45" pad="P$45"/>
+<connect gate="G$1" pin="P$46" pad="P$46"/>
+<connect gate="G$1" pin="P$47" pad="P$47"/>
+<connect gate="G$1" pin="P$48" pad="P$48"/>
+<connect gate="G$1" pin="P$49" pad="P$49"/>
+<connect gate="G$1" pin="P$5" pad="P$5"/>
+<connect gate="G$1" pin="P$50" pad="P$50"/>
+<connect gate="G$1" pin="P$51" pad="P$51"/>
+<connect gate="G$1" pin="P$52" pad="P$52"/>
+<connect gate="G$1" pin="P$6" pad="P$6"/>
+<connect gate="G$1" pin="P$7" pad="P$7"/>
+<connect gate="G$1" pin="P$8" pad="P$8"/>
+<connect gate="G$1" pin="P$9" pad="P$9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RADIO_HEAD_EDGECONNECTOR">
+<gates>
+<gate name="G$1" symbol="RADIO_HEAD_EDGECONNECTOR" x="0" y="10.16"/>
+</gates>
+<devices>
+<device name="" package="PCIE_MINI_CARDEDGE">
+<connects>
+<connect gate="G$1" pin="12V" pad="P$45 P$47 P$49 P$51"/>
+<connect gate="G$1" pin="3.3V" pad="P$29 P$31 P$33 P$35 P$37 P$39"/>
+<connect gate="G$1" pin="5V" pad="P$41 P$43"/>
+<connect gate="G$1" pin="ANALOG_1" pad="P$10"/>
+<connect gate="G$1" pin="ANALOG_2" pad="P$13"/>
+<connect gate="G$1" pin="ANALOG_3" pad="P$14"/>
+<connect gate="G$1" pin="ANALOG_4" pad="P$17"/>
+<connect gate="G$1" pin="ANALOG_5" pad="P$19"/>
+<connect gate="G$1" pin="ANALOG_6" pad="P$21"/>
+<connect gate="G$1" pin="DIFF_A+" pad="P$18"/>
+<connect gate="G$1" pin="DIFF_A-" pad="P$20"/>
+<connect gate="G$1" pin="DIFF_B+" pad="P$26"/>
+<connect gate="G$1" pin="DIFF_B-" pad="P$24"/>
+<connect gate="G$1" pin="DIG_1" pad="P$23"/>
+<connect gate="G$1" pin="DIG_2" pad="P$25"/>
+<connect gate="G$1" pin="GND" pad="P$3 P$4 P$7 P$8 P$11 P$12 P$15 P$16 P$22 P$27 P$28 P$30 P$34 P$38 P$42 P$44 P$46 P$48"/>
+<connect gate="G$1" pin="I2C_SCL" pad="P$40"/>
+<connect gate="G$1" pin="I2C_SDL" pad="P$36"/>
+<connect gate="G$1" pin="IRQ" pad="P$32"/>
+<connect gate="G$1" pin="RESET" pad="P$9"/>
+<connect gate="G$1" pin="SPI_CLK" pad="P$2"/>
+<connect gate="G$1" pin="SPI_CS" pad="P$6"/>
+<connect gate="G$1" pin="SPI_MISO" pad="P$5"/>
+<connect gate="G$1" pin="SPI_MOSI" pad="P$1"/>
+<connect gate="G$1" pin="UART_RX" pad="P$52"/>
+<connect gate="G$1" pin="UART_TX" pad="P$50"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
