@@ -4941,8 +4941,6 @@ CAP-10009- 50V, 10% (1206)</description>
 <text x="-185.42" y="607.06" size="1.4224" layer="91">add MIC5504-3.3YM5 TR LDO as 3v3 supply</text>
 <text x="91.44" y="279.4" size="1.4224" layer="97">I2C adress:</text>
 <text x="215.9" y="271.78" size="1.4224" layer="97">I2C adress:</text>
-<text x="-132.08" y="594.36" size="1.4224" layer="91">576-4310-1-ND</text>
-<text x="-132.08" y="591.82" size="1.4224" layer="91">576-4764-1-ND</text>
 <text x="-185.42" y="596.9" size="1.778" layer="91">Add switching supply to bring 12v to 3.6 lmz31704</text>
 <text x="-218.44" y="302.26" size="1.778" layer="97">R29 setting Vout to 3.6v</text>
 <text x="-243.84" y="264.16" size="1.778" layer="97">3.3v LDO</text>
@@ -5576,7 +5574,6 @@ CAP-10009- 50V, 10% (1206)</description>
 </segment>
 <segment>
 <pinref part="GND39" gate="1" pin="GND"/>
-<wire x1="-50.8" y1="243.84" x2="-48.26" y2="243.84" width="0.1524" layer="91"/>
 <wire x1="-48.26" y1="243.84" x2="-45.72" y2="243.84" width="0.1524" layer="91"/>
 <wire x1="-45.72" y1="243.84" x2="-45.72" y2="241.3" width="0.1524" layer="91"/>
 <pinref part="R8" gate="G$1" pin="1"/>
@@ -6446,6 +6443,7 @@ CAP-10009- 50V, 10% (1206)</description>
 <segment>
 <wire x1="416.56" y1="22.86" x2="406.4" y2="22.86" width="0.1524" layer="91"/>
 <label x="406.4" y="22.86" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$11" gate="G$1" pin="I"/>
 </segment>
 </net>
 <net name="RADIO_PWR_EN" class="0">
@@ -7395,16 +7393,6 @@ CAP-10009- 50V, 10% (1206)</description>
 <junction x="160.02" y="147.32"/>
 </segment>
 </net>
-<net name="N$51" class="0">
-<segment>
-<wire x1="-136.906" y1="595.122" x2="-132.334" y2="595.122" width="0.1524" layer="91"/>
-<wire x1="-132.334" y1="595.122" x2="-132.334" y2="590.55" width="0.1524" layer="91"/>
-<wire x1="-132.334" y1="590.55" x2="-117.856" y2="590.55" width="0.1524" layer="91"/>
-<wire x1="-117.856" y1="590.55" x2="-117.856" y2="596.392" width="0.1524" layer="91"/>
-<wire x1="-117.856" y1="596.392" x2="-132.334" y2="596.392" width="0.1524" layer="91"/>
-<wire x1="-132.334" y1="596.392" x2="-132.334" y2="595.122" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$54" class="0">
 <segment>
 <pinref part="U$15" gate="G$1" pin="VADJ"/>
@@ -7570,7 +7558,6 @@ CAP-10009- 50V, 10% (1206)</description>
 <segment>
 <pinref part="U6" gate="G$1" pin="LDAC"/>
 <wire x1="203.2" y1="246.38" x2="198.12" y2="246.38" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="246.38" x2="198.12" y2="246.38" width="0.1524" layer="91"/>
 <pinref part="R39" gate="G$1" pin="2"/>
 </segment>
 </net>
