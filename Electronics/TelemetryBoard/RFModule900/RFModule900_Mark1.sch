@@ -775,8 +775,8 @@
 <wire x1="-100" y1="-15" x2="-100" y2="15" width="0.127" layer="20"/>
 <wire x1="-100" y1="15" x2="-3.2" y2="15" width="0.127" layer="20"/>
 <wire x1="-100" y1="-15" x2="-3.2" y2="-15" width="0.127" layer="20"/>
-<hole x="-48.05" y="-12.1" drill="2.6"/>
-<hole x="-48.05" y="12.1" drill="2.6"/>
+<hole x="-96.31" y="-12.1" drill="2.6"/>
+<hole x="-96.31" y="12.1" drill="2.6"/>
 <wire x1="-16" y1="-3.85" x2="-6" y2="-3.85" width="0.127" layer="21"/>
 <wire x1="0" y1="-3.1" x2="0" y2="12.85" width="0.127" layer="20"/>
 <wire x1="0" y1="-12.85" x2="0" y2="-4.6" width="0.127" layer="20"/>
@@ -2271,8 +2271,8 @@ chip</description>
 <wire x1="1.473" y1="-0.483" x2="-1.473" y2="-0.483" width="0.0508" layer="39"/>
 <wire x1="-1.473" y1="-0.483" x2="-1.473" y2="0.483" width="0.0508" layer="39"/>
 <wire x1="0" y1="0.0305" x2="0" y2="-0.0305" width="0.4064" layer="21"/>
-<smd name="1" x="-0.58" y="0" dx="0.85" dy="0.9" layer="1"/>
-<smd name="2" x="0.58" y="0" dx="0.85" dy="0.9" layer="1"/>
+<smd name="1" x="-0.65" y="0" dx="0.7" dy="0.9" layer="1"/>
+<smd name="2" x="0.65" y="0" dx="0.7" dy="0.9" layer="1"/>
 <text x="-0.889" y="0.6985" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-1.0795" y="-1.143" size="0.4064" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.554" y1="-0.3048" x2="-0.254" y2="0.2951" layer="51"/>
@@ -3526,7 +3526,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </devices>
 </deviceset>
 <deviceset name="5V" prefix="SUPPLY">
-<description>5V supply symbol</description>
 <gates>
 <gate name="G$1" symbol="5V" x="0" y="0"/>
 </gates>
@@ -3778,39 +3777,14 @@ chip</description>
 <wire x1="1.473" y1="0.483" x2="1.473" y2="-0.483" width="0.0508" layer="39"/>
 <wire x1="1.473" y1="-0.483" x2="-1.473" y2="-0.483" width="0.0508" layer="39"/>
 <wire x1="-1.473" y1="-0.483" x2="-1.473" y2="0.483" width="0.0508" layer="39"/>
-<smd name="1" x="-0.58" y="0" dx="0.85" dy="0.9" layer="1"/>
-<smd name="2" x="0.58" y="0" dx="0.85" dy="0.9" layer="1"/>
+<smd name="1" x="-0.65" y="0" dx="0.7" dy="0.9" layer="1"/>
+<smd name="2" x="0.65" y="0" dx="0.7" dy="0.9" layer="1"/>
 <text x="-0.889" y="0.6985" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-1.0795" y="-1.143" size="0.4064" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.554" y1="-0.3048" x2="-0.254" y2="0.2951" layer="51"/>
 <rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.2951" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
 <rectangle x1="-0.2032" y1="-0.3556" x2="0.2032" y2="0.3556" layer="21"/>
-</package>
-<package name="AXIAL-0.1EZ">
-<wire x1="1.27" y1="-0.762" x2="1.27" y2="0" width="0.2032" layer="21"/>
-<wire x1="1.27" y1="0" x2="1.27" y2="0.762" width="0.2032" layer="21"/>
-<wire x1="1.524" y1="0" x2="1.27" y2="0" width="0.2032" layer="21"/>
-<wire x1="1.27" y1="0" x2="1.016" y2="0" width="0.2032" layer="21"/>
-<pad name="P$1" x="0" y="0" drill="0.9" diameter="1.8796" stop="no"/>
-<pad name="P$2" x="2.54" y="0" drill="0.9" diameter="1.8796" stop="no"/>
-<text x="0" y="1.27" size="1.016" layer="25" font="vector" ratio="15">&gt;Name</text>
-<text x="0" y="-2.159" size="1.016" layer="21" font="vector" ratio="15">&gt;Value</text>
-<circle x="0" y="0" radius="0.4572" width="0" layer="29"/>
-<circle x="0" y="0" radius="1.016" width="0" layer="30"/>
-<circle x="2.54" y="0" radius="1.016" width="0" layer="30"/>
-<circle x="0" y="0" radius="0.4572" width="0" layer="29"/>
-<circle x="2.54" y="0" radius="0.4572" width="0" layer="29"/>
-</package>
-<package name="AXIAL-0.1">
-<wire x1="1.27" y1="-0.762" x2="1.27" y2="0" width="0.2032" layer="21"/>
-<wire x1="1.27" y1="0" x2="1.27" y2="0.762" width="0.2032" layer="21"/>
-<wire x1="1.524" y1="0" x2="1.27" y2="0" width="0.2032" layer="21"/>
-<wire x1="1.27" y1="0" x2="1.016" y2="0" width="0.2032" layer="21"/>
-<pad name="P$1" x="0" y="0" drill="0.9" diameter="1.8796"/>
-<pad name="P$2" x="2.54" y="0" drill="0.9" diameter="1.8796"/>
-<text x="0" y="1.27" size="1.016" layer="25" font="vector" ratio="15">&gt;Name</text>
-<text x="0" y="-2.159" size="1.016" layer="21" font="vector" ratio="15">&gt;Value</text>
 </package>
 </packages>
 <symbols>
@@ -3883,7 +3857,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <technology name=""/>
 </technologies>
 </device>
-<device name="0603" package="0603-RES">
+<device name="0402-RES" package="0402-RES">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -3964,33 +3938,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <technology name=""/>
 </technologies>
 </device>
-<device name="PTH-1/4W-VERT-KIT" package="AXIAL-0.1EZ">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="PTH-1/4W-VERT" package="AXIAL-0.1">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="0402" package="0402-RES">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
 </devices>
 </deviceset>
 </devicesets>
@@ -4060,8 +4007,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-0.46" y1="0.17" x2="0" y2="0.17" width="0.2032" layer="21"/>
 <wire x1="0" y1="0.17" x2="0.2338" y2="-0.14" width="0.2032" layer="21"/>
 <wire x1="-0.0254" y1="0.1546" x2="-0.2184" y2="-0.14" width="0.2032" layer="21"/>
-<smd name="C" x="0" y="0.877" dx="1" dy="1" layer="1" roundness="30"/>
-<smd name="A" x="0" y="-0.877" dx="1" dy="1" layer="1" roundness="30"/>
+<smd name="C" x="0" y="0.75" dx="0.8" dy="0.8" layer="1"/>
+<smd name="A" x="0" y="-0.75" dx="0.8" dy="0.8" layer="1"/>
 <text x="-0.6985" y="-0.889" size="0.4064" layer="25" rot="R90">&gt;NAME</text>
 <text x="1.0795" y="-1.016" size="0.4064" layer="27" rot="R90">&gt;VALUE</text>
 </package>
@@ -4154,54 +4101,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="1.7119" y="-0.0101" curve="-90.012967"/>
 </polygon>
 </package>
-<package name="LED-1206-BOTTOM">
-<wire x1="-2" y1="0.4" x2="-2" y2="-0.4" width="0.127" layer="49"/>
-<wire x1="-2.4" y1="0" x2="-1.6" y2="0" width="0.127" layer="49"/>
-<wire x1="1.6" y1="0" x2="2.4" y2="0" width="0.127" layer="49"/>
-<wire x1="-1.27" y1="0" x2="-0.381" y2="0" width="0.127" layer="49"/>
-<wire x1="-0.381" y1="0" x2="-0.381" y2="0.635" width="0.127" layer="49"/>
-<wire x1="-0.381" y1="0.635" x2="0.254" y2="0" width="0.127" layer="49"/>
-<wire x1="0.254" y1="0" x2="-0.381" y2="-0.635" width="0.127" layer="49"/>
-<wire x1="-0.381" y1="-0.635" x2="-0.381" y2="0" width="0.127" layer="49"/>
-<wire x1="0.254" y1="0" x2="0.254" y2="0.635" width="0.127" layer="49"/>
-<wire x1="0.254" y1="0" x2="0.254" y2="-0.635" width="0.127" layer="49"/>
-<wire x1="0.254" y1="0" x2="1.27" y2="0" width="0.127" layer="49"/>
-<rectangle x1="-0.75" y1="-0.75" x2="0.75" y2="0.75" layer="51"/>
-<smd name="A" x="-1.8" y="0" dx="1.5" dy="1.6" layer="1"/>
-<smd name="C" x="1.8" y="0" dx="1.5" dy="1.6" layer="1"/>
-<hole x="0" y="0" drill="2.3"/>
-<polygon width="0" layer="51">
-<vertex x="1.1" y="-0.5"/>
-<vertex x="1.1" y="0.5"/>
-<vertex x="1.6" y="0.5"/>
-<vertex x="1.6" y="0.25" curve="90"/>
-<vertex x="1.4" y="0.05"/>
-<vertex x="1.4" y="-0.05" curve="90"/>
-<vertex x="1.6" y="-0.25"/>
-<vertex x="1.6" y="-0.5"/>
-</polygon>
-<polygon width="0" layer="51">
-<vertex x="-1.1" y="0.5"/>
-<vertex x="-1.1" y="-0.5"/>
-<vertex x="-1.6" y="-0.5"/>
-<vertex x="-1.6" y="-0.25" curve="90"/>
-<vertex x="-1.4" y="-0.05"/>
-<vertex x="-1.4" y="0.05" curve="90"/>
-<vertex x="-1.6" y="0.25"/>
-<vertex x="-1.6" y="0.5"/>
-</polygon>
-<wire x1="1.016" y1="1.016" x2="2.7686" y2="1.016" width="0.127" layer="21"/>
-<wire x1="2.7686" y1="1.016" x2="2.7686" y2="-1.016" width="0.127" layer="21"/>
-<wire x1="2.7686" y1="-1.016" x2="1.016" y2="-1.016" width="0.127" layer="21"/>
-<wire x1="2.9972" y1="0" x2="3.3528" y2="0" width="0.127" layer="21"/>
-<wire x1="-1.016" y1="-1.016" x2="-2.7686" y2="-1.016" width="0.127" layer="21"/>
-<wire x1="-2.7686" y1="-1.016" x2="-2.7686" y2="1.016" width="0.127" layer="21"/>
-<wire x1="-2.7686" y1="1.016" x2="-1.016" y2="1.016" width="0.127" layer="21"/>
-<wire x1="-2.9972" y1="0" x2="-3.3528" y2="0" width="0.127" layer="21"/>
-<wire x1="-3.175" y1="0.1778" x2="-3.175" y2="-0.1778" width="0.127" layer="21"/>
-<text x="-2.54" y="1.27" size="1.27" layer="25">&gt;NAME</text>
-<text x="-2.54" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
-</package>
 </packages>
 <symbols>
 <symbol name="LED">
@@ -4211,6 +4110,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="0" y1="-2.54" x2="-1.27" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="1.27" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.1524" layer="94"/>
 <wire x1="-2.032" y1="-0.762" x2="-3.429" y2="-2.159" width="0.1524" layer="94"/>
 <wire x1="-1.905" y1="-1.905" x2="-3.302" y2="-3.302" width="0.1524" layer="94"/>
 <text x="3.556" y="-4.572" size="1.778" layer="95" rot="R90">&gt;NAME</text>
@@ -4230,7 +4130,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="LED" prefix="D" uservalue="yes">
+<deviceset name="LED" prefix="LED" uservalue="yes">
 <description>&lt;b&gt;LEDs&lt;/b&gt;
 Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LEDs. 5mm - Spark Fun Electronics SKU : COM-00529 (and others)</description>
 <gates>
@@ -4304,15 +4204,6 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="K"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="1206-BOTTOM" package="LED-1206-BOTTOM">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -4467,7 +4358,7 @@ CAP-10009- 50V, 10% (1206)</description>
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND5" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R2" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="220"/>
+<part name="R2" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES" value="220"/>
 <part name="C13" library="SparkFun-Capacitors" deviceset="CAP" device="0402-CAP" value="2.2uF"/>
 <part name="C14" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="220pF">
 <attribute name="DIGI" value="712-1398-1-ND"/>
@@ -4475,7 +4366,7 @@ CAP-10009- 50V, 10% (1206)</description>
 <part name="GND10" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND11" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND15" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R3" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="390"/>
+<part name="R3" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES" value="390"/>
 <part name="C20" library="SparkFun-Capacitors" deviceset="CAP" device="0402-CAP" value="1uF">
 <attribute name="DIGI" value="490-3890-1-ND"/>
 <attribute name="MPN" value="GRM155R61A105KE15D"/>
@@ -4502,18 +4393,18 @@ CAP-10009- 50V, 10% (1206)</description>
 <part name="L1" library="SparkFun-Passives" deviceset="INDUCTOR" device="0402" value="10nH"/>
 <part name="L11" library="SparkFun-Passives" deviceset="INDUCTOR" device="0402" value="10nH"/>
 <part name="C1" library="SparkFun-Capacitors" deviceset="CAP" device="0402-CAP" value="2.7pF"/>
-<part name="R1" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="220"/>
+<part name="R1" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES" value="220"/>
 <part name="C10" library="SparkFun-Capacitors" deviceset="CAP" device="0402-CAP" value="2.2uF"/>
 <part name="GND6" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND7" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND12" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND13" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R4" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="390"/>
+<part name="R4" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES" value="390"/>
 <part name="GND16" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND14" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND23" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY3" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
-<part name="R6" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="5k"/>
+<part name="R6" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES" value="5k"/>
 <part name="SJ2" library="SparkFun-Passives" deviceset="JUMPER-PAD-3-2OF3_NC_BY_TRACE" device="_SMALL" value="invert Control Signal"/>
 <part name="C8" library="SparkFun-Capacitors" deviceset="CAP" device="0402-CAP" value="22pF"/>
 <part name="GND24" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -4523,7 +4414,7 @@ CAP-10009- 50V, 10% (1206)</description>
 <part name="GND26" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C31" library="SparkFun-Capacitors" deviceset="CAP" device="0402-CAP" value="22pF"/>
 <part name="GND27" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R7" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="5k"/>
+<part name="R7" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES" value="5k"/>
 <part name="GND29" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND30" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="Y1" library="RitLaunchInitiative" deviceset="CRYSTAL" device="" value="30 Mhz">
@@ -4543,11 +4434,11 @@ CAP-10009- 50V, 10% (1206)</description>
 <part name="U2" library="RitLaunchInitiative" deviceset="TPS2561" device=""/>
 <part name="GND38" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND39" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R8" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="25.5k"/>
-<part name="R9" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="25.5k"/>
-<part name="R10" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="270"/>
+<part name="R8" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES" value="25.5k"/>
+<part name="R9" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES" value="25.5k"/>
+<part name="R10" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES" value="270"/>
 <part name="GND40" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R12" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="270"/>
+<part name="R12" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES" value="270"/>
 <part name="GND42" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="D4" library="SparkFun-LED" deviceset="LED" device="0603">
@@ -4560,13 +4451,13 @@ CAP-10009- 50V, 10% (1206)</description>
 </part>
 <part name="U$5" library="RitLaunchInitiative" deviceset="AO6602" device=""/>
 <part name="GND44" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R5" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="270"/>
+<part name="R5" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES" value="270"/>
 <part name="SUPPLY6" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="SUPPLY8" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
-<part name="R15" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="270"/>
+<part name="R15" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES" value="270"/>
 <part name="GND45" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R16" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="DNP"/>
-<part name="R17" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="DNP"/>
+<part name="R16" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES" value="DNP"/>
+<part name="R17" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES" value="DNP"/>
 <part name="GND46" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY9" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="L4" library="SparkFun-Passives" deviceset="INDUCTOR" device="0603" value="260">
@@ -4595,7 +4486,7 @@ CAP-10009- 50V, 10% (1206)</description>
 <part name="U$9" library="RitLaunchInitiative" deviceset="SN74LVC1G32" device=""/>
 <part name="C38" library="SparkFun-Capacitors" deviceset="CAP" device="0402-CAP" value="0.1uF"/>
 <part name="GND48" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R18" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="5k"/>
+<part name="R18" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES" value="5k"/>
 <part name="GND49" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY13" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="SUPPLY10" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
@@ -4608,7 +4499,7 @@ CAP-10009- 50V, 10% (1206)</description>
 <part name="GND53" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C41" library="SparkFun-Capacitors" deviceset="CAP" device="0402-CAP" value="0.1uF"/>
 <part name="GND54" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R19" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="5k"/>
+<part name="R19" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES" value="5k"/>
 <part name="GND55" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY14" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="SUPPLY15" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
@@ -4651,8 +4542,8 @@ CAP-10009- 50V, 10% (1206)</description>
 <part name="GND65" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND67" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND68" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R22" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="DNP"/>
-<part name="R23" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="DNP"/>
+<part name="R22" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES" value="DNP"/>
+<part name="R23" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES" value="DNP"/>
 <part name="SUPPLY19" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="SUPPLY25" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="U$11" library="RitLaunchInitiative" deviceset="SN74LVC1G14" device=""/>
@@ -4660,14 +4551,14 @@ CAP-10009- 50V, 10% (1206)</description>
 <part name="SUPPLY28" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="C51" library="SparkFun-Capacitors" deviceset="CAP" device="0402-CAP" value="0.1uF"/>
 <part name="GND75" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R24" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="270"/>
+<part name="R24" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES" value="270"/>
 <part name="GND76" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SJ5" library="SparkFun-Passives" deviceset="JUMPER-PAD-3-2OF3_NC_BY_TRACE" device="_SMALL" value=""/>
 <part name="SUPPLY23" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
-<part name="R27" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="100k"/>
+<part name="R27" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES" value="100k"/>
 <part name="SUPPLY29" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
-<part name="R25" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="100k"/>
-<part name="R26" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="100k"/>
+<part name="R25" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES" value="100k"/>
+<part name="R26" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES" value="100k"/>
 <part name="SUPPLY30" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="SUPPLY31" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="C52" library="SparkFun-Capacitors" deviceset="CAP" device="0402-CAP" value="0.1uF"/>
@@ -4704,11 +4595,11 @@ CAP-10009- 50V, 10% (1206)</description>
 </part>
 <part name="U3" library="RitLaunchInitiative" deviceset="LM75B" device=""/>
 <part name="U$14" library="RitLaunchInitiative" deviceset="3.6V" device=""/>
-<part name="R13" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="0"/>
-<part name="R14" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="DNP"/>
+<part name="R13" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES" value="0"/>
+<part name="R14" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES" value="DNP"/>
 <part name="GND43" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R20" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="0"/>
-<part name="R21" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="DNP"/>
+<part name="R20" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES" value="0"/>
+<part name="R21" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES" value="DNP"/>
 <part name="GND62" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C12" library="SparkFun-Capacitors" deviceset="CAP" device="0402-CAP" value="0.1uF"/>
 <part name="SUPPLY5" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
@@ -4720,15 +4611,15 @@ CAP-10009- 50V, 10% (1206)</description>
 <attribute name="DIGI" value="490-4801-1-ND"/>
 <attribute name="MPN" value="NCP15XH103F03RC"/>
 </part>
-<part name="R28" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="10k"/>
+<part name="R28" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES" value="10k"/>
 <part name="U7" library="RitLaunchInitiative" deviceset="ADC128D818" device=""/>
 <part name="U$15" library="RitLaunchInitiative" deviceset="LMZ31704" device=""/>
 <part name="U8" library="RitLaunchInitiative" deviceset="MIC5504-3.3YM5" device=""/>
-<part name="R29" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="287">
+<part name="R29" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES" value="287">
 <attribute name="DIGI" value="P287LCT-ND"/>
 <attribute name="MPN" value="ERJ-2RKF2870X"/>
 </part>
-<part name="R30" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="90.9k"/>
+<part name="R30" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES" value="90.9k"/>
 <part name="C18" library="SparkFun-Retired" deviceset="2.2UF-CER" device="CAP-10009" value="100uF">
 <attribute name="DIGI" value="490-7217-2-ND"/>
 <attribute name="MPN" value="GRM31CR60J107ME39K"/>
@@ -4776,17 +4667,17 @@ CAP-10009- 50V, 10% (1206)</description>
 <attribute name="COLOR" value="Red"/>
 <attribute name="DIGI" value="160-1447-1-ND"/>
 </part>
-<part name="R31" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="270"/>
+<part name="R31" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES" value="270"/>
 <part name="GND91" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY32" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="D2" library="SparkFun-LED" deviceset="LED" device="0603">
 <attribute name="COLOR" value="Red"/>
 <attribute name="DIGI" value="160-1447-1-ND"/>
 </part>
-<part name="R32" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="270"/>
+<part name="R32" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES" value="270"/>
 <part name="GND92" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND93" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R33" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="270"/>
+<part name="R33" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES" value="270"/>
 <part name="U$19" library="RitLaunchInitiative" deviceset="3.6V" device=""/>
 <part name="C64" library="SparkFun-Capacitors" deviceset="CAP" device="0402-CAP" value="0.1uF">
 <attribute name="DIGI" value="311-1338-1-ND"/>
@@ -4807,17 +4698,17 @@ CAP-10009- 50V, 10% (1206)</description>
 <part name="GND97" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND98" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND99" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R34" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="5k"/>
-<part name="R35" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="5k"/>
+<part name="R34" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES" value="5k"/>
+<part name="R35" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES" value="5k"/>
 <part name="GND100" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND101" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R36" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="5k"/>
-<part name="R37" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="5k"/>
-<part name="R38" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="5k"/>
+<part name="R36" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES" value="5k"/>
+<part name="R37" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES" value="5k"/>
+<part name="R38" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES" value="5k"/>
 <part name="GND102" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND103" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND104" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R39" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="DNP"/>
+<part name="R39" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES" value="DNP"/>
 <part name="GND69" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="D7" library="RitLaunchInitiative" deviceset="PESD5V0U5BF" device=""/>
 <part name="D10" library="RitLaunchInitiative" deviceset="PESD5V0U5BF" device=""/>
@@ -4828,14 +4719,14 @@ CAP-10009- 50V, 10% (1206)</description>
 <attribute name="DIGI" value="490-4801-1-ND"/>
 <attribute name="MPN" value="NCP15XH103F03RC"/>
 </part>
-<part name="R40" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="10k"/>
+<part name="R40" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES" value="10k"/>
 <part name="SUPPLY35" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="GND106" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="U$21" library="RitLaunchInitiative" deviceset="THERMISTOR" device="" value="10k">
 <attribute name="DIGI" value="490-4801-1-ND"/>
 <attribute name="MPN" value="NCP15XH103F03RC"/>
 </part>
-<part name="R41" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="10k"/>
+<part name="R41" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES" value="10k"/>
 <part name="D13" library="RitLaunchInitiative" deviceset="PESD5V0U5BF" device=""/>
 <part name="GND107" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND108" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -4857,16 +4748,16 @@ CAP-10009- 50V, 10% (1206)</description>
 <attribute name="MPN" value="CC0402KRX7R7BB104"/>
 </part>
 <part name="GND28" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R11" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="5k"/>
-<part name="R42" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="5k"/>
-<part name="R43" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="5k"/>
+<part name="R11" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES" value="5k"/>
+<part name="R42" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES" value="5k"/>
+<part name="R43" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES" value="5k"/>
 <part name="GND41" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="D3" library="SparkFun-LED" deviceset="LED" device="0603">
 <attribute name="COLOR" value="Red"/>
 <attribute name="DIGI" value="160-1447-1-ND"/>
 </part>
 <part name="GND73" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R44" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="270"/>
+<part name="R44" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES" value="270"/>
 </parts>
 <sheets>
 <sheet>
