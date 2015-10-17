@@ -11913,7 +11913,7 @@
 <wire x1="-5.715" y1="3.175" x2="-5.08" y2="-3.175" width="0.2032" layer="51"/>
 <wire x1="-5.08" y1="3.175" x2="-4.445" y2="-3.175" width="0.2032" layer="51"/>
 <wire x1="-4.445" y1="3.175" x2="-3.81" y2="-3.175" width="0.2032" layer="51"/>
-<smd name="GND@2" x="2.54" y="4.3825" dx="2.415" dy="5.08" layer="1" rot="R90" cream="no"/>
+<smd name="GND@2" x="2.54" y="4.3825" dx="2.415" dy="5.08" layer="1" rot="R90" thermals="no" cream="no"/>
 <smd name="P" x="2.54" y="0" dx="2.29" dy="5.08" layer="1" rot="R90" thermals="no" cream="no"/>
 <text x="5.08" y="6.985" size="1.016" layer="25" ratio="18" rot="R180">&gt;NAME</text>
 <text x="5.08" y="-7.62" size="0.8128" layer="27" ratio="10" rot="R180">&gt;VALUE</text>
@@ -11935,9 +11935,9 @@
 <vertex x="0" y="-5.08"/>
 <vertex x="-1.524" y="-5.08"/>
 </polygon>
-<smd name="GND@5" x="2.54" y="-4.3825" dx="2.415" dy="5.08" layer="1" rot="R90" cream="no"/>
-<smd name="GND@1" x="2.54" y="4.3825" dx="2.415" dy="5.08" layer="16" rot="R90" cream="no"/>
-<smd name="GND@3" x="2.54" y="-4.3825" dx="2.415" dy="5.08" layer="16" rot="R90" cream="no"/>
+<smd name="GND@5" x="2.54" y="-4.3825" dx="2.415" dy="5.08" layer="1" rot="R90" thermals="no" cream="no"/>
+<smd name="GND@1" x="2.54" y="4.3825" dx="2.415" dy="5.08" layer="16" rot="R90" thermals="no" cream="no"/>
+<smd name="GND@3" x="2.54" y="-4.3825" dx="2.415" dy="5.08" layer="16" rot="R90" thermals="no" cream="no"/>
 </package>
 <package name="SMD-457-04">
 <smd name="P$1" x="0" y="1.875" dx="0.5" dy="0.85" layer="1" rot="R90"/>
@@ -12108,10 +12108,22 @@
 <circle x="-6.35" y="6.35" radius="0.635" width="0.2286" layer="21"/>
 <text x="0" y="6.35" size="1.016" layer="25">&gt;NAME</text>
 <text x="0.635" y="-6.985" size="1.016" layer="27">&gt;VALUE</text>
-<rectangle x1="-2.54" y1="-3.81" x2="2.54" y2="-1.905" layer="1"/>
-<rectangle x1="-0.635" y1="-1.905" x2="0.635" y2="-1.27" layer="1"/>
-<rectangle x1="-2.54" y1="1.905" x2="2.54" y2="3.81" layer="1"/>
-<rectangle x1="-0.635" y1="1.27" x2="0.635" y2="1.905" layer="1"/>
+<wire x1="-2.54" y1="3.81" x2="2.54" y2="3.81" width="0.127" layer="21"/>
+<wire x1="2.54" y1="3.81" x2="2.54" y2="1.905" width="0.127" layer="21"/>
+<wire x1="2.54" y1="1.905" x2="1.27" y2="1.905" width="0.127" layer="21"/>
+<wire x1="1.27" y1="1.905" x2="1.27" y2="1.27" width="0.127" layer="21"/>
+<wire x1="1.27" y1="1.27" x2="-1.27" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="1.905" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="1.905" x2="-2.54" y2="1.905" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="1.905" x2="-2.54" y2="3.81" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-1.905" x2="-1.27" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-1.905" x2="-1.27" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-1.27" x2="1.27" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="1.27" y1="-1.27" x2="1.27" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="1.27" y1="-1.905" x2="2.54" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-1.905" x2="2.54" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-3.81" x2="-2.54" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-3.81" x2="-2.54" y2="-1.905" width="0.127" layer="21"/>
 </package>
 <package name="CERAMIC_CAP_1210">
 <smd name="P$1" x="-1.5" y="0" dx="2.9" dy="1.6" layer="1" rot="R90"/>
@@ -13318,6 +13330,12 @@
 <pin name="P17" x="15.24" y="20.32" visible="pin" length="middle" rot="R180"/>
 <text x="-10.16" y="23.368" size="1.778" layer="95">&gt;NAME</text>
 <text x="-10.16" y="-27.94" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="ADS1015">
+<wire x1="-10.16" y1="7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
