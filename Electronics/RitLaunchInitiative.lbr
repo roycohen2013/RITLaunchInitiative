@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.000000123031" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -11620,18 +11620,6 @@
 </package>
 <package name="10-VFDFN">
 <smd name="GNDPAD" x="0" y="0" dx="2.4" dy="1.65" layer="1"/>
-<polygon width="0" layer="1">
-<vertex x="-1.9" y="0.39"/>
-<vertex x="1.9" y="0.39"/>
-<vertex x="1.9" y="0.11"/>
-<vertex x="-1.9" y="0.11"/>
-</polygon>
-<polygon width="0" layer="1">
-<vertex x="-1.9" y="-0.11"/>
-<vertex x="1.9" y="-0.11"/>
-<vertex x="1.9" y="-0.39"/>
-<vertex x="-1.9" y="-0.39"/>
-</polygon>
 <smd name="P$3" x="0" y="1.475" dx="0.28" dy="0.85" layer="1" roundness="100"/>
 <polygon width="0" layer="1">
 <vertex x="0.14" y="1.5"/>
