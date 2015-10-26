@@ -4924,10 +4924,10 @@ CAP-10009- 50V, 10% (1206)</description>
 <text x="421.64" y="243.84" size="2.54" layer="91">B</text>
 <text x="619.76" y="66.04" size="1.6764" layer="91">Optional input attenuation</text>
 <text x="668.02" y="139.7" size="1.6764" layer="91">Optional input attenuation</text>
-<wire x1="601.98" y1="162.56" x2="601.98" y2="35.56" width="0.1524" layer="94"/>
-<wire x1="601.98" y1="35.56" x2="726.44" y2="35.56" width="0.1524" layer="94"/>
+<wire x1="599.44" y1="162.56" x2="599.44" y2="35.56" width="0.1524" layer="94"/>
+<wire x1="599.44" y1="35.56" x2="726.44" y2="35.56" width="0.1524" layer="94"/>
 <wire x1="726.44" y1="35.56" x2="726.44" y2="162.56" width="0.1524" layer="94"/>
-<wire x1="726.44" y1="162.56" x2="601.98" y2="162.56" width="0.1524" layer="94"/>
+<wire x1="726.44" y1="162.56" x2="599.44" y2="162.56" width="0.1524" layer="94"/>
 <text x="647.7" y="165.1" size="2.54" layer="94">VSWR Measurement</text>
 <text x="424.18" y="33.02" size="1.27" layer="94">Buffering TR_SWITCH_CTL</text>
 <text x="-40.64" y="248.92" size="1.778" layer="91">2 AMP current limit per channel</text>

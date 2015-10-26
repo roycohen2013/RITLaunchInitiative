@@ -1251,8 +1251,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <element name="C21" library="SparkFun-Capacitors" package="0402-CAP" value="1pF" x="38.25875" y="12.3825" rot="R270"/>
 <element name="C22" library="SparkFun-Capacitors" package="0402-CAP" value="3pF" x="40.16375" y="13.97" rot="R180"/>
 <element name="C23" library="SparkFun-Capacitors" package="0402-CAP" value="3pF" x="46.6725" y="10.16" rot="R180"/>
-<element name="C24" library="SparkFun-Capacitors" package="0402-CAP" value="4.3pF" x="83.185" y="14.605" rot="R90"/>
-<element name="C25" library="SparkFun-Capacitors" package="0402-CAP" value="4.3pF" x="86.36" y="14.605" rot="R90"/>
+<element name="C24" library="SparkFun-Capacitors" package="0402-CAP" value="4.3pF" x="83.185" y="15.875" rot="R270"/>
+<element name="C25" library="SparkFun-Capacitors" package="0402-CAP" value="4.3pF" x="86.36" y="15.875" rot="R270"/>
 <element name="C26" library="SparkFun-Capacitors" package="0402-CAP" value="56pF" x="81.5975" y="15.24" rot="R180"/>
 <element name="C27" library="SparkFun-Capacitors" package="0402-CAP" value="56pF" x="74.77125" y="10.16" rot="R180"/>
 <element name="C28" library="SparkFun-Capacitors" package="0402-CAP" value="56pF" x="74.93" y="20.0025" rot="R180"/>
@@ -1347,13 +1347,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="PROD_ID" value="CAP-00811" x="66.548" y="24.257" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="C33" library="SparkFun-Capacitors" package="0402-CAP" value="0.01uF" x="57.4675" y="20.6375"/>
-<element name="T1" library="RitLaunchInitiative" package="SOT23-6" value="DC08-73" x="88.5825" y="16.51" rot="R270">
-<attribute name="DIGI" value="863-1243-1-ND" x="88.5825" y="16.51" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="DC08-73LF" x="88.5825" y="16.51" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="T1" library="RitLaunchInitiative" package="SOT23-6" value="DC08-73" x="88.9" y="14.2875" rot="R180">
+<attribute name="DIGI" value="863-1243-1-ND" x="88.9" y="14.2875" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="DC08-73LF" x="88.9" y="14.2875" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="T2" library="RitLaunchInitiative" package="SOT23-6" value="DC08-73" x="91.7575" y="13.97" rot="R90">
-<attribute name="DIGI" value="863-1243-1-ND" x="91.7575" y="13.97" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="DC08-73LF" x="91.7575" y="13.97" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="T2" library="RitLaunchInitiative" package="SOT23-6" value="DC08-73" x="85.09" y="12.3825">
+<attribute name="DIGI" value="863-1243-1-ND" x="85.09" y="12.3825" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="DC08-73LF" x="85.09" y="12.3825" size="1.778" layer="27" display="off"/>
 </element>
 <element name="U4" library="RitLaunchInitiative" package="TSOT-23-5" value="LTC5505" x="83.5025" y="24.13" rot="R180">
 <attribute name="DIGI" value="LTC5505-2ES5#TRMPBFCT-ND" x="83.5025" y="24.13" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1387,9 +1387,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <element name="C40" library="SparkFun-Capacitors" package="0402-CAP" value="DNP" x="86.995" y="20.32"/>
 <element name="C41" library="SparkFun-Capacitors" package="0402-CAP" value="0.1uF" x="85.24875" y="7.77875" rot="R270"/>
 <element name="R19" library="SparkFun-Resistors" package="0402-RES" value="5k" x="80.16875" y="10.00125" rot="R270"/>
-<element name="L13" library="SparkFun-Passives" package="C0402" value="0 ohm" x="89.2556" y="10.8077"/>
-<element name="C42" library="SparkFun-Capacitors" package="0402-CAP" value="DNP" x="90.7923" y="10.1346" rot="R90"/>
-<element name="C43" library="SparkFun-Capacitors" package="0402-CAP" value="DNP" x="87.63" y="10.16" rot="R90"/>
+<element name="L13" library="SparkFun-Passives" package="C0402" value="0 ohm" x="89.2556" y="9.5377"/>
+<element name="C42" library="SparkFun-Capacitors" package="0402-CAP" value="DNP" x="89.5223" y="8.8646" rot="R90"/>
+<element name="C43" library="SparkFun-Capacitors" package="0402-CAP" value="DNP" x="87.63" y="8.89" rot="R90"/>
 <element name="U$10" library="RitLaunchInitiative" package="SMA_EDGE_LAUNCH" value="0732511150_SMA_EDGE_LAUNCH" x="103.4034" y="15.2654" locked="yes" rot="R180">
 <attribute name="DIGI" value="WM5534-ND" x="103.4034" y="15.2654" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="0732511150" x="103.4034" y="15.2654" size="1.778" layer="27" rot="R180" display="off"/>
@@ -2079,15 +2079,15 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <contactref element="L8" pad="1"/>
 <contactref element="C24" pad="2"/>
 <contactref element="C26" pad="1"/>
-<wire x1="83.185" y1="15.185" x2="84.1225" y2="15.24" width="0" layer="19" extent="1-1"/>
-<wire x1="82.1775" y1="15.24" x2="83.185" y2="15.185" width="0" layer="19" extent="1-1"/>
+<wire x1="83.185" y1="15.295" x2="84.1225" y2="15.24" width="0" layer="19" extent="1-1"/>
+<wire x1="82.1775" y1="15.24" x2="83.185" y2="15.295" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$15" class="1">
 <contactref element="C25" pad="2"/>
 <contactref element="L8" pad="2"/>
 <contactref element="T1" pad="4"/>
-<wire x1="85.4225" y1="15.24" x2="86.36" y2="15.185" width="0" layer="19" extent="1-1"/>
-<wire x1="87.6325" y1="15.2099" x2="86.36" y2="15.185" width="0" layer="19" extent="1-1"/>
+<wire x1="85.4225" y1="15.24" x2="86.36" y2="15.295" width="0" layer="19" extent="1-1"/>
+<wire x1="87.5999" y1="15.2375" x2="86.36" y2="15.295" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$16">
 <contactref element="U$3" pad="P$7"/>
@@ -2345,7 +2345,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <contactref element="L12" pad="1"/>
 <contactref element="T1" pad="3"/>
 <wire x1="87.63" y1="21.2575" x2="87.575" y2="20.32" width="0" layer="19" extent="1-1"/>
-<wire x1="87.6325" y1="17.8101" x2="87.575" y2="20.32" width="0" layer="19" extent="1-1"/>
+<wire x1="90.2001" y1="15.2375" x2="87.575" y2="20.32" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$40" class="1">
 <contactref element="C39" pad="2"/>
@@ -2363,20 +2363,20 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <contactref element="C43" pad="2"/>
 <contactref element="L13" pad="1"/>
 <contactref element="U5" pad="P$1"/>
-<wire x1="88.6056" y1="10.8077" x2="87.63" y2="10.74" width="0" layer="19" extent="1-1"/>
-<wire x1="83.8175" y1="10.6615" x2="87.63" y2="10.74" width="0" layer="19" extent="1-1"/>
+<wire x1="88.6056" y1="9.5377" x2="87.63" y2="9.47" width="0" layer="19" extent="1-1"/>
+<wire x1="83.8175" y1="10.6615" x2="87.63" y2="9.47" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$44" class="1">
 <contactref element="C42" pad="2"/>
 <contactref element="L13" pad="2"/>
 <contactref element="T2" pad="3"/>
-<wire x1="90.7923" y1="10.7146" x2="92.7075" y2="12.6699" width="0" layer="19" extent="1-1"/>
-<wire x1="89.9056" y1="10.8077" x2="90.7923" y2="10.7146" width="0" layer="19" extent="1-1"/>
+<wire x1="89.5223" y1="9.4446" x2="83.7899" y2="11.4325" width="0" layer="19" extent="1-1"/>
+<wire x1="89.9056" y1="9.5377" x2="89.5223" y2="9.4446" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$41" class="1">
 <contactref element="T1" pad="6"/>
 <contactref element="T2" pad="6"/>
-<wire x1="89.5325" y1="15.2099" x2="90.8075" y2="15.2701" width="0" layer="19" extent="1-1"/>
+<wire x1="87.5999" y1="13.3375" x2="86.3901" y2="13.3325" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$45" class="1">
 <contactref element="T2" pad="4"/>
@@ -2387,7 +2387,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="94.5134" y="14.1224"/>
 <vertex x="92.4306" y="14.6685"/>
 </polygon>
-<wire x1="92.7075" y1="15.2701" x2="100.8634" y2="15.2654" width="0" layer="19" extent="1-1"/>
+<wire x1="86.3901" y1="11.4325" x2="100.8634" y2="15.2654" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RF_POWER_IN">
 <contactref element="U5" pad="P$4"/>
