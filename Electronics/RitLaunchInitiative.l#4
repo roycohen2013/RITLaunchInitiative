@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.079375" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -13578,6 +13578,8 @@
 <wire x1="3.81" y1="-2.032" x2="4.572" y2="-2.032" width="0.254" layer="94"/>
 <wire x1="4.572" y1="-2.032" x2="5.08" y2="-1.524" width="0.254" layer="94"/>
 <wire x1="3.048" y1="-2.032" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<text x="-10.16" y="5.08" size="1.27" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-7.62" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -14782,6 +14784,23 @@ http://www.nxp.com/documents/data_sheet/LM75B.pdf</description>
 <connect gate="G$1" pin="D" pad="P$5"/>
 <connect gate="G$1" pin="G" pad="P$4"/>
 <connect gate="G$1" pin="S" pad="P$1 P$2 P$3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MTD20P03HDL">
+<gates>
+<gate name="G$1" symbol="MTD20P03HDL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DPAK_369C_SMD">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="P$3" pad="P$3"/>
 </connects>
 <technologies>
 <technology name=""/>
