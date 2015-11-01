@@ -1017,6 +1017,12 @@ chip</description>
 <smd name="P$50" x="-1.275" y="11" dx="0.6" dy="2.3" layer="16" rot="R90" thermals="no" cream="no"/>
 <smd name="P$52" x="-1.275" y="11.8" dx="0.6" dy="2.3" layer="16" rot="R90" thermals="no" cream="no"/>
 </package>
+<package name="PCIE_36_CARDEDGE">
+<wire x1="0" y1="10.325" x2="0" y2="-10.325" width="0.127" layer="20"/>
+<wire x1="1.27" y1="10.325" x2="1.27" y2="-10.325" width="0.127" layer="20"/>
+<wire x1="0" y1="10.325" x2="-100" y2="10.325" width="0.127" layer="20"/>
+<wire x1="0" y1="-10.325" x2="-100" y2="-10.325" width="0.127" layer="20"/>
+</package>
 </packages>
 </library>
 <library name="SparkFun-Retired">
@@ -1605,6 +1611,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="MPN" value="SN74LVC1G14DBVR" x="-7.62" y="-21.59" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C54" library="SparkFun-Capacitors" package="0402-CAP" value="0.1uF" x="-17.78" y="-25.4"/>
+<element name="U$5" library="RitLaunchInitiative" package="PCIE_36_CARDEDGE" value="" x="100.33" y="15.24"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -1767,10 +1774,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <contactref element="R11" pad="1"/>
 <contactref element="R44" pad="1"/>
 <polygon width="0.4064" layer="16">
-<vertex x="-1.27" y="30.48"/>
-<vertex x="100.33" y="30.48"/>
+<vertex x="0" y="31.75"/>
+<vertex x="100.33" y="31.75"/>
 <vertex x="100.33" y="0"/>
-<vertex x="-1.27" y="0"/>
+<vertex x="0" y="0"/>
 </polygon>
 <polygon width="0.4064" layer="2">
 <vertex x="-10.16" y="30.48"/>
